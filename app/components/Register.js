@@ -21,13 +21,14 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class Login extends Component {
+export default class Register extends Component {
   render() {
     let Actions = this.props.routes;
 
     return (
       <View style={styles.container}>
-        <Text>Login page: {this.props.data}</Text>
+        <Text>Register page</Text>
+        <Button onPress={Actions.home}>Home</Button>
         <Button onPress={Actions.pop}>Back</Button>
       </View>
     );

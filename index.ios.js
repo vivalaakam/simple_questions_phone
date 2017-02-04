@@ -4,17 +4,7 @@
  * @flow
  */
 
-import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
+import Main from './app/Main';
 
-import Login from './app/components/Login';
-
-export default class phone extends Component {
-  render() {
-    return (
-      <Login />
-    );
-  }
-}
-
-AppRegistry.registerComponent('phone', () => phone);
+AppRegistry.registerComponent('phone', () => Main);

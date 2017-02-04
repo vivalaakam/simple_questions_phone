@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet } from  'react-native';
 import Button from 'react-native-button';
 
 const styles = StyleSheet.create({
@@ -21,13 +21,12 @@ const styles = StyleSheet.create({
   },
 });
 
-export default class Login extends Component {
+export default class Register extends Component {
   render() {
     let Actions = this.props.routes;
-
     return (
       <View style={styles.container}>
-        <Text>Login page: {this.props.data}</Text>
+        <Text>Home</Text>
         <Button onPress={Actions.pop}>Back</Button>
       </View>
     );
