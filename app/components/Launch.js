@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
 import Button from 'react-native-button';
+import Login from '../containers/Login';
 
 const styles = StyleSheet.create({
   container: {
@@ -12,15 +13,29 @@ const styles = StyleSheet.create({
 });
 
 export default class Launch extends Component {
+  static propTypes = {
+    routes: PropTypes.object,
+    user: PropTypes.object,
+    userLogout: PropTypes.func
+  };
+
+  static defaultProps = {
+    user: {}
+  };
+
   render() {
-    var Actions = this.props.routes;
+    const { routes, user, userLogout } = this.props;
+    if (!user.auth) {
+      return (
+        <Login {...this.props} />
+      );
+    }
+    
     return (
       <View style={styles.container}>
         <Text>Launch page</Text>
-        <Button onPress={()=>Actions.login({data:"Custom data", title:'Custom title' })}>Go to Login page</Button>
-        <Button onPress={Actions.register}>Go to Register page</Button>
-        <Button onPress={()=>Actions.register2({title: 'Register 2'})}>Go to Register page without animation</Button>
-        <Button onPress={()=>Actions.error("Error message")}>Go to Error page</Button>
+        <Button onPress={()=>routes.error("Error message")}>Go to Error page</Button>
+        <Button onPress={userLogout}>Logout</Button>
       </View>
     );
   }

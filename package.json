@@ -15,7 +15,10 @@
     "react-native-redux-router": "^1.0.7",
     "react-native-tabs": "^1.0.9",
     "react-redux": "^5.0.2",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "redux-actions": "^1.2.1",
+    "redux-logger": "^2.8.1",
+    "redux-saga": "^0.14.3"
   },
   "devDependencies": {
     "babel-jest": "18.0.0",

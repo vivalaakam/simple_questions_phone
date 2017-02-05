@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-import Button from 'react-native-button';
+import { LoginButton } from 'react-native-fbsdk';
 
 const styles = StyleSheet.create({
   container: {
@@ -9,26 +9,30 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
-  welcome: {
+  shareText: {
     fontSize: 20,
-    textAlign: 'center',
     margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
   },
 });
 
 export default class Login extends Component {
+  static propTypes = {
+    user: PropTypes.object,
+    userLogin: PropTypes.func
+  };
+
+  static defaultProps = {
+    user: {}
+  };
+
   render() {
-    let Actions = this.props.routes;
+    const { userLogin } = this.props;
 
     return (
       <View style={styles.container}>
-        <Text>Login page: {this.props.data}</Text>
-        <Button onPress={Actions.pop}>Back</Button>
+        <LoginButton
+          publishPermissions={["publish_actions"]}
+          onLoginFinished={userLogin} />
       </View>
     );
   }

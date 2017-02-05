@@ -1,4 +1,6 @@
 import { routerReducer } from 'react-native-redux-router';
 import { combineReducers } from 'redux';
 
-export default  combineReducers({ routerReducer });
+import user from './user';
+
+export default  combineReducers({ routerReducer, user });
