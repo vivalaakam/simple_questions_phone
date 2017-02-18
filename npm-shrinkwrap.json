@@ -2502,6 +2502,11 @@
       "from": "pegjs@0.9.0",
       "resolved": "https://registry.npmjs.org/pegjs/-/pegjs-0.9.0.tgz"
     },
+    "performance-now": {
+      "version": "0.2.0",
+      "from": "performance-now@>=0.2.0 <0.3.0",
+      "resolved": "https://registry.npmjs.org/performance-now/-/performance-now-0.2.0.tgz"
+    },
     "pify": {
       "version": "2.3.0",
       "from": "pify@>=2.0.0 <3.0.0",
@@ -2587,6 +2592,16 @@
       "from": "qs@4.0.0",
       "resolved": "https://registry.npmjs.org/qs/-/qs-4.0.0.tgz"
     },
+    "raf": {
+      "version": "3.3.0",
+      "from": "raf@>=3.1.0 <4.0.0",
+      "resolved": "https://registry.npmjs.org/raf/-/raf-3.3.0.tgz"
+    },
+    "ramda": {
+      "version": "0.23.0",
+      "from": "ramda@latest",
+      "resolved": "https://registry.npmjs.org/ramda/-/ramda-0.23.0.tgz"
+    },
     "random-bytes": {
       "version": "1.0.0",
       "from": "random-bytes@>=1.0.0 <1.1.0",
@@ -2667,6 +2682,11 @@
         }
       }
     },
+    "react-native-swipe-out": {
+      "version": "2.0.14",
+      "from": "react-native-swipe-out@2.0.14",
+      "resolved": "https://registry.npmjs.org/react-native-swipe-out/-/react-native-swipe-out-2.0.14.tgz"
+    },
     "react-native-tabs": {
       "version": "1.0.9",
       "from": "react-native-tabs@latest",
@@ -2697,6 +2717,11 @@
       "version": "1.0.4",
       "from": "react-transform-hmr@>=1.0.4 <2.0.0",
       "resolved": "https://registry.npmjs.org/react-transform-hmr/-/react-transform-hmr-1.0.4.tgz"
+    },
+    "react-tween-state": {
+      "version": "0.1.5",
+      "from": "react-tween-state@>=0.1.3 <0.2.0",
+      "resolved": "https://registry.npmjs.org/react-tween-state/-/react-tween-state-0.1.5.tgz"
     },
     "read-pkg": {
       "version": "1.1.0",
@@ -3213,6 +3238,11 @@
       "version": "0.4.3",
       "from": "tunnel-agent@>=0.4.1 <0.5.0",
       "resolved": "https://registry.npmjs.org/tunnel-agent/-/tunnel-agent-0.4.3.tgz"
+    },
+    "tween-functions": {
+      "version": "1.2.0",
+      "from": "tween-functions@>=1.0.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/tween-functions/-/tween-functions-1.2.0.tgz"
     },
     "tweetnacl": {
       "version": "0.14.5",
