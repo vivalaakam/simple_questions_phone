@@ -21,7 +21,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
   return {
     push(name, data) {
-      return Actions.push({ name, data });
+      return Actions.replace({ name, data });
     },
     userLogout() {
       dispatch(userLogout());

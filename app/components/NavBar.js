@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, TouchableHighlight } from 'react-native';
 import NavigationBar from 'react-native-navbar';
+import Icon from './Icon';
 
 const styles = StyleSheet.create({
   navBar: {
-    backgroundColor: '#0db0d9'
+    backgroundColor: '#333',
   },
 });
 
@@ -22,9 +23,9 @@ export default class NavBarBase extends Component {
 
   render() {
     return <NavigationBar style={styles.navBar}
-                          titleColor='white'
-                          buttonsColor='white'
-                          statusBar={{style:'light-content', hidden: false}}
+      //titleColor='white'
+      // buttonsColor='white'
+                          statusBar={{style:'default', hidden: false, tintColor: '#333'}}
                           title={{title:this.props.title}}
                           prevTitle={this.props.initial ? " " : null}
                           leftButton={this.props.leftButton ? this.props.leftButton : {title:''}}
@@ -34,9 +35,22 @@ export default class NavBarBase extends Component {
 }
 
 export class NavBar extends Component {
+  renderButton(handler) {
+    return (
+      <View>
+        <TouchableHighlight onPress={handler} underlayColor="transparent">
+          <View>
+            <Icon name="Hamburger" fill="#eee" />
+          </View>
+        </TouchableHighlight>
+      </View>
+    );
+  }
+
   render() {
-    return <NavBarBase customNext={<View/>} {...this.props}
-                       leftButton={{title:'Menu', handler:this.props.toggleMenu}} />
+    return (
+      <NavBarBase customNext={<View/>} leftButton={this.renderButton(this.props.toggleMenu)} {...this.props} />
+    );
   }
 }
 
