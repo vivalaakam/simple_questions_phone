@@ -21,7 +21,6 @@ export default class NavBarBase extends Component {
   }
 
   render() {
-    console.log("Props : " + this.props);
     return <NavigationBar style={styles.navBar}
                           titleColor='white'
                           buttonsColor='white'
@@ -36,9 +35,8 @@ export default class NavBarBase extends Component {
 
 export class NavBar extends Component {
   render() {
-    const Actions = this.props.routes;
     return <NavBarBase customNext={<View/>} {...this.props}
-                       leftButton={{title:'Left', handler:this.props.onPrev || Actions.pop}} />
+                       leftButton={{title:'Menu', handler:this.props.toggleMenu}} />
   }
 }
 

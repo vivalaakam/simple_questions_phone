@@ -6,8 +6,8 @@ import Login from '../containers/Login';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-   // justifyContent: 'center',
-   // alignItems: 'center',
+    // justifyContent: 'center',
+    // alignItems: 'center',
     backgroundColor: 'transparent',
   }
 });
@@ -34,9 +34,6 @@ export default class Launch extends Component {
     return (
       <View style={styles.container}>
         <Text>Launch page</Text>
-        <Button onPress={()=>routes.error("Error message")}>Go to Error page</Button>
-        <Button onPress={()=>routes.todos()}>Todos</Button>
-        <Button onPress={userLogout}>Logout</Button>
       </View>
     );
   }
