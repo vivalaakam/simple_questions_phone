@@ -38,10 +38,18 @@ const styles = StyleSheet.create({
 });
 
 export default class Row extends Component {
-  getBtn = (text, backgroundColor, position) => {
+  onDestroy = () => {
+    this.props.destroy(this.props.id);
+  };
+
+  onToggle = () => {
+    this.props.toggle(this.props.id);
+  };
+
+  getBtn = (text, backgroundColor, position, action) => {
     const style = position === 'left' ? {marginLeft: 10} : {marginRight: 10};
     return (
-      <TouchableHighlight style={[styles.btn , {backgroundColor}, style]}>
+      <TouchableHighlight style={[styles.btn , {backgroundColor}, style]} onPress={action} underlayColor="transparent">
         <Text style={styles.btnText}>{text}</Text>
       </TouchableHighlight>
     );
@@ -55,19 +63,13 @@ export default class Row extends Component {
 
     const leftBtn = [{
       backgroundColor: 'transparent',
-      component: this.getBtn(completed ? 'Undone' : 'Done', completed ? '#CDDC39' : '#8BC34A', 'left'),
-      onPress: () => {
-        this.props.toggle(this.props.id);
-      }
+      component: this.getBtn(completed ? 'Undone' : 'Done', completed ? '#CDDC39' : '#8BC34A', 'left', this.onToggle),
     }];
 
     const rightBtn = [{
       text: 'Delete',
       backgroundColor: 'transparent',
-      component: this.getBtn('Delete', '#F44336', 'right'),
-      onPress: () => {
-        this.props.destroy(this.props.id);
-      }
+      component: this.getBtn('Delete', '#F44336', 'right', this.onDestroy),
     }];
 
     return (
