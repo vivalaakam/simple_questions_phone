@@ -44,7 +44,7 @@ export default class List extends Component {
         style={styles.container}
         dataSource={this.state.dataSource}
         enableEmptySections={true}
-        renderSeparator={(sectionId, rowId) => <View key={rowId} style={styles.separator} />}
+        //renderSeparator={(sectionId, rowId) => <View key={rowId} style={styles.separator} />}
         renderRow={(data) => <Row {...data} toggle={this.props.toggle} destroy={this.props.destroy} />}
       />
     );

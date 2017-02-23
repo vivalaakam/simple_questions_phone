@@ -1,13 +1,27 @@
-import React, { Component, PropTypes } from 'react';
-import { View, Text, StyleSheet, TextInput, Button } from 'react-native';
+import React, {Component, PropTypes} from 'react';
+import {View, Text, StyleSheet, TextInput, Button, TouchableHighlight} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    flexBasis: 60,
-    padding: 10
+    padding: 10,
+    margin: 10,
+    backgroundColor: '#474f60',
+    borderRadius: 5
   },
   input: {
-    borderColor: 'gray', borderWidth: 1, height: 50, padding: 5
+    height: 50,
+    padding: 5,
+    color: '#fff',
+    fontSize: 16
+  },
+  text: {
+    backgroundColor: '#e1e4e9',
+    padding: 5,
+    borderRadius: 3,
+    overflow: 'hidden',
+    color: '#474f60',
+    textAlign: 'center',
+    fontSize: 16
   }
 });
 
@@ -29,7 +43,9 @@ export default class Form extends Component {
   renderButton() {
     if (this.props.form.text.length) {
       return (
-        <Button onPress={this.handleSubmit} title="Save" />
+        <TouchableHighlight onPress={this.handleSubmit} underlayColor="transparent">
+          <Text style={styles.text}>Save</Text>
+        </TouchableHighlight>
       );
     }
 
@@ -43,6 +59,8 @@ export default class Form extends Component {
                    multiline={true}
                    numberOfLines={4}
                    value={this.props.form.text}
+                   placeholder="Add todo"
+                   placeholderTextColor="#e1e4e9"
                    onChangeText={this.handleChangeTodoText} />
         {this.renderButton()}
       </View>
