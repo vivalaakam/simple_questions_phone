@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, Text, StyleSheet, TouchableHighlight} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import Swipeout from 'react-native-swipe-out';
 
 const styles = StyleSheet.create({
@@ -15,7 +15,6 @@ const styles = StyleSheet.create({
     borderRadius: 5
   },
   text: {
-    marginLeft: 12,
     fontSize: 16,
     color: '#474f60'
   },
@@ -46,12 +45,12 @@ export default class Row extends Component {
     this.props.toggle(this.props.id);
   };
 
-  getBtn = (text, backgroundColor, position, action) => {
+  getBtn = (text, backgroundColor, position) => {
     const style = position === 'left' ? {marginLeft: 10} : {marginRight: 10};
     return (
-      <TouchableHighlight style={[styles.btn , {backgroundColor}, style]} onPress={action} underlayColor="transparent">
+      <View style={[styles.btn , {backgroundColor}, style]} underlayColor="transparent">
         <Text style={styles.btnText}>{text}</Text>
-      </TouchableHighlight>
+      </View>
     );
   };
 
@@ -63,13 +62,15 @@ export default class Row extends Component {
 
     const leftBtn = [{
       backgroundColor: 'transparent',
-      component: this.getBtn(completed ? 'Undone' : 'Done', completed ? '#CDDC39' : '#8BC34A', 'left', this.onToggle),
+      component: this.getBtn(completed ? 'Undone' : 'Done', completed ? '#CDDC39' : '#8BC34A', 'left'),
+      onPress: this.onToggle
     }];
 
     const rightBtn = [{
       text: 'Delete',
       backgroundColor: 'transparent',
-      component: this.getBtn('Delete', '#F44336', 'right', this.onDestroy),
+      component: this.getBtn('Delete', '#F44336', 'right'),
+      onPress: this.onDestroy
     }];
 
     return (
