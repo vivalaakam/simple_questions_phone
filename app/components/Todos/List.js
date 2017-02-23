@@ -1,5 +1,5 @@
-import React, { Component, PropTypes } from 'react';
-import { View, ListView, StyleSheet, Text } from 'react-native';
+import React, {Component, PropTypes} from 'react';
+import {View, ListView, StyleSheet, Text} from 'react-native';
 
 import Row from './Row';
 
@@ -24,11 +24,14 @@ export default class List extends Component {
     list: []
   };
 
+  ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+
   constructor(props) {
     super(props);
-    this.ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
+
     this.state = {
       dataSource: this.ds.cloneWithRows(props.list),
+      scroll: true
     };
   }
 
@@ -38,14 +41,24 @@ export default class List extends Component {
     });
   }
 
+  onScroll = (scroll) => {
+    this.setState({scroll});
+  };
+
+  renderRow = (data) => {
+    return (
+      <Row {...data} toggle={this.props.toggle} destroy={this.props.destroy} onScroll={this.onScroll} />
+    );
+  };
+
   render() {
     return (
       <ListView
+        scrollEnabled={this.state.scroll}
         style={styles.container}
         dataSource={this.state.dataSource}
         enableEmptySections={true}
-        //renderSeparator={(sectionId, rowId) => <View key={rowId} style={styles.separator} />}
-        renderRow={(data) => <Row {...data} toggle={this.props.toggle} destroy={this.props.destroy} />}
+        renderRow={this.renderRow}
       />
     );
   }

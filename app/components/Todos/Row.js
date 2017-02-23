@@ -76,6 +76,7 @@ export default class Row extends Component {
       <Swipeout left={leftBtn}
                 right={rightBtn}
                 autoClose={true}
+                scroll={this.props.onScroll}
                 backgroundColor='transparent'>
         <View style={styles.container}>
           <Text style={[styles.text , style]}>
