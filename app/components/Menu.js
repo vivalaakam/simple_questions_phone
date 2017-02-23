@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#333'
+    backgroundColor: '#474f60'
   },
   main: {
     flex: 1
@@ -16,10 +16,10 @@ const styles = StyleSheet.create({
     flexBasis: 44,
     padding: 20,
     paddingRight: 25,
-    borderBottomColor: '#eee'
+    borderBottomColor: '#e1e4e9'
   },
   btnText: {
-    color: '#eee'
+    color: '#e1e4e9'
   }
 });
 

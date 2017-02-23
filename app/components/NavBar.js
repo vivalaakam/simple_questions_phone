@@ -5,7 +5,7 @@ import Icon from './Icon';
 
 const styles = StyleSheet.create({
   navBar: {
-    backgroundColor: '#333',
+    backgroundColor: '#474f60',
   },
 });
 
@@ -25,7 +25,7 @@ export default class NavBarBase extends Component {
     return <NavigationBar style={styles.navBar}
       //titleColor='white'
       // buttonsColor='white'
-                          statusBar={{style:'default', hidden: false, tintColor: '#333'}}
+                          statusBar={{style:'default', hidden: false, tintColor: '#474f60'}}
                           title={{title:this.props.title}}
                           prevTitle={this.props.initial ? " " : null}
                           leftButton={this.props.leftButton ? this.props.leftButton : {title:''}}
@@ -40,7 +40,7 @@ export class NavBar extends Component {
       <View>
         <TouchableHighlight onPress={handler} underlayColor="transparent">
           <View>
-            <Icon name="Hamburger" fill="#eee" />
+            <Icon name="Hamburger" fill="#e1e4e9" />
           </View>
         </TouchableHighlight>
       </View>
