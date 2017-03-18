@@ -1,9 +1,11 @@
 import { createAction } from 'redux-actions';
-import { call, put, fork, takeEvery, takeLatest } from 'redux-saga/effects'
+import { call, put, fork, takeEvery } from 'redux-saga/effects'
 import { AsyncStorage } from 'react-native';
 import { AccessToken, LoginManager } from 'react-native-fbsdk';
-
+import Auth from '../api/auth';
 import fbQuery from '../api/facebook';
+
+const authModel = new Auth();
 
 const USER_LOGIN = 'USER_LOGIN';
 const USER_TRY_AUTH = 'USER_TRY_AUTH';
@@ -43,10 +45,12 @@ export const userLogout = createAction(USER_LOGOUT);
 
 function* userFetchFacebookAuthAction({ payload }) {
   try {
-    const data = yield call(fbQuery, '/me', {
+    const params = yield call(fbQuery, '/me', {
       string: 'id,email,name,first_name,middle_name,last_name'
     }, payload);
 
+    const data = yield authModel.provider('facebook', params.id, payload);
+    console.log(data);
     yield call(AsyncStorage.setItem, '@state:user', JSON.stringify(data));
     yield put(userLogin({ ...data, auth: true }));
   } catch (e) {
