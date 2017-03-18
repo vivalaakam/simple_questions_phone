@@ -16,6 +16,7 @@ export default class Rest {
 
   setToken = (token) => {
     this._token = token
+    console.log('_token', this._token);
   }
 
   restoreToken() {
@@ -49,7 +50,6 @@ export default class Rest {
   }
 
   postQuery(url, data) {
-    console.log(data);
     return fetch(url, this.options({
       method: 'POST',
       body: JSON.stringify(data)

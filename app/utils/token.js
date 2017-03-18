@@ -8,7 +8,9 @@ export default {
     return token;
   },
   getToken(callback) {
-    return AsyncStorage.getItem(KEY, callback);
+    return AsyncStorage.getItem(KEY, (err, result) => {
+      callback(result)
+    });
   },
   setToken(jwt) {
     if (jwt) {

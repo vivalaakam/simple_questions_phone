@@ -2,9 +2,11 @@ import { fork, put, call, select, takeEvery } from 'redux-saga/effects';
 import { createAction } from 'redux-actions';
 import { AsyncStorage } from 'react-native';
 import uuid4 from 'uuid/v4';
-
+import Todos from '../../api/todos'
 import { append, removeByKey, replace } from '../../helpers/ramda';
 import { selectForm, todoFormReset } from './form';
+
+const todosModel = new Todos();
 
 const TODO_DELETE = 'TODO_DELETE';
 const TODO_DESTROY = 'TODO_DESTROY';
@@ -71,6 +73,9 @@ function* createTodoAction() {
 
     yield put(addTodo(todo));
     yield put(todoFormReset());
+    console.log(1);
+    yield todosModel.create(todo);
+    console.log(2);
   } catch (e) {
     console.log(e.message);
   }
@@ -94,8 +99,10 @@ function* todosListRestoreAction() {
 }
 
 function* updateTodoAction({ payload: { id, text = '', completed = false } }) {
-  yield put(resetTodo({ id, text, completed }));
+  const todo = { id, text, completed };
+  yield put(resetTodo(todo));
   yield call(updateTodosStorage);
+  yield  todosModel.update(todo.id, todo);
 }
 
 function* toggleTodoAction({ payload }) {
@@ -107,6 +114,13 @@ function* toggleTodoAction({ payload }) {
 function* deleteTodoAction({ payload }) {
   yield put(destroyTodo(payload));
   yield call(updateTodosStorage);
+  yield todosModel.remove(payload);
+}
+
+function* fetchTodosAction() {
+  const data = yield call(todosModel.all);
+  yield call(updateTodosStorage);
+  yield put(resetTodos(data))
 }
 
 export function* todosList() {
@@ -116,4 +130,5 @@ export function* todosList() {
   yield fork(takeEvery, TODO_UPDATE, updateTodoAction);
   yield fork(takeEvery, TODO_DELETE, deleteTodoAction);
   yield fork(takeEvery, TODO_ADD, updateTodosStorage);
+  yield fork(takeEvery, TODOS_FETCH, fetchTodosAction);
 }
