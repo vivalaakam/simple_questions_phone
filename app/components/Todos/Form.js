@@ -1,9 +1,9 @@
-import React, {Component, PropTypes} from 'react';
-import {Keyboard, View, StyleSheet, TextInput, Animated} from 'react-native';
+import React, { Component, PropTypes } from 'react';
+import { Keyboard, View, StyleSheet, TextInput, Animated } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    flexBasis: 40,
     padding: 10,
     backgroundColor: '#474f60',
   },
@@ -62,7 +62,7 @@ export default class Form extends Component {
 
   render() {
     return (
-      <Animated.View style={[styles.container , { height: this.height}]}>
+      <Animated.View style={[styles.container , { flexBasis: this.height}]}>
         <TextInput style={styles.input}
                    multiline={true}
                    value={this.props.form.text}

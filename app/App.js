@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { View, StyleSheet, Animated, Dimensions, Text, TouchableHighlight } from 'react-native';
+import { View, StyleSheet, LayoutAnimation, Dimensions, Text, TouchableHighlight } from 'react-native';
 import { Router, Route, Container, Animations, Schema } from 'react-native-redux-router';
 
 import { NavBar, NavBarModal } from './components/NavBar';
@@ -67,57 +67,43 @@ class App extends Component {
     userRestore: PropTypes.func
   };
 
-  transition = new Animated.Value(0);
-
   state = {
     menuVisible: false
   };
 
   toggleMenu = () => {
+    LayoutAnimation.configureNext(LayoutAnimation.Presets.spring);
     this.setState({
       menuVisible: !this.state.menuVisible
-    }, () => {
-      const toValue = this.state.menuVisible ? 1 : 0;
-      Animated.timing(this.transition, { toValue, duration: 250 }).start();
     })
   };
 
   render() {
-    const transformMenu = this.transition.interpolate({
-      inputRange: [0, 1],
-      outputRange: [-1 * width, 0]
-    });
-
-    const transformView = this.transition.interpolate({
-      inputRange: [0, (1 - MENU_WIDTH), 1],
-      outputRange: [0, 0, width * MENU_WIDTH]
-    });
-
     const styleMenu = {
       transform: [
-        { translateX: transformMenu }
+        { translateX: this.state.menuVisible ? 0 : -1 * width }
       ]
     };
 
     const styleView = {
       transform: [
         {
-          translateX: transformView
+          translateX: this.state.menuVisible ? width * MENU_WIDTH : 0
         }
       ]
     };
 
     return (
       <View style={styles.container}>
-        <Animated.View style={[styles.menuWrapper , styleMenu]}>
+        <View style={[styles.menuWrapper , styleMenu]}>
           <View style={styles.menu}>
             <Menu user={this.props.user} toggleMenu={this.toggleMenu} />
           </View>
           <TouchableHighlight underlayColor="transparent" style={styles.menuRight} onPress={this.toggleMenu}>
             <View />
           </TouchableHighlight>
-        </Animated.View>
-        <Animated.View style={[styles.view , styleView]}>
+        </View>
+        <View style={[styles.view , styleView]}>
           <Router ref={this.setRef}>
             <Schema name="modal" sceneConfig={Animations.FlatFloatFromBottom} navBar={NavBarModal} />
             <Schema name="default" sceneConfig={Animations.FlatFloatFromRight} navBar={NavBar}
@@ -133,7 +119,7 @@ class App extends Component {
             <Route name="register2" component={Register} myparam="abc" schema="withoutAnimation" />
             <Route name="error" component={Error} schema="popup" />
           </Router>
-        </Animated.View>
+        </View>
       </View>
     );
   }
