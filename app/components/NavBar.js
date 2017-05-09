@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, View, TouchableHighlight } from 'react-native';
+import { StyleSheet, View, Text, TouchableHighlight } from 'react-native';
 import NavigationBar from 'react-native-navbar';
 import Icon from './Icon';
 
@@ -23,8 +23,8 @@ export default class NavBarBase extends Component {
 
   render() {
     return <NavigationBar style={styles.navBar}
-      //titleColor='white'
-      // buttonsColor='white'
+                          titleColor='white'
+                          buttonsColor='white'
                           statusBar={{style:'default', hidden: false, tintColor: '#474f60'}}
                           title={{title:this.props.title}}
                           prevTitle={this.props.initial ? " " : null}
@@ -35,21 +35,23 @@ export default class NavBarBase extends Component {
 }
 
 export class NavBar extends Component {
-  renderButton(handler) {
+  renderMenuButton(handler) {
     return (
-      <View>
-        <TouchableHighlight onPress={handler} underlayColor="transparent">
-          <View>
-            <Icon name="Hamburger" fill="#e1e4e9" />
-          </View>
-        </TouchableHighlight>
-      </View>
+      <TouchableHighlight onPress={handler} underlayColor="transparent">
+        <View>
+          <Icon name="Hamburger" fill="#e1e4e9" />
+        </View>
+      </TouchableHighlight>
     );
   }
 
   render() {
     return (
-      <NavBarBase customNext={<View/>} leftButton={this.renderButton(this.props.toggleMenu)} {...this.props} />
+      <NavBarBase
+        customNext={<View/>}
+        leftButton={this.renderMenuButton(this.props.toggleMenu)}
+        {...this.props}
+      />
     );
   }
 }

@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { View, StyleSheet, LayoutAnimation, Dimensions, Text, TouchableHighlight } from 'react-native';
-import { Router, Route, Container, Animations, Schema } from 'react-native-redux-router';
+import { View, StyleSheet, LayoutAnimation, Dimensions, TouchableHighlight } from 'react-native';
+import { Router, Route, Container, Animations, Schema, Actions } from 'react-native-redux-router';
 
 import { NavBar, NavBarModal } from './components/NavBar';
 import Error from './components/Error';
@@ -10,6 +10,9 @@ import Launch from './containers/Launch';
 import Register from './components/Register';
 import Login from './containers/Login';
 import Todos from './containers/Todos/Todos';
+import Questions from './containers/Questions/Questions';
+import Question from './containers/Questions/Question';
+import QuestionsForm from './containers/Questions/Form';
 import Menu from './containers/Menu';
 
 const mapStateToProps = (state) => {
@@ -32,7 +35,7 @@ const styles = StyleSheet.create({
     right: 0,
     top: 0,
     bottom: 0,
-    backgroundColor: '#F5FCFF'
+    backgroundColor: 'rgba(232,234,246,.25)'
   },
   menuWrapper: {
     position: 'absolute',
@@ -78,6 +81,20 @@ class App extends Component {
     })
   };
 
+  onQuestionAdd = {
+    title: "Add",
+    handler: () => {
+      Actions.questions_add()
+    }
+  };
+
+  onQuestionAddBack = {
+    title: "Back",
+    handler: () => {
+      Actions.questions()
+    }
+  }
+
   render() {
     const styleMenu = {
       transform: [
@@ -95,7 +112,7 @@ class App extends Component {
 
     return (
       <View style={styles.container}>
-        <View style={[styles.menuWrapper , styleMenu]}>
+        <View style={[styles.menuWrapper, styleMenu]}>
           <View style={styles.menu}>
             <Menu user={this.props.user} toggleMenu={this.toggleMenu} />
           </View>
@@ -103,7 +120,7 @@ class App extends Component {
             <View />
           </TouchableHighlight>
         </View>
-        <View style={[styles.view , styleView]}>
+        <View style={[styles.view, styleView]}>
           <Router ref={this.setRef}>
             <Schema name="modal" sceneConfig={Animations.FlatFloatFromBottom} navBar={NavBarModal} />
             <Schema name="default" sceneConfig={Animations.FlatFloatFromRight} navBar={NavBar}
@@ -115,6 +132,12 @@ class App extends Component {
             <Route name="register" component={Register} title="Register" />
             <Route name="home" component={Home} title="Home" type="replace" />
             <Route name="todos" component={Todos} title="Todos" type="replace" />
+            <Route name="questions" component={Questions} title="Вопросы" type="replace"
+                   rightButton={this.onQuestionAdd} />
+            <Route name="question_show" component={Question} title="Вопрос" type="replace"
+                   leftButton={this.onQuestionAddBack} />
+            <Route name="questions_add" component={QuestionsForm} title="Создать вопрос" type="replace"
+                   leftButton={this.onQuestionAddBack} />
             <Route name="login" component={Login} title="Login Page" />
             <Route name="register2" component={Register} myparam="abc" schema="withoutAnimation" />
             <Route name="error" component={Error} schema="popup" />

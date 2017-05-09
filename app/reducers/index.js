@@ -3,5 +3,6 @@ import { combineReducers } from 'redux';
 
 import user from './user';
 import todos from './todos';
+import questions from './questions';
 
-export default  combineReducers({ routerReducer, user, todos });
+export default combineReducers({ routerReducer, user, todos, questions });

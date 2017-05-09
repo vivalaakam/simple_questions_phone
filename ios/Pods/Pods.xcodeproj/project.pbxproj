@@ -21,7 +21,7 @@
 		038740C322C55AE9B95DEDEF4916E60F /* FBSDKLikeObjectType.h in Headers */ = {isa = PBXBuildFile; fileRef = 50912B63E3060030875EFED230050BB1 /* FBSDKLikeObjectType.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		03F8F185B3D213B3D5C1D63949471800 /* RCTNetworkTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B05B38919A991AB865A7B336AE1C427 /* RCTNetworkTask.m */; };
 		04055C48EB014CEDAB099DBFCA717FA0 /* RCTModalHostView.h in Headers */ = {isa = PBXBuildFile; fileRef = 12EF48699566B056951B053FE4F68415 /* RCTModalHostView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0452906DC1DB80E0AE91A4AD6D518E7F /* Pods-phone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A01552BDBF40760478F0880C189517D /* Pods-phone-dummy.m */; };
+		0452906DC1DB80E0AE91A4AD6D518E7F /* Pods-phone-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 53E64B44F544549717BC999C5B9B454B /* Pods-phone-dummy.m */; };
 		049B02E84BF64423FDDEBDB8E52C6146 /* RCTExceptionsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C766FD866E06930A3903A11CCAEBC7D /* RCTExceptionsManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04B1CF72916A902DC8BACD5564C1F6DC /* RCTFBSDKGraphRequestConnectionContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = D3A0C0AF2C5A0DDDA56FD26C9036EF09 /* RCTFBSDKGraphRequestConnectionContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		04CE54BBE6008BE750742616CA28E795 /* FBSDKLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E390D0BEBA2B0ADC50787F89C8D3FB5 /* FBSDKLogger.m */; };
@@ -131,7 +131,7 @@
 		2950E4BCBE0462E3B5B64673DBF6209C /* FBSDKShareOpenGraphAction.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D818F0C1C62EA669111D10D51ADAAB5 /* FBSDKShareOpenGraphAction.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A6E4EBF3EA180560C206A4CC156474B /* RCTTextViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 10819F1BCDBF28AA39058C2315B8302D /* RCTTextViewManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2ABDE5427FF8C255C19B01914CEAF18E /* FBSDKGameRequestFrictionlessRecipientCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C492AAE8ABE2430F3CE231E0FC669C4 /* FBSDKGameRequestFrictionlessRecipientCache.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2B3E786B3CC215EFC11DF237CF27A811 /* Pods-phoneTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 722BE081E063285018A4ED5FB0EDF0C4 /* Pods-phoneTests-dummy.m */; };
+		2B3E786B3CC215EFC11DF237CF27A811 /* Pods-phoneTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 396AD249EE5D97F7B8D1A4EAD3B66A17 /* Pods-phoneTests-dummy.m */; };
 		2B62381FEB8C61B4EDDC66581782DAE9 /* FBSDKLoginManager+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = BBCCA9FA320CB3816B529CCC4E3FC67E /* FBSDKLoginManager+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2B7E670413C790A426506DDABE107B68 /* RCTProfileTrampoline-x86_64.S in Sources */ = {isa = PBXBuildFile; fileRef = 5FAD73B45A9D32317F7D311BE5A663AA /* RCTProfileTrampoline-x86_64.S */; };
 		2BF9D4DCFFA081B4ED64CE3B0DB3500A /* FBSDKAppEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2B99C55B19DF311F97C037FADA3ED8 /* FBSDKAppEvents.m */; };
@@ -145,7 +145,7 @@
 		2E5793F3CCE2F046D7C2BB0720502727 /* FBSDKAccessTokenCacheV3_21.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FD5C84D291C69331F37DCA37BC4356 /* FBSDKAccessTokenCacheV3_21.m */; };
 		2F1073E9FDC7CF6ED1A34A50B98A2C83 /* FBSDKTestUsersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EAD22FC10EB7D2E099D4DCB50F3B0E40 /* FBSDKTestUsersManager.m */; };
 		2F265C785D8818867AC5B506601F9845 /* FBSDKShareKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFCCD8C057B8B2C4831878C6FFD4647 /* FBSDKShareKit-dummy.m */; };
-		2F350AEB5AF2EE8CB76D5BA84278CE2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254F9B9A57E4FB65DBC26F1A14C3AF95 /* Foundation.framework */; };
+		2F350AEB5AF2EE8CB76D5BA84278CE2A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722E487B16EAF4E7EA3387061ACCE666 /* Foundation.framework */; };
 		2F9463F7F4568FBE09250783A1D8B2E2 /* ARTTextManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5863E78BA7FB6181CA5D1ABE6E254A36 /* ARTTextManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F9F8595B81532F59CFC0D65AE0559FE /* FBSDKSystemAccountStoreAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AA02FF44FDE77AB952DC45EF32D885 /* FBSDKSystemAccountStoreAdapter.m */; };
 		2FEBCDE902CA94289BAC0FFF5E19F59B /* FBSDKAccessTokenCacheV4.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B326B5E82B44BB0E728FAC841687C83 /* FBSDKAccessTokenCacheV4.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -179,7 +179,6 @@
 		3941EBA77E5E82F80444B77C04040777 /* RCTRedBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 717178E50FC25763BE757E8C07A13809 /* RCTRedBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3952D92F59CDC058F4EDB106AE6A8ACD /* FBSDKServerConfigurationManager+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E5D369629DA2B438D9836AE5FE45938 /* FBSDKServerConfigurationManager+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		39B542254C174EFD6085CE435E118038 /* BFCancellationTokenSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 07B9F7277167C628F8A62AB2FA1ADE43 /* BFCancellationTokenSource.m */; };
-		3A51F04EE9BB7C599B9B00572569851B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B673C07E94782F7D4D71B6FBD31231 /* Foundation.framework */; };
 		3A6C3FC455BA4333FACE0E8A3FF9EDAE /* FBSDKLikeBoxBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = A74CA25BD4B0034CE84D869CAE5AA6A5 /* FBSDKLikeBoxBorderView.m */; };
 		3C83CDF004CE477C5147A4F0759577B3 /* RCTImageEditingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 67ABE007CD62ED789C4ED72384B8425A /* RCTImageEditingManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3CCCF3B74204C33FE14FBB750CA546D3 /* FBSDKShareOpenGraphAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 35619F1FA7620DB37216EA7D38C46DD9 /* FBSDKShareOpenGraphAction.m */; };
@@ -197,7 +196,7 @@
 		4045A655A28C4D6B2D59748FCCC6492D /* FBSDKColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 604317060FDC4784EC32B1B98806C143 /* FBSDKColor.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		404695F7E3884F1A96C06B8A71750EDC /* RCTModalHostViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 909ACDC5E44BEF8177D3AA79787CF889 /* RCTModalHostViewManager.m */; };
 		408129F7644A03B1C53C106EE2DAC822 /* RCTPlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 37000A919FAEC13AC9E7F2CE9DCE98E1 /* RCTPlatform.m */; };
-		40F6CAD71BBC3496E8D3BD95D7709E98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254F9B9A57E4FB65DBC26F1A14C3AF95 /* Foundation.framework */; };
+		40F6CAD71BBC3496E8D3BD95D7709E98 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722E487B16EAF4E7EA3387061ACCE666 /* Foundation.framework */; };
 		412E25D0915EE2E0C4A13B08067F3CAF /* ARTSolidColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD0BAC35E77F924E225857C6BDA3BA8 /* ARTSolidColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		414F017007E07B604B685B6273E0BB29 /* RCTBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DF29853B864EEB13447D574C1F0A334 /* RCTBridge.m */; };
 		419876E820FF2F45AC9F957E770E5866 /* RCTDisplayLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 553E74C285B1D543FCD6BBF134040731 /* RCTDisplayLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -350,7 +349,7 @@
 		7BBBEB288C1363BADBEF4E626EAF7F36 /* FBSDKShareDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 27D8AD32747D6B86A7B77AA0B8CCE2C7 /* FBSDKShareDefines.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7C3030CF7D91BF63D797C8B7F22CDB82 /* BFURL.m in Sources */ = {isa = PBXBuildFile; fileRef = C937E24BE83E7D20FF9A7F392093C625 /* BFURL.m */; };
 		7C41D7E8FF85D13897AF0AC6C6ADA114 /* RCTSliderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A70DDAC54803CFA3E8BB1D82638B2D /* RCTSliderManager.m */; };
-		7CA81574641CE76247FC94A560D82E14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254F9B9A57E4FB65DBC26F1A14C3AF95 /* Foundation.framework */; };
+		7CA81574641CE76247FC94A560D82E14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722E487B16EAF4E7EA3387061ACCE666 /* Foundation.framework */; };
 		7CD8B463DD7AB1BA7F0B6ACB997DFD7F /* RCTAccessibilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28B833E20469004B75070ABE844CF97F /* RCTAccessibilityManager.m */; };
 		7DBD70A4A2DBBE2A953574E35511EF12 /* RCTFPSGraph.h in Headers */ = {isa = PBXBuildFile; fileRef = 44AB5C1A326B65DBD40839744911CD74 /* RCTFPSGraph.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7DED87187EC1C8C460544672F04BAF84 /* FBSDKShareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 05BE021884EDAF95813F6078B4E60889 /* FBSDKShareButton.m */; };
@@ -394,10 +393,9 @@
 		89AD3573EAD7A77A85AF7D6C0A45F070 /* RCTUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D617A216F734E20B81A9E2DF4C07C0 /* RCTUtils.m */; };
 		8A354AF78FF3993A080E537D9B9FF9BC /* RCTScrollViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC7ADD0F3463B48B6FEA213DE153184 /* RCTScrollViewManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8A437FF73E42DBFDD736306922424903 /* RCTURLRequestDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 97FCFD2A4900DA2BA94CCFF2E7D5861E /* RCTURLRequestDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8AA51BE81A066C0F379AEDC75A2A6B7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254F9B9A57E4FB65DBC26F1A14C3AF95 /* Foundation.framework */; };
+		8AA51BE81A066C0F379AEDC75A2A6B7F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722E487B16EAF4E7EA3387061ACCE666 /* Foundation.framework */; };
 		8AC7A96C031D4E31932D6C5DC75C69C8 /* FBSDKSendButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F226FD50864D6175B447D742B8D9687 /* FBSDKSendButton.m */; };
 		8AE2C0AD2A4C34B3C6498E8D483AFD58 /* RCTNavItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B24A81BD2385D55478588376FCB2EA /* RCTNavItem.m */; };
-		8AE9D81012F474A1D5E14BA95A80B509 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94B673C07E94782F7D4D71B6FBD31231 /* Foundation.framework */; };
 		8B03C49A3CE3E5CB23C3882B5E251283 /* FBSDKGraphRequestPiggybackManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8579BA2D698C6E2F73CBA7E1539A573 /* FBSDKGraphRequestPiggybackManager.m */; };
 		8B306360FAD1B8DE9E2A995E2A33B3FF /* RCTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4F3AB6B5966AAA0585DE41E43FDE2E /* RCTMapManager.m */; };
 		8B7A8646B1936B2F35F30448B9ECA36D /* FBSDKLoginConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 89A4BE7D4AAD63BADA217AE83B29F002 /* FBSDKLoginConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -406,7 +404,6 @@
 		8CB8E2ACE55D3C274F1C73E3DA15DEB8 /* RCTFPSGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 031123985787639E637A44E688ACE219 /* RCTFPSGraph.m */; };
 		8D861ED9ED10F8BB4C8E3845ACA5D7BF /* BFAppLinkNavigation.h in Headers */ = {isa = PBXBuildFile; fileRef = 126CFCA07E6C9E8F6C747AFA42A798C5 /* BFAppLinkNavigation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E03485119EA329B24A91FBDC297683D /* RCTI18nManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 48B61000149362FEBE7011DED9E52B70 /* RCTI18nManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E0A5498F7C1BBEC909A5E500485CB82 /* Pods-phone-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B7189B7243C7E2FD54E5D8FED4031F2 /* Pods-phone-tvOS-dummy.m */; };
 		8E289704FB2183A5A45105908256D6C1 /* RCTWebSocketExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C48ABA6186ADF79B01FE09B1EF80F55 /* RCTWebSocketExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8E673848BAD73E34D6D45E7BF418BB47 /* ARTPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FD5B3F807DA632B587E8CAF21ACE65 /* ARTPattern.m */; };
 		8EC9CA21733FBDA23037FA0EBB029B3E /* FBSDKLoginKit+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 80C116021E2127CBCF63E356FC2F9FBF /* FBSDKLoginKit+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -457,7 +454,7 @@
 		A1379C3CEE1A1693AAA8FFC74BD598DC /* RCTTVNavigationEventEmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = EF16B69E3919758CAB7A2283E9716D34 /* RCTTVNavigationEventEmitter.m */; };
 		A138855488FB86BB5F3D4180B82DE9F3 /* ARTRenderable.h in Headers */ = {isa = PBXBuildFile; fileRef = BFA0C2AA62CED9793823DFE916B664D8 /* ARTRenderable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1619A0DDC8E52654368C0A6CFCCA325 /* FBSDKApplicationDelegate+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = FB8E394CDDBCF5E713784EF56922F9F3 /* FBSDKApplicationDelegate+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A1DAF3B9809BEF61F9EA1737B4ABEE38 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87083F2B928CBE35EACD7340A7BA574C /* JavaScriptCore.framework */; };
+		A1DAF3B9809BEF61F9EA1737B4ABEE38 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F14B6CE89E61F1F10C8870968C801750 /* JavaScriptCore.framework */; };
 		A276D94F7FE5EB87C6560FC763911278 /* RCTProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 38153049EE350736ADE81264B46D0F90 /* RCTProfile.m */; };
 		A2D580AA461813283CC53ABABDA2562C /* FBSDKCoreKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3994F27DDF11CBFFB41CBD2587CBEC46 /* FBSDKCoreKit-dummy.m */; };
 		A2FC61711FB026143F101B92E802659F /* RCTDevLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC973B2EF81D15CFD01428FCE39E0AC /* RCTDevLoadingView.m */; };
@@ -595,12 +592,11 @@
 		CD97EB841D1E9C9B7D9CC90B77C197FE /* ARTNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 95076C78756103C056E8CBC90CDFB8D0 /* ARTNode.m */; };
 		CDF56D05379EAEDCCF20FB8A6EA5345A /* FBSDKTypeUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 75DB25EE3BB436F99851BB20084DBE51 /* FBSDKTypeUtility.m */; };
 		CE114B4486D05C7FBCC81E8944CFC249 /* RCTKeyCommands.h in Headers */ = {isa = PBXBuildFile; fileRef = 98ACFD7B7551898403C249E6E243524C /* RCTKeyCommands.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CEB6330046ACB0BE9A6E1C20049B4A23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254F9B9A57E4FB65DBC26F1A14C3AF95 /* Foundation.framework */; };
+		CEB6330046ACB0BE9A6E1C20049B4A23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722E487B16EAF4E7EA3387061ACCE666 /* Foundation.framework */; };
 		CF3B2C059B698135ED59C39F3B943898 /* FBSDKConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CE7618472BAE231A941DF88098F0521 /* FBSDKConstants.m */; };
 		CF5A71B8C0791AD0475C5F6DEAEEE81B /* FBSDKLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = C083F3ACFF2FBE633381213895582D6F /* FBSDKLogo.m */; };
 		CF670B170C49C1C5DD33285A4FFBB2F8 /* FBSDKTriStateBOOL.h in Headers */ = {isa = PBXBuildFile; fileRef = 96D02DDE90662CA4A36B055302246639 /* FBSDKTriStateBOOL.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CF7FEF21C67BE612D07A530341A9B0BC /* RCTMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB04F609FC64076CD3F9F790C52E96D /* RCTMapAnnotation.m */; };
-		CFAC5843D43167DB71F0DB67716E08B3 /* Pods-phone-tvOSTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCF6EAE2958F1C6E4DB74F205378DED1 /* Pods-phone-tvOSTests-dummy.m */; };
 		D0AA2A2026A9F7E2B18401960FC20267 /* RCTFBSDKAppEvents.h in Headers */ = {isa = PBXBuildFile; fileRef = B914B1232065E5D102C90725D901FC67 /* RCTFBSDKAppEvents.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0C4CEDE24012084D665326B95631EF9 /* RCTFBSDKAppEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = E4ADD7A79B337E0E89AE3191723B4CC1 /* RCTFBSDKAppEvents.m */; };
 		D13D2ABAC952FFE1557B31E74A5300C1 /* FBSDKUIUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 70F86EBF33C47E2CFB319DB9BFE40315 /* FBSDKUIUtility.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -618,7 +614,7 @@
 		D5255EC632AAE2E451498F81310B6737 /* FBSDKWebDialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CAA9E0B3451946318CE34AF1FDF8B7D /* FBSDKWebDialog.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D53E81787A9C94EBAA6AD51288959338 /* FBSDKGraphRequestConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 04A487DF669F062DC33FD3BEC693356D /* FBSDKGraphRequestConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D540F6E72AAC6C2DEF45332193AF7C27 /* RCTRootView.h in Headers */ = {isa = PBXBuildFile; fileRef = 09F71CABE72AA883E7B2658EB0717D3F /* RCTRootView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D54611CD85EE8EBF3524105CC8095728 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254F9B9A57E4FB65DBC26F1A14C3AF95 /* Foundation.framework */; };
+		D54611CD85EE8EBF3524105CC8095728 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722E487B16EAF4E7EA3387061ACCE666 /* Foundation.framework */; };
 		D5743B272DCBEE2253E94DB34D386FC0 /* RCTLocalAssetImageLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 00B7E63A5548BBDA1D313F01ADC3F568 /* RCTLocalAssetImageLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5AC4A3CA9374DDD012A60982F334BD4 /* RCTPicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 40ECF1D171C2C58BECBC2106565E5ED6 /* RCTPicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5B2A9C7DE0DC9DD843FCF443CDA1D02 /* React-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF8EAC56460990CDC6F6947F5976B95 /* React-dummy.m */; };
@@ -673,11 +669,11 @@
 		E689CA4E57CEEC8BC95F220F484AD917 /* FBSDKShareOpenGraphValueContainer+Internal.h in Headers */ = {isa = PBXBuildFile; fileRef = C18ED28F7DBB49561C9C535073B830F2 /* FBSDKShareOpenGraphValueContainer+Internal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E7ED5E5198B656BD7D3B47AA120D279F /* RCTI18nManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 895EBB579BFDBA8E362E260E74F0E069 /* RCTI18nManager.m */; };
 		E8CBB6698A3E4F766D0B7F26CCB5E40E /* BFAppLinkReturnToRefererController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EDC9D6DC7BE089E2CD7CA8367C66CCC /* BFAppLinkReturnToRefererController.m */; };
-		E8FFBD27158AA6AFE589C697B6E047C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254F9B9A57E4FB65DBC26F1A14C3AF95 /* Foundation.framework */; };
+		E8FFBD27158AA6AFE589C697B6E047C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722E487B16EAF4E7EA3387061ACCE666 /* Foundation.framework */; };
 		E903470B675F5BC869E7FEED2B4D5D2A /* RCTStatusBarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97446694BE6B97F11560CEAFCA1DB530 /* RCTStatusBarManager.m */; };
 		E90522E17955FE05776A91AAC420F985 /* FBSDKLoginError.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E878FE12F3018C934B97686E11AC648 /* FBSDKLoginError.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E91DFFA6975862F723B7DC3DA7987ABD /* FBSDKCrypto.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ED39866F5263A19C03619CFF2A88AF2 /* FBSDKCrypto.m */; };
-		E9B210A5B8003AA363DF0A4C77FFF331 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 254F9B9A57E4FB65DBC26F1A14C3AF95 /* Foundation.framework */; };
+		E9B210A5B8003AA363DF0A4C77FFF331 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722E487B16EAF4E7EA3387061ACCE666 /* Foundation.framework */; };
 		E9D1767F0E054CD88AEC770676967795 /* RCTFBSDKInitializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9168F35035DCB29E869DAF8CA94D5A27 /* RCTFBSDKInitializer.m */; };
 		EA1664E0D5011A2031E73D6D89B99583 /* RCTStatusBarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5185E23F4CFC96A3DB1BEB408B713C26 /* RCTStatusBarManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB2A9F49C83020B4D2E549C7CCC93018 /* ARTGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = BB8507A85CE7619CC790364B0EBCBECF /* ARTGroup.m */; };
@@ -853,12 +849,15 @@
 		00A2C45E7DF3FA0A2E3558623A9280A0 /* RCTResizeMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTResizeMode.h; sourceTree = "<group>"; };
 		00B7E63A5548BBDA1D313F01ADC3F568 /* RCTLocalAssetImageLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTLocalAssetImageLoader.h; sourceTree = "<group>"; };
 		00F51623DB08B3920C50086A3F56B4D8 /* RCTFBSDKShareButtonManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTFBSDKShareButtonManager.h; sourceTree = "<group>"; };
+		01CA64F350D0005E098333F4E737790D /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReact.a; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		01FA83B93918DBBB54D920F26088B4E9 /* RCTNavigatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTNavigatorManager.m; sourceTree = "<group>"; };
 		0226835BDB1AC500514B8249E2E01A2C /* FBSDKShareVideo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKShareVideo.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareVideo.m; sourceTree = "<group>"; };
+		024E28B0BEC698338E04FF90EA11EB74 /* Pods-phone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phone.debug.xcconfig"; sourceTree = "<group>"; };
 		031123985787639E637A44E688ACE219 /* RCTFPSGraph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTFPSGraph.m; sourceTree = "<group>"; };
 		03AD83E1610734232895067B066947D2 /* RCTDevMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTDevMenu.m; sourceTree = "<group>"; };
 		03DD13148695E455F882E5971BA751B7 /* ARTNodeManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ARTNodeManager.m; sourceTree = "<group>"; };
 		0407F41C33D264734A19FD412583B40A /* FBSDKGameRequestContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGameRequestContent.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKGameRequestContent.h; sourceTree = "<group>"; };
+		04458B3018CF309FCE19D340F38F009A /* Pods-phoneTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-phoneTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		04A487DF669F062DC33FD3BEC693356D /* FBSDKGraphRequestConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKGraphRequestConnection.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKGraphRequestConnection.h; sourceTree = "<group>"; };
 		04A4C93D7E7EE54460228F24162671AE /* RCTTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTabBar.h; sourceTree = "<group>"; };
 		04CA1171EA892179EACF951F9A722554 /* UIView+React.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+React.m"; sourceTree = "<group>"; };
@@ -867,7 +866,6 @@
 		05BCA852BD43E68522C954ACCA54C7EB /* RCTMapManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMapManager.h; sourceTree = "<group>"; };
 		05BE021884EDAF95813F6078B4E60889 /* FBSDKShareButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKShareButton.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareButton.m; sourceTree = "<group>"; };
 		05D768B6484F688060700651B2E97CED /* FBSDKCoreKit+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKCoreKit+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKCoreKit+Internal.h"; sourceTree = "<group>"; };
-		0655BB3D02ADCD5021D6A739A07BC6EE /* libBolts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libBolts.a; path = libBolts.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		06A3FFD03CF5F5F14D43D719A228BAEC /* BFAppLinkResolving.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLinkResolving.h; path = Bolts/iOS/BFAppLinkResolving.h; sourceTree = "<group>"; };
 		07005251A99DAAC39D8FBBCDBAC482C2 /* RCTLog.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTLog.mm; sourceTree = "<group>"; };
 		07B9F7277167C628F8A62AB2FA1ADE43 /* BFCancellationTokenSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFCancellationTokenSource.m; path = Bolts/Common/BFCancellationTokenSource.m; sourceTree = "<group>"; };
@@ -876,7 +874,6 @@
 		086AFF82B052A07291F52FB4AF04E698 /* RCTFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTFont.h; sourceTree = "<group>"; };
 		08B1C78FAA24451C45E7E598CBAEF290 /* RCTWebSocketObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTWebSocketObserver.h; sourceTree = "<group>"; };
 		099B49BD4C2AEF932FB0DACA8B17AAAB /* FBSDKErrorConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKErrorConfiguration.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKErrorConfiguration.m; sourceTree = "<group>"; };
-		09F49B8BBC5DDBC70935FCC9B8418BF2 /* Pods-phoneTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-phoneTests-resources.sh"; sourceTree = "<group>"; };
 		09F71CABE72AA883E7B2658EB0717D3F /* RCTRootView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRootView.h; sourceTree = "<group>"; };
 		09FE4A26273F4CD64CBEBD95C510E583 /* RCTComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTComponent.h; sourceTree = "<group>"; };
 		0A3F1536EA5344F881E1D0ADC0A0D343 /* FBSDKViewImpressionTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKViewImpressionTracker.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKViewImpressionTracker.h; sourceTree = "<group>"; };
@@ -897,19 +894,21 @@
 		10010FA14733C26E8E3FC96F69507932 /* FBSDKHashtag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKHashtag.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKHashtag.h; sourceTree = "<group>"; };
 		10345E933ADDDA37CCFDBEE9BF49CFC1 /* FBSDKMutableCopying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMutableCopying.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKMutableCopying.h; sourceTree = "<group>"; };
 		10819F1BCDBF28AA39058C2315B8302D /* RCTTextViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTextViewManager.h; sourceTree = "<group>"; };
+		11201ABEA37AFB11A091028C86CA3315 /* Pods-phone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phone.release.xcconfig"; sourceTree = "<group>"; };
 		124894E54D163FF876E9A5A56B265E83 /* FBSDKAppEventsState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppEventsState.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/FBSDKAppEventsState.h; sourceTree = "<group>"; };
 		126CFCA07E6C9E8F6C747AFA42A798C5 /* BFAppLinkNavigation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLinkNavigation.h; path = Bolts/iOS/BFAppLinkNavigation.h; sourceTree = "<group>"; };
 		12CE35865914B84EA1FD5CC95CC655B5 /* FBSDKErrorConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKErrorConfiguration.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKErrorConfiguration.h; sourceTree = "<group>"; };
 		12EF48699566B056951B053FE4F68415 /* RCTModalHostView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTModalHostView.h; sourceTree = "<group>"; };
 		13165EA05A666150B121C1C0C89418C7 /* FBSDKURLConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKURLConnection.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKURLConnection.m; sourceTree = "<group>"; };
 		1364CACAD424B7A88AEDD3B7C73BEE93 /* FBSDKAccessTokenCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAccessTokenCache.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenCache.h; sourceTree = "<group>"; };
+		13E595F3112B8B94E7E7B154ED9C4B10 /* libBolts.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libBolts.a; path = libBolts.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		148FB46A391CF7643E1CB121ED7C8772 /* FBSDKHashtag.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKHashtag.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKHashtag.m; sourceTree = "<group>"; };
 		157C35F5D961C1253F8926AE6964B518 /* RCTLinkingManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTLinkingManager.m; sourceTree = "<group>"; };
 		162B09474B66F710E1203A624FBC7EC0 /* FBSDKProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKProfile.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKProfile.h; sourceTree = "<group>"; };
 		16E70F61C53B62A0CD764434F4CD3E08 /* RCTFBSDKShareHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTFBSDKShareHelper.h; sourceTree = "<group>"; };
+		176A739BB693E387988BF836C63E5B10 /* Pods-phoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phoneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1840F34E6FE75446A764BB84848CAE17 /* ARTLinearGradient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ARTLinearGradient.h; sourceTree = "<group>"; };
 		189436ED28A6A5B3C6A8CF70C539D74B /* FBSDKSettings+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKSettings+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKSettings+Internal.h"; sourceTree = "<group>"; };
-		18C100C948D0ACFEF127D21371198DFC /* Pods-phone-tvOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-phone-tvOS-resources.sh"; sourceTree = "<group>"; };
 		18CBECCC2A338E5D6EAE3CD356C945A7 /* RCTFBSDKSendButtonManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTFBSDKSendButtonManager.h; sourceTree = "<group>"; };
 		1982E6A045E7816384C0763BF73EB263 /* ARTBrush.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ARTBrush.h; sourceTree = "<group>"; };
 		19871E90ABCE2505BDE44EA99564EA02 /* FBSDKCrypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKCrypto.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Cryptography/FBSDKCrypto.h; sourceTree = "<group>"; };
@@ -931,7 +930,6 @@
 		1F03F802ECE3BFF14318DB45348B08C2 /* FBSDKMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMacros.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKMacros.h; sourceTree = "<group>"; };
 		1F16424333EDCAD82C8026C85C9D21C7 /* ARTSurfaceView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ARTSurfaceView.m; sourceTree = "<group>"; };
 		1F20B825C3278CB1CAFDD4B95956E4F8 /* FBSDKLikeControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKLikeControl.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKLikeControl.m; sourceTree = "<group>"; };
-		1F71710AEC6CE02807A0FFAF8B71F452 /* libPods-phoneTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-phoneTests.a"; path = "libPods-phoneTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2103906F17D6B7839C36B565598FA05A /* RCTFont.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTFont.mm; sourceTree = "<group>"; };
 		21FAEB820E0A6960BDC7D34A62F3E12A /* RCTShadowText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTShadowText.m; sourceTree = "<group>"; };
 		224F65413DED62B4288B84664BB11E9A /* RCTConvert+CoreLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+CoreLocation.m"; sourceTree = "<group>"; };
@@ -943,8 +941,6 @@
 		24B0CE3F2DAC6098D2261F3F529699BD /* RCTLocationObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTLocationObserver.h; sourceTree = "<group>"; };
 		24C490560F8E9266F1CC8BEB0F20BECC /* FBSDKBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKBase64.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Base64/FBSDKBase64.h; sourceTree = "<group>"; };
 		24CBE1D33DFC5DE942E6304A478B9DBB /* RCTSegmentedControlManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSegmentedControlManager.m; sourceTree = "<group>"; };
-		24FBFB174155EF817440F0B88880697D /* Pods-phone-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phone-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		254F9B9A57E4FB65DBC26F1A14C3AF95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		25A864808D3BF311FAEE419EFED934B1 /* FBSDKLoginCompletion+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKLoginCompletion+Internal.h"; path = "FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginCompletion+Internal.h"; sourceTree = "<group>"; };
 		26017C86360049859ECDBD5E18950DC6 /* RCTConvert+FBSDKSharingContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+FBSDKSharingContent.h"; sourceTree = "<group>"; };
 		26306EB4B8DC93A4A2F932BB68148AEF /* RCTConvert+MapKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+MapKit.m"; sourceTree = "<group>"; };
@@ -952,8 +948,8 @@
 		26FA3A0DBF38B620687225468A16FE9D /* FBSDKAppInviteContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppInviteContent.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKAppInviteContent.h; sourceTree = "<group>"; };
 		2743D518DC9D4F963ACEFA3DEB26B616 /* FBSDKTooltipView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKTooltipView.h; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKTooltipView.h; sourceTree = "<group>"; };
 		2765F65E00EC2D544800BA2975BDD030 /* RCTAdSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTAdSupport.h; sourceTree = "<group>"; };
-		278BCA70EEC2A7E58DB1B682D365D208 /* libPods-phone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-phone.a"; path = "libPods-phone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B8B172EC82680218A442B2FAB933CB /* RCTFBSDKGraphRequestManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTFBSDKGraphRequestManager.h; sourceTree = "<group>"; };
+		27B9038DF7B936CE1C791A7442A56881 /* Pods-phone-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-phone-frameworks.sh"; sourceTree = "<group>"; };
 		27D8AD32747D6B86A7B77AA0B8CCE2C7 /* FBSDKShareDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareDefines.h; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareDefines.h; sourceTree = "<group>"; };
 		27E70F58B7F775A8FCBD8BD9093DA1F0 /* FBSDKAccessToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAccessToken.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKAccessToken.m; sourceTree = "<group>"; };
 		27F12A5E0DB06AFDE0703CEE460D3111 /* FBSDKShareMediaContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKShareMediaContent.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareMediaContent.m; sourceTree = "<group>"; };
@@ -980,6 +976,7 @@
 		2EDC9D6DC7BE089E2CD7CA8367C66CCC /* BFAppLinkReturnToRefererController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLinkReturnToRefererController.m; path = Bolts/iOS/BFAppLinkReturnToRefererController.m; sourceTree = "<group>"; };
 		2EDFC8DFAF8D51F1BA024D1CE3D65C98 /* RCTShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTShadowView.h; sourceTree = "<group>"; };
 		2FA0E232AA38ACA06174CBE982A91962 /* RCTModalHostViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTModalHostViewController.m; sourceTree = "<group>"; };
+		2FE7605011191D8E1B6406CA83B138C4 /* Pods-phoneTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-phoneTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		3027373C14F4E37D4A9D643E8778642A /* RCTConvert+CoreLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+CoreLocation.h"; sourceTree = "<group>"; };
 		306F97AA4166912F5E66C9A5A4B39592 /* RCTHTTPRequestHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTHTTPRequestHandler.h; sourceTree = "<group>"; };
 		30AA4353B4F1D6C76A1D045BB6F5A4DE /* RCTModuleMethod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTModuleMethod.h; sourceTree = "<group>"; };
@@ -1008,12 +1005,12 @@
 		38970CADA4CDCAB2FEF1DA905855A39B /* RCTSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSlider.h; sourceTree = "<group>"; };
 		38CC6A4F12688ACEEF866665ED596DF5 /* RCTImageEditingManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTImageEditingManager.m; sourceTree = "<group>"; };
 		39019A924E24185B4C0F654AD551181A /* FBSDKInternalUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKInternalUtility.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKInternalUtility.m; sourceTree = "<group>"; };
+		396AD249EE5D97F7B8D1A4EAD3B66A17 /* Pods-phoneTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-phoneTests-dummy.m"; sourceTree = "<group>"; };
 		3994F27DDF11CBFFB41CBD2587CBEC46 /* FBSDKCoreKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSDKCoreKit-dummy.m"; sourceTree = "<group>"; };
 		3C0F7CB61F84769EA08AD1390E89A2A2 /* RCTClipboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTClipboard.h; sourceTree = "<group>"; };
 		3CE7618472BAE231A941DF88098F0521 /* FBSDKConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKConstants.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKConstants.m; sourceTree = "<group>"; };
 		3CE94AB5AD3BD49A18ACC39094CF97C1 /* RCTRefreshControl.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRefreshControl.m; sourceTree = "<group>"; };
 		3D184442F3E00C609531195F4D44084C /* FBSDKSettings.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKSettings.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKSettings.m; sourceTree = "<group>"; };
-		3D44E263CF87D16F3A8C93A7655D0E95 /* Pods-phone-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phone-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3DE03E88A6F37EFA709D2CF975566B23 /* RCTText.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTText.m; sourceTree = "<group>"; };
 		3DE98DAF3FE4FC3D2AEFD69E082F2C46 /* RCTImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTImageCache.m; sourceTree = "<group>"; };
 		3ED1DA53BB01AA53C75E81629BF61F43 /* FBSDKAccessTokenCacheV3_17.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAccessTokenCacheV3_17.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenCacheV3_17.m; sourceTree = "<group>"; };
@@ -1033,7 +1030,6 @@
 		43FF141308E45E5E1731CC75B311B9C5 /* RCTTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTabBar.m; sourceTree = "<group>"; };
 		4447E78C7AE6219E2C4372BF1FFF089C /* FBSDKBridgeAPIProtocolNativeV1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKBridgeAPIProtocolNativeV1.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/ProtocolVersions/FBSDKBridgeAPIProtocolNativeV1.h; sourceTree = "<group>"; };
 		44723C33D17EBD4FB8D4EAC59B23AB4C /* FBSDKErrorRecoveryAttempter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKErrorRecoveryAttempter.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ErrorRecovery/FBSDKErrorRecoveryAttempter.h; sourceTree = "<group>"; };
-		4490E9DA9879B5A0AEAE62D370E41F91 /* Pods-phone-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phone-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		449B3C95A9CEF11F29FD0CDB1FF07FC4 /* BFTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFTask.h; path = Bolts/Common/BFTask.h; sourceTree = "<group>"; };
 		44AB5C1A326B65DBD40839744911CD74 /* RCTFPSGraph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTFPSGraph.h; sourceTree = "<group>"; };
 		44BA1F976ADCD41219EF7004536D1536 /* react-native-fbsdk.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-fbsdk.xcconfig"; sourceTree = "<group>"; };
@@ -1043,10 +1039,8 @@
 		45DEED713153186DA43596FA766BAD92 /* RCTTabBarItemManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTabBarItemManager.m; sourceTree = "<group>"; };
 		45E0392D1C761C0B76731378D71414B4 /* FBSDKSharePhoto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKSharePhoto.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKSharePhoto.m; sourceTree = "<group>"; };
 		461A85AD75CA100ABFB4B6444006D68B /* RCTMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTMap.m; sourceTree = "<group>"; };
-		4637181CC70ACF8D4DD9A77FA79A719D /* Pods-phone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phone.release.xcconfig"; sourceTree = "<group>"; };
 		470128AD6682C3FE3E4580485ACABB10 /* RCTConvert+FBSDKLogin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+FBSDKLogin.m"; sourceTree = "<group>"; };
 		4703D3F34003A45E776623868E5BCA6E /* RCTErrorCustomizer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTErrorCustomizer.h; sourceTree = "<group>"; };
-		47110D150ED802FF2DE690084833EE13 /* libFBSDKShareKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFBSDKShareKit.a; path = libFBSDKShareKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		478A57FEF9D0922BAF76B90BAE010D07 /* RCTProfileTrampoline-arm.S */ = {isa = PBXFileReference; includeInIndex = 1; path = "RCTProfileTrampoline-arm.S"; sourceTree = "<group>"; };
 		47A79915B9DA92B70B4D941AF8A23DA6 /* BFAppLinkReturnToRefererController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFAppLinkReturnToRefererController.h; path = Bolts/iOS/BFAppLinkReturnToRefererController.h; sourceTree = "<group>"; };
 		47D0CC6337226D0E2E44761B3AAD8B04 /* RCTFBSDKGameRequestDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTFBSDKGameRequestDialog.m; sourceTree = "<group>"; };
@@ -1072,28 +1066,28 @@
 		4F717C5CDACB06FC648D27EF2E7243FE /* RCTLocationObserver.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTLocationObserver.m; sourceTree = "<group>"; };
 		4F79A208F528607A9B9BC9F7741E1D48 /* FBSDKBridgeAPICrypto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKBridgeAPICrypto.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPICrypto.m; sourceTree = "<group>"; };
 		4F93C964A0DAF8CF64DD2BFE5DE0135A /* RCTTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTextField.h; sourceTree = "<group>"; };
-		503B3D9B531575B2CC6A41F54B677511 /* Pods-phone-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-phone-acknowledgements.plist"; sourceTree = "<group>"; };
 		508CD646B88BFE31C7B0B8356A369559 /* FBSDKIcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKIcon.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKIcon.h; sourceTree = "<group>"; };
 		50912B63E3060030875EFED230050BB1 /* FBSDKLikeObjectType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLikeObjectType.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKLikeObjectType.h; sourceTree = "<group>"; };
+		50CED81207558D2F620E1225558E3093 /* Pods-phone-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-phone-acknowledgements.plist"; sourceTree = "<group>"; };
 		5123A175E817638A15821E2BE8407141 /* FBSDKUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKUtility.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKUtility.h; sourceTree = "<group>"; };
 		5185E23F4CFC96A3DB1BEB408B713C26 /* RCTStatusBarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTStatusBarManager.h; sourceTree = "<group>"; };
 		51869709DAB8B6A2431C0113AD9DDF82 /* RCTPerformanceLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTPerformanceLogger.m; sourceTree = "<group>"; };
 		51D617A216F734E20B81A9E2DF4C07C0 /* RCTUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTUtils.m; sourceTree = "<group>"; };
-		5209D86687FA51713BF36CB33B88F182 /* libFBSDKLoginKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFBSDKLoginKit.a; path = libFBSDKLoginKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5264B084B460A27083D713C689A318C3 /* RCTNetworking.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTNetworking.mm; sourceTree = "<group>"; };
 		52694D62F09C75D29472924532106908 /* ARTShapeManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ARTShapeManager.h; sourceTree = "<group>"; };
 		52C2E5649667952AAE7AE7F2C27A603D /* RCTRefreshControlManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRefreshControlManager.m; sourceTree = "<group>"; };
 		52ED6741876F42147C050C97DF48A9E8 /* FBSDKButton+Subclass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKButton+Subclass.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKButton+Subclass.h"; sourceTree = "<group>"; };
 		53C1019AB56517B6EA399485FDC2518B /* BFTaskCompletionSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFTaskCompletionSource.m; path = Bolts/Common/BFTaskCompletionSource.m; sourceTree = "<group>"; };
+		53E64B44F544549717BC999C5B9B454B /* Pods-phone-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-phone-dummy.m"; sourceTree = "<group>"; };
 		54011036FE2C50377A03EA42EA379F1F /* JSBundleType.cpp */ = {isa = PBXFileReference; includeInIndex = 1; path = JSBundleType.cpp; sourceTree = "<group>"; };
 		5474F3D5FA0A8A8AED60EFB4F1E3BBFA /* FBSDKBridgeAPIRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKBridgeAPIRequest.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIRequest.h; sourceTree = "<group>"; };
 		54F5C40A3A7881F09A9F485F9D2C98ED /* FBSDKPaymentObserver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKPaymentObserver.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/FBSDKPaymentObserver.h; sourceTree = "<group>"; };
+		552AE8B8306943B131EB5E571F625ABB /* libPods-phoneTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-phoneTests.a"; path = "libPods-phoneTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		553E74C285B1D543FCD6BBF134040731 /* RCTDisplayLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTDisplayLink.h; sourceTree = "<group>"; };
 		55BE8ABDD9611670269E59BBDAC7A93C /* FBSDKURLOpening.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKURLOpening.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKURLOpening.h; sourceTree = "<group>"; };
 		55E3E576B5981392B0B35CBD3C1C5BFB /* RCTAlertManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTAlertManager.m; sourceTree = "<group>"; };
 		561757415890F3131D14CA33A9569583 /* ARTRenderableManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ARTRenderableManager.h; sourceTree = "<group>"; };
 		5637BDD97EA72361D357DB91321A7A3D /* JSCWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JSCWrapper.h; sourceTree = "<group>"; };
-		56D3E61D2480FA51C2BA025CC64C7773 /* Pods-phone-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phone-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		57158B3A58B2E0AB719082181B028882 /* RCTFBSDKLikeControlManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTFBSDKLikeControlManager.m; sourceTree = "<group>"; };
 		575DF3E5699417001FBD57E8D6D146AE /* RCTNavigator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTNavigator.m; sourceTree = "<group>"; };
 		578E2246F95CD1D70AC49A977A436B08 /* FBSDKApplicationDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKApplicationDelegate.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKApplicationDelegate.m; sourceTree = "<group>"; };
@@ -1115,10 +1109,7 @@
 		5CAA9E0B3451946318CE34AF1FDF8B7D /* FBSDKWebDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKWebDialog.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/WebDialog/FBSDKWebDialog.h; sourceTree = "<group>"; };
 		5CAF7FE8C8909E03CA6FF533B967CD5B /* RCTUIManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTUIManager.m; sourceTree = "<group>"; };
 		5D03DD57FC56B2D45E70FCDDA4BA9A78 /* FBSDKURLSessionTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKURLSessionTask.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKURLSessionTask.h; sourceTree = "<group>"; };
-		5D2CB032DDDCD2D925C6889A893CCFCD /* libFBSDKCoreKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFBSDKCoreKit.a; path = libFBSDKCoreKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF26487EB1949636016A4CF23C2DACE /* RCTAsyncLocalStorage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTAsyncLocalStorage.h; sourceTree = "<group>"; };
-		5F01A3D4DC107958E994847F1E800ED5 /* Pods-phone-tvOSTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-phone-tvOSTests-frameworks.sh"; sourceTree = "<group>"; };
-		5F029BA6FBFECC57691AFE3803DD8F7B /* Pods-phone-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-phone-resources.sh"; sourceTree = "<group>"; };
 		5F6AAACF951DC15F36CA447B8DE80DA8 /* FBSDKLikeButtonPopWAV.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKLikeButtonPopWAV.m; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeButtonPopWAV.m; sourceTree = "<group>"; };
 		5FAA737BE422EBBC3D671587B0138546 /* FBSDKLikeBoxView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKLikeBoxView.m; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeBoxView.m; sourceTree = "<group>"; };
 		5FAD73B45A9D32317F7D311BE5A663AA /* RCTProfileTrampoline-x86_64.S */ = {isa = PBXFileReference; includeInIndex = 1; path = "RCTProfileTrampoline-x86_64.S"; sourceTree = "<group>"; };
@@ -1131,11 +1122,11 @@
 		60C65F4ADD2A38BD10A71E566FC7A3DC /* RCTWebSocketExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTWebSocketExecutor.m; sourceTree = "<group>"; };
 		61FE270BE8811A3360B1EEFA518E8D1B /* BFAppLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLink.m; path = Bolts/iOS/BFAppLink.m; sourceTree = "<group>"; };
 		627F0A4635A8402FE08CA77A12716555 /* RCTMapOverlay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTMapOverlay.m; sourceTree = "<group>"; };
+		63FB300151523E96160BCA895E2E4D36 /* libFBSDKShareKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFBSDKShareKit.a; path = libFBSDKShareKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		640086D3F0440B96BEEDD0ADC7188DBC /* RCTImageLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTImageLoader.h; sourceTree = "<group>"; };
 		652D259803C732CD230FD283688D5B9F /* ARTContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ARTContainer.h; sourceTree = "<group>"; };
 		65840C71E4E3D845FC5F495A144DCAA8 /* BFAppLinkNavigation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLinkNavigation.m; path = Bolts/iOS/BFAppLinkNavigation.m; sourceTree = "<group>"; };
 		66094D696CB3F5245D7552DF51AAE304 /* BFAppLinkTarget.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLinkTarget.m; path = Bolts/iOS/BFAppLinkTarget.m; sourceTree = "<group>"; };
-		665178E797CAFF25142FFFC991E75477 /* Pods-phone-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-phone-frameworks.sh"; sourceTree = "<group>"; };
 		66B81733D47FB5878890256E9486A45D /* RCTTextFieldManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTextFieldManager.m; sourceTree = "<group>"; };
 		66BC0601493B791B0B8E8131634D0E56 /* FBSDKShareLinkContent+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKShareLinkContent+Internal.h"; path = "FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareLinkContent+Internal.h"; sourceTree = "<group>"; };
 		670B5BEC4A7E2C02E7CEC1076D529AB9 /* Bolts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bolts-dummy.m"; sourceTree = "<group>"; };
@@ -1151,14 +1142,11 @@
 		69144253C0FD6FA6913ABEE1C7594269 /* FBSDKDeviceRequestsHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKDeviceRequestsHelper.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKDeviceRequestsHelper.h; sourceTree = "<group>"; };
 		694B130F56A27735DCDB1D5BCD4973D6 /* ARTTextFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ARTTextFrame.h; sourceTree = "<group>"; };
 		6982354880F76FA01D08B4F49E4ECA0E /* BFTask.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFTask.m; path = Bolts/Common/BFTask.m; sourceTree = "<group>"; };
-		69CEB1241CD5A58A855BB8A55ED4E969 /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libReact.a; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A01552BDBF40760478F0880C189517D /* Pods-phone-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-phone-dummy.m"; sourceTree = "<group>"; };
 		6A34F34C65F22CA962EE79C5E34124E7 /* RCTSourceCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSourceCode.h; sourceTree = "<group>"; };
 		6B10F19F3FF287A9FFB8FDA5646BFE46 /* RCTBridgeMethod.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBridgeMethod.h; sourceTree = "<group>"; };
 		6B7601F971FAC92A9AEA9569E89EAACD /* FBSDKSharingContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSharingContent.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKSharingContent.h; sourceTree = "<group>"; };
 		6C4310FF23E7600F74BB15FAAFB5A359 /* FBSDKAccessToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAccessToken.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKAccessToken.h; sourceTree = "<group>"; };
 		6C5F5E4C22DFEB8BB253DC7E4A55804F /* RCTSRWebSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSRWebSocket.m; sourceTree = "<group>"; };
-		6CBFD4837EB96E6A609E7F44D7BD67A0 /* libPods-phone-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-phone-tvOS.a"; path = "libPods-phone-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CDCBC11A9239AB5A9D22E0DC9A003C2 /* FBSDKBridgeAPIRequest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKBridgeAPIRequest+Private.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIRequest+Private.h"; sourceTree = "<group>"; };
 		6DD953A53BFF866612B68D262781453F /* FBSDKLoginKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSDKLoginKit-dummy.m"; sourceTree = "<group>"; };
 		6E31FB41EA645B747D6E9E086860AF9D /* ARTRadialGradient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ARTRadialGradient.m; sourceTree = "<group>"; };
@@ -1177,29 +1165,26 @@
 		712A3171EF03B24D2B48BEF96F4E64C0 /* ARTGroupManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ARTGroupManager.m; sourceTree = "<group>"; };
 		717178E50FC25763BE757E8C07A13809 /* RCTRedBox.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTRedBox.h; sourceTree = "<group>"; };
 		71C2425420CE147AB5E319242452C096 /* RCTTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTextView.h; sourceTree = "<group>"; };
-		722BE081E063285018A4ED5FB0EDF0C4 /* Pods-phoneTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-phoneTests-dummy.m"; sourceTree = "<group>"; };
+		722E487B16EAF4E7EA3387061ACCE666 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		723C5F1150FE338C9A9AB99FFDB565FF /* RCTSwitchManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTSwitchManager.m; sourceTree = "<group>"; };
-		73114044B68720966111CDD2976A85AB /* Pods-phone-tvOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-phone-tvOS-acknowledgements.markdown"; sourceTree = "<group>"; };
 		73892E0C292EE833D72C45BED39D17D7 /* FBSDKLoginCompletion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLoginCompletion.h; path = FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginCompletion.h; sourceTree = "<group>"; };
 		7429B55329C1E65EAD1A6E22E127D0C9 /* RCTSliderManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSliderManager.h; sourceTree = "<group>"; };
 		74BF9081DBC9049DC570A4F5290BFE26 /* RCTModuleMethod.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTModuleMethod.m; sourceTree = "<group>"; };
 		754DA42FDA0418DF8066BCDFA2AE44D6 /* RCTFBSDKMessageDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTFBSDKMessageDialog.m; sourceTree = "<group>"; };
 		75A25F5907B2C9C4CC780AA9D348AA8A /* FBSDKSharePhoto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSharePhoto.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKSharePhoto.h; sourceTree = "<group>"; };
 		75DB25EE3BB436F99851BB20084DBE51 /* FBSDKTypeUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKTypeUtility.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKTypeUtility.m; sourceTree = "<group>"; };
-		75F0407285629300DAA5BFC740604392 /* Pods-phoneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phoneTests.release.xcconfig"; sourceTree = "<group>"; };
 		7613BCD1B2AA50BBCF5129150E55862C /* RCTNetInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTNetInfo.m; sourceTree = "<group>"; };
 		762E22B01D6D6AA6845AEAD56F360A2B /* BFAppLinkReturnToRefererView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFAppLinkReturnToRefererView.m; path = Bolts/iOS/BFAppLinkReturnToRefererView.m; sourceTree = "<group>"; };
 		7639C525D30F5753415578BB26C25545 /* FBSDKBridgeAPIProtocolWebV2.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKBridgeAPIProtocolWebV2.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/ProtocolVersions/FBSDKBridgeAPIProtocolWebV2.h; sourceTree = "<group>"; };
 		770CD55B7C30D454DF65D7ED57363E35 /* FBSDKShareKit+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKShareKit+Internal.h"; path = "FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareKit+Internal.h"; sourceTree = "<group>"; };
 		779240652DB0ACE60607A10E4E49B6C6 /* RCTActivityIndicatorView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTActivityIndicatorView.h; sourceTree = "<group>"; };
 		77CCF2175ABDCD4E2F72E9AC251D7B78 /* FBSDKBridgeAPIProtocolType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKBridgeAPIProtocolType.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIProtocolType.h; sourceTree = "<group>"; };
+		77DB83C88AA79A34293EB85FCC777AEC /* Pods-phone-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-phone-resources.sh"; sourceTree = "<group>"; };
 		782C92F18E13258514C73A332ED8D8EB /* FBSDKAppEventsState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppEventsState.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/FBSDKAppEventsState.m; sourceTree = "<group>"; };
-		78816FC1A9E76839E1F91594C192C050 /* Pods-phone-tvOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-phone-tvOS-acknowledgements.plist"; sourceTree = "<group>"; };
 		78A0B97FE1D079DEE2FDC4DFB38A6BDB /* RCTTouchEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTouchEvent.m; sourceTree = "<group>"; };
 		798DAD76A888533F5229FFCE06A1C16E /* Bolts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bolts-prefix.pch"; sourceTree = "<group>"; };
 		79C944F76962339312DECFA783FEFE27 /* RCTURLRequestHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTURLRequestHandler.h; sourceTree = "<group>"; };
 		7B4DB299ECC5BD74F153A92317F106D8 /* RCTSwitchManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSwitchManager.h; sourceTree = "<group>"; };
-		7B7189B7243C7E2FD54E5D8FED4031F2 /* Pods-phone-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-phone-tvOS-dummy.m"; sourceTree = "<group>"; };
 		7BDCE7FCF3EF4EF5871DA9DF84C54A20 /* RCTModuleData.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = RCTModuleData.mm; sourceTree = "<group>"; };
 		7BF6D7A9F15A6A95B7207292BDC9396B /* FBSDKMessageDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMessageDialog.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKMessageDialog.h; sourceTree = "<group>"; };
 		7C26138690C4BF30D1FF49B8F0BB7D61 /* RCTConvert.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTConvert.m; sourceTree = "<group>"; };
@@ -1210,10 +1195,8 @@
 		7D1AC753B1DA2E7094DD30DE2C1ED53B /* RCTGIFImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTGIFImageDecoder.h; sourceTree = "<group>"; };
 		7D6DE2EAAF76945D864C44744236F54E /* FBSDKProfilePictureView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKProfilePictureView.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKProfilePictureView.m; sourceTree = "<group>"; };
 		7DEC77720C1899EC4DDCD2B4CF7B45CD /* FBSDKButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKButton.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKButton.h; sourceTree = "<group>"; };
-		7E68F0AEA8A12499DC280D0FA0CF6522 /* Pods-phone-tvOSTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-phone-tvOSTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7E844EEF19C66B04E90E71B95F89AC48 /* RCTTextManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTextManager.m; sourceTree = "<group>"; };
 		7EA551AFDFA458EFF751C0F0F45967F7 /* RCTNavigator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTNavigator.h; sourceTree = "<group>"; };
-		7EC4075B2EC0E6B9D0CE1E0B03504DA7 /* libPods-phone-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-phone-tvOSTests.a"; path = "libPods-phone-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED39866F5263A19C03619CFF2A88AF2 /* FBSDKCrypto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKCrypto.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Cryptography/FBSDKCrypto.m; sourceTree = "<group>"; };
 		7F226FD50864D6175B447D742B8D9687 /* FBSDKSendButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKSendButton.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKSendButton.m; sourceTree = "<group>"; };
 		7F25AB5C49CD9956602F303DDBA59CE4 /* RCTTabBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTabBarItem.h; sourceTree = "<group>"; };
@@ -1225,7 +1208,6 @@
 		81D786F5E328EA0692D9AEADB45CBB89 /* FBSDKCopying.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKCopying.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKCopying.h; sourceTree = "<group>"; };
 		82816A8C550DB06D3FAEFB2C2428D707 /* RCTI18nUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTI18nUtil.m; sourceTree = "<group>"; };
 		82928DF0172A6DAB8BFF0B96114AD21E /* RCTTabBarItemManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTabBarItemManager.h; sourceTree = "<group>"; };
-		829DF355B6DA4848DBAF712036431DC0 /* Pods-phone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phone.debug.xcconfig"; sourceTree = "<group>"; };
 		832105CBEC819E19A0F592409F2C9B35 /* RCTBridgeModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBridgeModule.h; sourceTree = "<group>"; };
 		83F609371BAD99070AC55C4BED64D066 /* React.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = React.xcconfig; sourceTree = "<group>"; };
 		8426F4A845A7165C81A75676C72AEDE1 /* RCTTabBarManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTabBarManager.h; sourceTree = "<group>"; };
@@ -1238,7 +1220,6 @@
 		85F09C8AE7704537F74B603B2C99FEDB /* RCTSegmentedControlManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSegmentedControlManager.h; sourceTree = "<group>"; };
 		860BC2A77BE32B4F2D38596CEBDDC63E /* RCTRootShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTRootShadowView.m; sourceTree = "<group>"; };
 		8692E2C86B64ABDB986B2B39175DFAC4 /* FBSDKShareLinkContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKShareLinkContent.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareLinkContent.m; sourceTree = "<group>"; };
-		87083F2B928CBE35EACD7340A7BA574C /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		8736A9151B2D3DDC30B2A14A5C635D43 /* BFCancellationToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFCancellationToken.h; path = Bolts/Common/BFCancellationToken.h; sourceTree = "<group>"; };
 		873D5AAD630B8E8896A8948824448ED4 /* FBSDKBridgeAPIProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKBridgeAPIProtocol.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/BridgeAPI/FBSDKBridgeAPIProtocol.h; sourceTree = "<group>"; };
 		8760984806BA2AA39C3F133951882FB1 /* RCTConvert+Text.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+Text.m"; sourceTree = "<group>"; };
@@ -1283,10 +1264,8 @@
 		934A54A461D6C93908BB232AB5CD66B0 /* FBSDKShareVideoContent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareVideoContent.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareVideoContent.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9411178B304FE607BB771A3AFFA96F62 /* RCTModuleData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTModuleData.h; sourceTree = "<group>"; };
-		9427C3E15D85FB3717F0B0199F8618EA /* Pods-phone-tvOSTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-phone-tvOSTests-resources.sh"; sourceTree = "<group>"; };
 		94563D7455EE0991CFA2BF0CB1329E8F /* FBSDKLoginUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLoginUtility.h; path = FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginUtility.h; sourceTree = "<group>"; };
 		9465DF5192817B221736F9B07E00A892 /* RCTEventDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTEventDispatcher.h; sourceTree = "<group>"; };
-		94B673C07E94782F7D4D71B6FBD31231 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		94D883752FAAFC67F487611786447CE4 /* RCTImageBlurUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTImageBlurUtils.h; sourceTree = "<group>"; };
 		94FC7B50AD3C70E12EBB449326A12D13 /* FBSDKWebDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKWebDialog.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/WebDialog/FBSDKWebDialog.m; sourceTree = "<group>"; };
 		95076C78756103C056E8CBC90CDFB8D0 /* ARTNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ARTNode.m; sourceTree = "<group>"; };
@@ -1325,12 +1304,12 @@
 		9E4F3AB6B5966AAA0585DE41E43FDE2E /* RCTMapManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTMapManager.m; sourceTree = "<group>"; };
 		9E57BDF2C8C8ABA47DD306471320CA15 /* RCTWrapperViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTWrapperViewController.m; sourceTree = "<group>"; };
 		9E5D369629DA2B438D9836AE5FE45938 /* FBSDKServerConfigurationManager+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKServerConfigurationManager+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfigurationManager+Internal.h"; sourceTree = "<group>"; };
-		9E80BCC6A63BC81070847E7D2A2325EB /* Pods-phone-tvOSTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-phone-tvOSTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9E9930C9C1D7C8533781DC8EFD88C735 /* RCTImageBlurUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTImageBlurUtils.m; sourceTree = "<group>"; };
 		9ECCEC8EFF9553CFB82E49041BD10171 /* FBSDKDeviceRequestsHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKDeviceRequestsHelper.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKDeviceRequestsHelper.m; sourceTree = "<group>"; };
 		9F578AE517A6A8942DDFEF9B3F84CDC6 /* FBSDKShareKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareKit.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareKit.h; sourceTree = "<group>"; };
 		9F7C8DF1A4DB35681591304A5484FD88 /* RCTConvert.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTConvert.h; sourceTree = "<group>"; };
 		9F995B084C4D668A44834169CE6C32D3 /* RCTFBSDKAccessToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTFBSDKAccessToken.m; sourceTree = "<group>"; };
+		9FB13F130A56BA76FBE0FB591FD3F246 /* libFBSDKLoginKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFBSDKLoginKit.a; path = libFBSDKLoginKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBB00496D76420501C580D4181D8CD8 /* YGMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YGMacros.h; sourceTree = "<group>"; };
 		A02EA8AF0FFC936E763520235612669F /* RCTWebViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTWebViewManager.m; sourceTree = "<group>"; };
 		A095BBB4BD2889EA422A5562406716DA /* FBSDKKeychainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKKeychainStore.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKKeychainStore.h; sourceTree = "<group>"; };
@@ -1375,6 +1354,7 @@
 		AE726A0A5767CC53ED3D37C01477632E /* FBSDKShareOpenGraphValueContainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareOpenGraphValueContainer.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphValueContainer.h; sourceTree = "<group>"; };
 		AE86ECC2210D74167763318449018492 /* FBSDKServerConfiguration+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKServerConfiguration+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKServerConfiguration+Internal.h"; sourceTree = "<group>"; };
 		AE915C6BA3301AEB72CE3FC75254B0FB /* FBSDKLikeActionController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLikeActionController.h; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeActionController.h; sourceTree = "<group>"; };
+		AF7ADD134F84797870072209CD2DC2B4 /* Pods-phone-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-phone-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AF8242B8FCA3B3B972C1982C2B5C8B80 /* RCTFBSDKMessageDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTFBSDKMessageDialog.h; sourceTree = "<group>"; };
 		AF94FA999CE0A2F3F4BDF3599D7B9AFC /* FBSDKAppEventsUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKAppEventsUtility.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/FBSDKAppEventsUtility.h; sourceTree = "<group>"; };
 		AFB124241BA5E56EF773C46188871B50 /* RCTProfileTrampoline-arm64.S */ = {isa = PBXFileReference; includeInIndex = 1; path = "RCTProfileTrampoline-arm64.S"; sourceTree = "<group>"; };
@@ -1387,7 +1367,6 @@
 		B3A82C2DCA059BFFC9C0468792662079 /* FBSDKLoginCompletion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKLoginCompletion.m; path = FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginCompletion.m; sourceTree = "<group>"; };
 		B4961F03BB2C95458EB274F8C7490B32 /* RCTMapOverlay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMapOverlay.h; sourceTree = "<group>"; };
 		B49B6112C873A3ADE8E35536C58E29E4 /* FBSDKShareVideoContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKShareVideoContent.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareVideoContent.m; sourceTree = "<group>"; };
-		B5516AFBEB75FBF38EAA6E4B398FC853 /* Pods-phone-tvOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-phone-tvOS-frameworks.sh"; sourceTree = "<group>"; };
 		B5F201A615E65592B3B275F4D4F9B033 /* RCTFBSDKAccessToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTFBSDKAccessToken.h; sourceTree = "<group>"; };
 		B61A3AA67041EABAFFCC82AEADE5A8F9 /* FacebookSDKStrings.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = FacebookSDKStrings.bundle; sourceTree = "<group>"; };
 		B63CCBDD227D4A555381B5903C446118 /* RCTTVRemoteHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTVRemoteHandler.m; sourceTree = "<group>"; };
@@ -1423,6 +1402,7 @@
 		C2B7299FFFC65F5F694E880AC9E24982 /* FBSDKLikeBoxView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLikeBoxView.h; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeBoxView.h; sourceTree = "<group>"; };
 		C2D63D70AECFB023942BE8A99EEAF7F1 /* FBSDKLiking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLiking.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKLiking.h; sourceTree = "<group>"; };
 		C2D67BE874B6AFF6B3514317268924B2 /* FBSDKLoginManagerLoginResult.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKLoginManagerLoginResult.m; path = FBSDKLoginKit/FBSDKLoginKit/FBSDKLoginManagerLoginResult.m; sourceTree = "<group>"; };
+		C2E721C004D9DE8C5A845070126CC064 /* Pods-phoneTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phoneTests.release.xcconfig"; sourceTree = "<group>"; };
 		C36FD94ED4003D0DBDC796EDD08C43CA /* FBSDKAppGroupAddDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppGroupAddDialog.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKAppGroupAddDialog.m; sourceTree = "<group>"; };
 		C378B62DFCDC26A85769B6831EA2C1EE /* FBSDKMessageDialog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKMessageDialog.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKMessageDialog.m; sourceTree = "<group>"; };
 		C39184222B9AE366C7B2A8FE46FC70E5 /* RCTFBSDKShareButtonManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTFBSDKShareButtonManager.m; sourceTree = "<group>"; };
@@ -1454,21 +1434,20 @@
 		CA1CC17265497611A7F4B3BB205127BD /* RCTDisplayLink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTDisplayLink.m; sourceTree = "<group>"; };
 		CB12D6974565AF4B090A7551B8925FAC /* RCTVibration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTVibration.h; sourceTree = "<group>"; };
 		CC095750758AE42849D3435E216B26CA /* FBSDKError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKError.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKError.h; sourceTree = "<group>"; };
+		CC1B1210123FD0B880E3F00367B9F706 /* Pods-phoneTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-phoneTests-frameworks.sh"; sourceTree = "<group>"; };
 		CC37FCBD6B0D71BBBBD015512DC22D8E /* RCTPicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTPicker.m; sourceTree = "<group>"; };
 		CC7659E3C1DBD560CA760C0293518F73 /* RCTJSCProfiler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTJSCProfiler.h; sourceTree = "<group>"; };
-		CCEFB6027787D808D8168C4B65D755D1 /* Pods-phoneTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-phoneTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CCF51ACB4240EAD38ACFFF9059C6DE77 /* RCTProfileTrampoline-i386.S */ = {isa = PBXFileReference; includeInIndex = 1; path = "RCTProfileTrampoline-i386.S"; sourceTree = "<group>"; };
 		CD018051C4B262C94AB7AA1070E2C057 /* RCTVibration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTVibration.m; sourceTree = "<group>"; };
 		CD0537F0F67314F7D40F067D4AB292E0 /* BFURL_Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFURL_Internal.h; path = Bolts/iOS/Internal/BFURL_Internal.h; sourceTree = "<group>"; };
 		CD4EB75F387F6E04975E6A50587102FF /* Yoga.c */ = {isa = PBXFileReference; includeInIndex = 1; path = Yoga.c; sourceTree = "<group>"; };
-		CDB5D63CE45DD77713CFCC47B5C4BD41 /* Pods-phoneTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-phoneTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CDC3007BB7A21C021D1FBF5362A0C9DA /* FBSDKConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKConstants.h; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKConstants.h; sourceTree = "<group>"; };
 		CDD95B129AF650BE5FB547219B20C5B7 /* FBSDKLikeButtonPopWAV.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLikeButtonPopWAV.h; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeButtonPopWAV.h; sourceTree = "<group>"; };
 		CE2176807397460C98D824712077D278 /* FBSDKInternalUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKInternalUtility.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKInternalUtility.h; sourceTree = "<group>"; };
 		CE21CE8D878EA27BE986B0D2455191E7 /* BFTaskCompletionSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFTaskCompletionSource.h; path = Bolts/Common/BFTaskCompletionSource.h; sourceTree = "<group>"; };
 		CE29F0ED5A211551EEA9F4A6922A4E0A /* FBSDKAppEventsUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppEventsUtility.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/AppEvents/FBSDKAppEventsUtility.m; sourceTree = "<group>"; };
 		CE902C7CD70B59E619F61C8F59B171CE /* RCTImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTImageCache.h; sourceTree = "<group>"; };
-		CF916CA5C7A61EC64D715E97C4388BF9 /* Pods-phoneTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-phoneTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CF7350BDCF7C18CA1916892639F81CDA /* Pods-phoneTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-phoneTests-resources.sh"; sourceTree = "<group>"; };
 		D1148A570CB529046F7D4EC09CCFC21A /* FBSDKShareDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareDialog.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareDialog.h; sourceTree = "<group>"; };
 		D116BBBFAD5DA0B83FFA8995F2FE3C87 /* _FBSDKLoginRecoveryAttempter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = _FBSDKLoginRecoveryAttempter.m; path = FBSDKLoginKit/FBSDKLoginKit/Internal/_FBSDKLoginRecoveryAttempter.m; sourceTree = "<group>"; };
 		D121094086D5247258015311F806EB74 /* UIView+React.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+React.h"; sourceTree = "<group>"; };
@@ -1493,7 +1472,6 @@
 		D667E4BFD45F5200188D490C761EBB03 /* BFCancellationToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFCancellationToken.m; path = Bolts/Common/BFCancellationToken.m; sourceTree = "<group>"; };
 		D6BA9003B52A0AFB649376D281E891E9 /* FBSDKShareConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKShareConstants.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareConstants.m; sourceTree = "<group>"; };
 		D6C960E8ADFD7CD5AD2969BD125769DF /* FBSDKLikeDialog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKLikeDialog.h; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeDialog.h; sourceTree = "<group>"; };
-		D78F21BC39C4EF0AEE95F596EBC9A771 /* libreact-native-fbsdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libreact-native-fbsdk.a"; path = "libreact-native-fbsdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D791C13FBF62A57FA1404224824C9477 /* RCTNavItemManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTNavItemManager.h; sourceTree = "<group>"; };
 		D84816DF3C73299599FE6E97E3028A21 /* FBSDKGraphRequestConnection+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKGraphRequestConnection+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequestConnection+Internal.h"; sourceTree = "<group>"; };
 		D8579BA2D698C6E2F73CBA7E1539A573 /* FBSDKGraphRequestPiggybackManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKGraphRequestPiggybackManager.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Network/FBSDKGraphRequestPiggybackManager.m; sourceTree = "<group>"; };
@@ -1523,7 +1501,6 @@
 		E06AFEFA85F62F482FD9B86CBC4F8BB0 /* oss-compat-util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "oss-compat-util.h"; sourceTree = "<group>"; };
 		E0AECB1A1370B14B56731B50A43E2C08 /* RCTFrameUpdate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTFrameUpdate.m; sourceTree = "<group>"; };
 		E1319C0D49B4A5B3F4776ACD52A10AF9 /* RCTTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTextView.m; sourceTree = "<group>"; };
-		E196DD98A6D6A973EB378674F903709B /* Pods-phoneTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-phoneTests-frameworks.sh"; sourceTree = "<group>"; };
 		E2842D4D467B5AE42A4D5D7BEDAA52E8 /* BFExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BFExecutor.h; path = Bolts/Common/BFExecutor.h; sourceTree = "<group>"; };
 		E3330E8AC644E083F7339854A7399418 /* FBSDKSharingButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKSharingButton.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKSharingButton.h; sourceTree = "<group>"; };
 		E3689480D1C83679CAE3F682482B7CCD /* ARTRadialGradient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ARTRadialGradient.h; sourceTree = "<group>"; };
@@ -1539,7 +1516,6 @@
 		E68BA89AD976638EC333666D964C84B2 /* RCTJSCErrorHandling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTJSCErrorHandling.h; sourceTree = "<group>"; };
 		E6F30FB99DA1FD89E2901EB30A2AA7EF /* RCTScrollView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTScrollView.m; sourceTree = "<group>"; };
 		E6FEDDA8A04B2357CA527ABFC2A087A4 /* RCTBridge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTBridge.h; sourceTree = "<group>"; };
-		E7097CD4A7B67B833020977F2128924D /* Pods-phone-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-phone-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E73A922622A640B42FB1D1DB224443E0 /* RCTImageUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTImageUtils.h; sourceTree = "<group>"; };
 		E75B706A2F4F87A23EB801F663521888 /* RCTTouchHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTouchHandler.h; sourceTree = "<group>"; };
 		E7FD5C84D291C69331F37DCA37BC4356 /* FBSDKAccessTokenCacheV3_21.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAccessTokenCacheV3_21.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenCacheV3_21.m; sourceTree = "<group>"; };
@@ -1549,6 +1525,7 @@
 		E922EBBF75DD7971A97A695BE51E0993 /* RCTTiming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTTiming.h; sourceTree = "<group>"; };
 		E9C1C9AA8CA59517DC2E777598EC6878 /* RCTMultipartDataTask.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTMultipartDataTask.h; sourceTree = "<group>"; };
 		EA838848FDD8C98254750B90E0D943EC /* BFCancellationTokenRegistration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BFCancellationTokenRegistration.m; path = Bolts/Common/BFCancellationTokenRegistration.m; sourceTree = "<group>"; };
+		EAA3CD89F6020305C50D7CF9FC03B791 /* libFBSDKCoreKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libFBSDKCoreKit.a; path = libFBSDKCoreKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD22FC10EB7D2E099D4DCB50F3B0E40 /* FBSDKTestUsersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKTestUsersManager.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKTestUsersManager.m; sourceTree = "<group>"; };
 		EB1419863CFD76BA54C7A6B7CBFB6796 /* FBSDKVideoUploader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKVideoUploader.h; path = FBSDKShareKit/FBSDKShareKit/Internal/FBSDKVideoUploader.h; sourceTree = "<group>"; };
 		EB252C426A4DCE4E28FE40732D4212F6 /* FBSDKAppLinkUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAppLinkUtility.m; path = FBSDKCoreKit/FBSDKCoreKit/FBSDKAppLinkUtility.m; sourceTree = "<group>"; };
@@ -1566,11 +1543,13 @@
 		F110EA321B30F6F59F55229E2923BA56 /* ARTTextManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ARTTextManager.m; sourceTree = "<group>"; };
 		F132E657C7EAF1898EE2199AB7166905 /* FBSDKBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKBase64.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/Base64/FBSDKBase64.m; sourceTree = "<group>"; };
 		F13578571EDB3E9964EBC2AA651748AD /* ARTShape.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ARTShape.m; sourceTree = "<group>"; };
+		F14B6CE89E61F1F10C8870968C801750 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F17136D28A7F63F537717E9183B9836D /* FBSDKLoginUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKLoginUtility.m; path = FBSDKLoginKit/FBSDKLoginKit/Internal/FBSDKLoginUtility.m; sourceTree = "<group>"; };
 		F1BD2DC3B301A39904722569CD334902 /* FBSDKErrorRecoveryConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKErrorRecoveryConfiguration.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/ServerConfiguration/FBSDKErrorRecoveryConfiguration.m; sourceTree = "<group>"; };
 		F214F7E666D6E0CC3261CD1A35029CDA /* ARTRenderableManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ARTRenderableManager.m; sourceTree = "<group>"; };
 		F28B6D9BD2F83A45368BD1169899F60B /* FBSDKTriStateBOOL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKTriStateBOOL.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKTriStateBOOL.m; sourceTree = "<group>"; };
 		F2EFA13FEA6E50B996AB4A1DAE2E9BF5 /* FBSDKShareKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSDKShareKit-prefix.pch"; sourceTree = "<group>"; };
+		F2F29C29CADBE22E581439608C7E6670 /* libPods-phone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-phone.a"; path = "libPods-phone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F32DFE2DE0247125F7EE3EAD4A1B95FA /* RCTKeyCommands.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTKeyCommands.m; sourceTree = "<group>"; };
 		F33665E612068D3410063D2E9458E023 /* FBSDKLikeControl+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKLikeControl+Internal.h"; path = "FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeControl+Internal.h"; sourceTree = "<group>"; };
 		F3A4BB97DD0D62D43DA8D60AE614A971 /* RCTTextSelection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTextSelection.m; sourceTree = "<group>"; };
@@ -1590,6 +1569,7 @@
 		F73BE1C8AA2D126267592D4999358035 /* FBSDKSharePhotoContent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKSharePhotoContent.m; path = FBSDKShareKit/FBSDKShareKit/FBSDKSharePhotoContent.m; sourceTree = "<group>"; };
 		F764FB75B15C3758A6E44186EA740588 /* RCTTouchHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTouchHandler.m; sourceTree = "<group>"; };
 		F7759785675B9E423353498C82576CB2 /* RCTTabBarManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTTabBarManager.m; sourceTree = "<group>"; };
+		F77DAF003524F1D0E7555D483BAC8C4D /* libreact-native-fbsdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libreact-native-fbsdk.a"; path = "libreact-native-fbsdk.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BC7D04522F2EC182A02F6823D919C6 /* RCTSRWebSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTSRWebSocket.h; sourceTree = "<group>"; };
 		F7D0D38FE1D574632431CAAB94525D18 /* RCTView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RCTView.m; sourceTree = "<group>"; };
 		F7D7F4E99BC2485F55D813B5837C2FCF /* FBSDKMath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKMath.h; path = FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKMath.h; sourceTree = "<group>"; };
@@ -1604,7 +1584,6 @@
 		FABF6B8A6A58D352177EF8DAE388AB26 /* RCTNavigatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTNavigatorManager.h; sourceTree = "<group>"; };
 		FB8E394CDDBCF5E713784EF56922F9F3 /* FBSDKApplicationDelegate+Internal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FBSDKApplicationDelegate+Internal.h"; path = "FBSDKCoreKit/FBSDKCoreKit/Internal/FBSDKApplicationDelegate+Internal.h"; sourceTree = "<group>"; };
 		FC404624D7CE9D8555E57E528C9235C0 /* FBSDKAccessTokenCacheV3.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAccessTokenCacheV3.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenCacheV3.m; sourceTree = "<group>"; };
-		FCF6EAE2958F1C6E4DB74F205378DED1 /* Pods-phone-tvOSTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-phone-tvOSTests-dummy.m"; sourceTree = "<group>"; };
 		FD49C66910642284120728FA14ACDECD /* RCTWebSocketObserverProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RCTWebSocketObserverProtocol.h; sourceTree = "<group>"; };
 		FD55996999A7E707D2A617C664B8F709 /* FBSDKAccessTokenCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSDKAccessTokenCache.m; path = FBSDKCoreKit/FBSDKCoreKit/Internal/TokenCaching/FBSDKAccessTokenCache.m; sourceTree = "<group>"; };
 		FD7C7BC8A1DFCE8A80888841C8C1EC2D /* FBSDKShareConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSDKShareConstants.h; path = FBSDKShareKit/FBSDKShareKit/FBSDKShareConstants.h; sourceTree = "<group>"; };
@@ -1648,14 +1627,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4E596FA16BD17BA3493521119360D3F2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8AE9D81012F474A1D5E14BA95A80B509 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		62E241B96C1439A8746C4DB0AD7700A0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1670,14 +1641,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEB6330046ACB0BE9A6E1C20049B4A23 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		87DE6A717F83D9F71E6B64E71F39D300 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3A51F04EE9BB7C599B9B00572569851B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1700,36 +1663,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0075D6A73CF9CACD42A4BD5297690FDB /* Pods-phoneTests */ = {
-			isa = PBXGroup;
-			children = (
-				CDB5D63CE45DD77713CFCC47B5C4BD41 /* Pods-phoneTests-acknowledgements.markdown */,
-				CF916CA5C7A61EC64D715E97C4388BF9 /* Pods-phoneTests-acknowledgements.plist */,
-				722BE081E063285018A4ED5FB0EDF0C4 /* Pods-phoneTests-dummy.m */,
-				E196DD98A6D6A973EB378674F903709B /* Pods-phoneTests-frameworks.sh */,
-				09F49B8BBC5DDBC70935FCC9B8418BF2 /* Pods-phoneTests-resources.sh */,
-				CCEFB6027787D808D8168C4B65D755D1 /* Pods-phoneTests.debug.xcconfig */,
-				75F0407285629300DAA5BFC740604392 /* Pods-phoneTests.release.xcconfig */,
-			);
-			name = "Pods-phoneTests";
-			path = "Target Support Files/Pods-phoneTests";
-			sourceTree = "<group>";
-		};
-		01A127A1B05F050912AF38B0C0A23E78 /* Pods-phone-tvOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				7E68F0AEA8A12499DC280D0FA0CF6522 /* Pods-phone-tvOSTests-acknowledgements.markdown */,
-				9E80BCC6A63BC81070847E7D2A2325EB /* Pods-phone-tvOSTests-acknowledgements.plist */,
-				FCF6EAE2958F1C6E4DB74F205378DED1 /* Pods-phone-tvOSTests-dummy.m */,
-				5F01A3D4DC107958E994847F1E800ED5 /* Pods-phone-tvOSTests-frameworks.sh */,
-				9427C3E15D85FB3717F0B0199F8618EA /* Pods-phone-tvOSTests-resources.sh */,
-				4490E9DA9879B5A0AEAE62D370E41F91 /* Pods-phone-tvOSTests.debug.xcconfig */,
-				24FBFB174155EF817440F0B88880697D /* Pods-phone-tvOSTests.release.xcconfig */,
-			);
-			name = "Pods-phone-tvOSTests";
-			path = "Target Support Files/Pods-phone-tvOSTests";
-			sourceTree = "<group>";
-		};
 		03878F931CD086F3202597ACBD1FDA08 /* RCTNetwork */ = {
 			isa = PBXGroup;
 			children = (
@@ -1909,21 +1842,6 @@
 			);
 			name = Base;
 			path = Base;
-			sourceTree = "<group>";
-		};
-		11C56FB73E3170B474973C8A1F05C5F4 /* Pods-phone */ = {
-			isa = PBXGroup;
-			children = (
-				E7097CD4A7B67B833020977F2128924D /* Pods-phone-acknowledgements.markdown */,
-				503B3D9B531575B2CC6A41F54B677511 /* Pods-phone-acknowledgements.plist */,
-				6A01552BDBF40760478F0880C189517D /* Pods-phone-dummy.m */,
-				665178E797CAFF25142FFFC991E75477 /* Pods-phone-frameworks.sh */,
-				5F029BA6FBFECC57691AFE3803DD8F7B /* Pods-phone-resources.sh */,
-				829DF355B6DA4848DBAF712036431DC0 /* Pods-phone.debug.xcconfig */,
-				4637181CC70ACF8D4DD9A77FA79A719D /* Pods-phone.release.xcconfig */,
-			);
-			name = "Pods-phone";
-			path = "Target Support Files/Pods-phone";
 			sourceTree = "<group>";
 		};
 		12138B3E825D48C7F66E057BE5D8F56E /* RCTImage */ = {
@@ -2147,6 +2065,15 @@
 			path = "../Target Support Files/FBSDKCoreKit";
 			sourceTree = "<group>";
 		};
+		22FD6EC3025836573B3353D773CFD5F4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4ACF83282A93D9B5754DA9E9022BD696 /* Pods-phone */,
+				569BFED0E8093DA997A6A71E25A64E3F /* Pods-phoneTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
 		286AD6ED7B24E00215D0AA5C5661ADA9 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -2240,6 +2167,23 @@
 			path = Libraries;
 			sourceTree = "<group>";
 		};
+		40E87A04FC68160A534976DB6464FB2E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				722E487B16EAF4E7EA3387061ACCE666 /* Foundation.framework */,
+				F14B6CE89E61F1F10C8870968C801750 /* JavaScriptCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40E87A04FC68160A534976DB6464FB2E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4683C28DB2C9D3280D49505FCA34356D /* RCTFBSDK */ = {
 			isa = PBXGroup;
 			children = (
@@ -2247,6 +2191,21 @@
 			);
 			name = RCTFBSDK;
 			path = RCTFBSDK;
+			sourceTree = "<group>";
+		};
+		4ACF83282A93D9B5754DA9E9022BD696 /* Pods-phone */ = {
+			isa = PBXGroup;
+			children = (
+				AF7ADD134F84797870072209CD2DC2B4 /* Pods-phone-acknowledgements.markdown */,
+				50CED81207558D2F620E1225558E3093 /* Pods-phone-acknowledgements.plist */,
+				53E64B44F544549717BC999C5B9B454B /* Pods-phone-dummy.m */,
+				27B9038DF7B936CE1C791A7442A56881 /* Pods-phone-frameworks.sh */,
+				77DB83C88AA79A34293EB85FCC777AEC /* Pods-phone-resources.sh */,
+				024E28B0BEC698338E04FF90EA11EB74 /* Pods-phone.debug.xcconfig */,
+				11201ABEA37AFB11A091028C86CA3315 /* Pods-phone.release.xcconfig */,
+			);
+			name = "Pods-phone";
+			path = "Target Support Files/Pods-phone";
 			sourceTree = "<group>";
 		};
 		510DA5EE9F9D43F1DE7B59AA045B6C2B /* Login */ = {
@@ -2287,6 +2246,21 @@
 			);
 			name = "Support Files";
 			path = "../../../ios/Pods/Target Support Files/react-native-fbsdk";
+			sourceTree = "<group>";
+		};
+		569BFED0E8093DA997A6A71E25A64E3F /* Pods-phoneTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FE7605011191D8E1B6406CA83B138C4 /* Pods-phoneTests-acknowledgements.markdown */,
+				04458B3018CF309FCE19D340F38F009A /* Pods-phoneTests-acknowledgements.plist */,
+				396AD249EE5D97F7B8D1A4EAD3B66A17 /* Pods-phoneTests-dummy.m */,
+				CC1B1210123FD0B880E3F00367B9F706 /* Pods-phoneTests-frameworks.sh */,
+				CF7350BDCF7C18CA1916892639F81CDA /* Pods-phoneTests-resources.sh */,
+				176A739BB693E387988BF836C63E5B10 /* Pods-phoneTests.debug.xcconfig */,
+				C2E721C004D9DE8C5A845070126CC064 /* Pods-phoneTests.release.xcconfig */,
+			);
+			name = "Pods-phoneTests";
+			path = "Target Support Files/Pods-phoneTests";
 			sourceTree = "<group>";
 		};
 		57794C38CF554775BB3574C31E48FA8A /* Support Files */ = {
@@ -2360,17 +2334,6 @@
 			path = WebSocket;
 			sourceTree = "<group>";
 		};
-		69D1D5E02BC808E96404444FDCD7988F /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				11C56FB73E3170B474973C8A1F05C5F4 /* Pods-phone */,
-				77AAB030735A549E6D69E44E53206316 /* Pods-phone-tvOS */,
-				01A127A1B05F050912AF38B0C0A23E78 /* Pods-phone-tvOSTests */,
-				0075D6A73CF9CACD42A4BD5297690FDB /* Pods-phoneTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
 		6F08DF87D8A24C084A7E935266E3974A /* yoga */ = {
 			isa = PBXGroup;
 			children = (
@@ -2398,30 +2361,6 @@
 			);
 			name = Libraries;
 			path = Libraries;
-			sourceTree = "<group>";
-		};
-		77AAB030735A549E6D69E44E53206316 /* Pods-phone-tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				73114044B68720966111CDD2976A85AB /* Pods-phone-tvOS-acknowledgements.markdown */,
-				78816FC1A9E76839E1F91594C192C050 /* Pods-phone-tvOS-acknowledgements.plist */,
-				7B7189B7243C7E2FD54E5D8FED4031F2 /* Pods-phone-tvOS-dummy.m */,
-				B5516AFBEB75FBF38EAA6E4B398FC853 /* Pods-phone-tvOS-frameworks.sh */,
-				18C100C948D0ACFEF127D21371198DFC /* Pods-phone-tvOS-resources.sh */,
-				3D44E263CF87D16F3A8C93A7655D0E95 /* Pods-phone-tvOS.debug.xcconfig */,
-				56D3E61D2480FA51C2BA025CC64C7773 /* Pods-phone-tvOS.release.xcconfig */,
-			);
-			name = "Pods-phone-tvOS";
-			path = "Target Support Files/Pods-phone-tvOS";
-			sourceTree = "<group>";
-		};
-		77C668F9898CC4E153C0860C6B0D7D4E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8BA8047A1F7B31C2F0BB5709CB33289B /* iOS */,
-				E199DF3588C254A81000234D69138493 /* tvOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7BDEA3DDCDA0177E487F001E9F1EC4E4 /* share */ = {
@@ -2457,10 +2396,10 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				FF4B4998D1CAAC3CBA46461C372AEB09 /* Development Pods */,
-				77C668F9898CC4E153C0860C6B0D7D4E /* Frameworks */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				1B410ADB16DB99852F33FDB7D25081AA /* Pods */,
-				93DB010BE6A28A85C5643BC60D4AE147 /* Products */,
-				69D1D5E02BC808E96404444FDCD7988F /* Targets Support Files */,
+				8B969C075E3B7549D531B3C761336132 /* Products */,
+				22FD6EC3025836573B3353D773CFD5F4 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2542,13 +2481,19 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		8BA8047A1F7B31C2F0BB5709CB33289B /* iOS */ = {
+		8B969C075E3B7549D531B3C761336132 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				254F9B9A57E4FB65DBC26F1A14C3AF95 /* Foundation.framework */,
-				87083F2B928CBE35EACD7340A7BA574C /* JavaScriptCore.framework */,
+				13E595F3112B8B94E7E7B154ED9C4B10 /* libBolts.a */,
+				EAA3CD89F6020305C50D7CF9FC03B791 /* libFBSDKCoreKit.a */,
+				9FB13F130A56BA76FBE0FB591FD3F246 /* libFBSDKLoginKit.a */,
+				63FB300151523E96160BCA895E2E4D36 /* libFBSDKShareKit.a */,
+				F2F29C29CADBE22E581439608C7E6670 /* libPods-phone.a */,
+				552AE8B8306943B131EB5E571F625ABB /* libPods-phoneTests.a */,
+				01CA64F350D0005E098333F4E737790D /* libReact.a */,
+				F77DAF003524F1D0E7555D483BAC8C4D /* libreact-native-fbsdk.a */,
 			);
-			name = iOS;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		8C16E7C402D25E3684EB2A7673360D7C /* ART */ = {
@@ -2648,23 +2593,6 @@
 			);
 			name = React;
 			path = "../../node_modules/react-native";
-			sourceTree = "<group>";
-		};
-		93DB010BE6A28A85C5643BC60D4AE147 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0655BB3D02ADCD5021D6A739A07BC6EE /* libBolts.a */,
-				5D2CB032DDDCD2D925C6889A893CCFCD /* libFBSDKCoreKit.a */,
-				5209D86687FA51713BF36CB33B88F182 /* libFBSDKLoginKit.a */,
-				47110D150ED802FF2DE690084833EE13 /* libFBSDKShareKit.a */,
-				278BCA70EEC2A7E58DB1B682D365D208 /* libPods-phone.a */,
-				6CBFD4837EB96E6A609E7F44D7BD67A0 /* libPods-phone-tvOS.a */,
-				7EC4075B2EC0E6B9D0CE1E0B03504DA7 /* libPods-phone-tvOSTests.a */,
-				1F71710AEC6CE02807A0FFAF8B71F452 /* libPods-phoneTests.a */,
-				69CEB1241CD5A58A855BB8A55ED4E969 /* libReact.a */,
-				D78F21BC39C4EF0AEE95F596EBC9A771 /* libreact-native-fbsdk.a */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		97C6C68E8A43650726297441130EA5BC /* Text */ = {
@@ -3163,14 +3091,6 @@
 			);
 			name = Profiler;
 			path = Profiler;
-			sourceTree = "<group>";
-		};
-		E199DF3588C254A81000234D69138493 /* tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				94B673C07E94782F7D4D71B6FBD31231 /* Foundation.framework */,
-			);
-			name = tvOS;
 			sourceTree = "<group>";
 		};
 		E544334886776572C6ED16166C55CC94 /* RCTSettings */ = {
@@ -3683,22 +3603,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		109E7FF3D49968CD9C8133D7654B91DF /* Pods-phone-tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8870EDD6E5C3562D27D8FBFD452FDB75 /* Build configuration list for PBXNativeTarget "Pods-phone-tvOS" */;
-			buildPhases = (
-				DC72BC114634A98EC9B913FE43909632 /* Sources */,
-				87DE6A717F83D9F71E6B64E71F39D300 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-phone-tvOS";
-			productName = "Pods-phone-tvOS";
-			productReference = 6CBFD4837EB96E6A609E7F44D7BD67A0 /* libPods-phone-tvOS.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		272BD852DAFDCC1B72465F42FC992E37 /* react-native-fbsdk */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D2C5DFB5C9585EF3998625C59825634 /* Build configuration list for PBXNativeTarget "react-native-fbsdk" */;
@@ -3718,7 +3622,7 @@
 			);
 			name = "react-native-fbsdk";
 			productName = "react-native-fbsdk";
-			productReference = D78F21BC39C4EF0AEE95F596EBC9A771 /* libreact-native-fbsdk.a */;
+			productReference = F77DAF003524F1D0E7555D483BAC8C4D /* libreact-native-fbsdk.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		3C7B23B3FE0CE1A6131C7E09B3F47DA3 /* FBSDKCoreKit */ = {
@@ -3736,23 +3640,7 @@
 			);
 			name = FBSDKCoreKit;
 			productName = FBSDKCoreKit;
-			productReference = 5D2CB032DDDCD2D925C6889A893CCFCD /* libFBSDKCoreKit.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		44C56DD180794D576A22994D85ED2ABC /* Pods-phone-tvOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6152C20912AF84C49065F0CAF595419E /* Build configuration list for PBXNativeTarget "Pods-phone-tvOSTests" */;
-			buildPhases = (
-				09C61A664182B6CD91B4896960DCDF83 /* Sources */,
-				4E596FA16BD17BA3493521119360D3F2 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-phone-tvOSTests";
-			productName = "Pods-phone-tvOSTests";
-			productReference = 7EC4075B2EC0E6B9D0CE1E0B03504DA7 /* libPods-phone-tvOSTests.a */;
+			productReference = EAA3CD89F6020305C50D7CF9FC03B791 /* libFBSDKCoreKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		4535974165899814CFAFC246B092E260 /* Pods-phone */ = {
@@ -3774,7 +3662,7 @@
 			);
 			name = "Pods-phone";
 			productName = "Pods-phone";
-			productReference = 278BCA70EEC2A7E58DB1B682D365D208 /* libPods-phone.a */;
+			productReference = F2F29C29CADBE22E581439608C7E6670 /* libPods-phone.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		5DC7D7B380A5FEAE815A0DDD986A0174 /* FBSDKLoginKit */ = {
@@ -3793,7 +3681,7 @@
 			);
 			name = FBSDKLoginKit;
 			productName = FBSDKLoginKit;
-			productReference = 5209D86687FA51713BF36CB33B88F182 /* libFBSDKLoginKit.a */;
+			productReference = 9FB13F130A56BA76FBE0FB591FD3F246 /* libFBSDKLoginKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A1A230693B513730FF7B5357E3D7312F /* Pods-phoneTests */ = {
@@ -3809,7 +3697,7 @@
 			);
 			name = "Pods-phoneTests";
 			productName = "Pods-phoneTests";
-			productReference = 1F71710AEC6CE02807A0FFAF8B71F452 /* libPods-phoneTests.a */;
+			productReference = 552AE8B8306943B131EB5E571F625ABB /* libPods-phoneTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		D20970FC04E53ACCC762771C8D91873D /* React */ = {
@@ -3826,7 +3714,7 @@
 			);
 			name = React;
 			productName = React;
-			productReference = 69CEB1241CD5A58A855BB8A55ED4E969 /* libReact.a */;
+			productReference = 01CA64F350D0005E098333F4E737790D /* libReact.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		F58CF3B268C937FF221EC44C97C18A9F /* FBSDKShareKit */ = {
@@ -3845,7 +3733,7 @@
 			);
 			name = FBSDKShareKit;
 			productName = FBSDKShareKit;
-			productReference = 47110D150ED802FF2DE690084833EE13 /* libFBSDKShareKit.a */;
+			productReference = 63FB300151523E96160BCA895E2E4D36 /* libFBSDKShareKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		FB06743FD599C11559E52D2D552AEE80 /* Bolts */ = {
@@ -3862,7 +3750,7 @@
 			);
 			name = Bolts;
 			productName = Bolts;
-			productReference = 0655BB3D02ADCD5021D6A739A07BC6EE /* libBolts.a */;
+			productReference = 13E595F3112B8B94E7E7B154ED9C4B10 /* libBolts.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -3882,7 +3770,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 93DB010BE6A28A85C5643BC60D4AE147 /* Products */;
+			productRefGroup = 8B969C075E3B7549D531B3C761336132 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -3891,8 +3779,6 @@
 				5DC7D7B380A5FEAE815A0DDD986A0174 /* FBSDKLoginKit */,
 				F58CF3B268C937FF221EC44C97C18A9F /* FBSDKShareKit */,
 				4535974165899814CFAFC246B092E260 /* Pods-phone */,
-				109E7FF3D49968CD9C8133D7654B91DF /* Pods-phone-tvOS */,
-				44C56DD180794D576A22994D85ED2ABC /* Pods-phone-tvOSTests */,
 				A1A230693B513730FF7B5357E3D7312F /* Pods-phoneTests */,
 				D20970FC04E53ACCC762771C8D91873D /* React */,
 				272BD852DAFDCC1B72465F42FC992E37 /* react-native-fbsdk */,
@@ -3917,14 +3803,6 @@
 				82A0D807276FDBF072CBA377C8C566F3 /* FBSDKLoginTooltipView.m in Sources */,
 				266B45B24A4E0312ED7CB0823D07163D /* FBSDKLoginUtility.m in Sources */,
 				BCD1E99F035A72D3C7412A5E90C3D188 /* FBSDKTooltipView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		09C61A664182B6CD91B4896960DCDF83 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CFAC5843D43167DB71F0DB67716E08B3 /* Pods-phone-tvOSTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4292,14 +4170,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC72BC114634A98EC9B913FE43909632 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8E0A5498F7C1BBEC909A5E500485CB82 /* Pods-phone-tvOS-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -4425,7 +4295,120 @@
 			};
 			name = Debug;
 		};
-		0B43A67CEC0B68167428C47C8B9118F8 /* Release */ = {
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		122B916155540FC1376B54CC672B200B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D20F556E82A28701AA17EC1201D2D9D4 /* FBSDKLoginKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FBSDKLoginKit/FBSDKLoginKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		283C66AFBDB35F1A400390D32602DB71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2E721C004D9DE8C5A845070126CC064 /* Pods-phoneTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		307F0B7EEFEF9C9C5DB857E9ECF107DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 176A739BB693E387988BF836C63E5B10 /* Pods-phoneTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -4461,102 +4444,9 @@
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
-				TVOS_DEPLOYMENT_TARGET = 9.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		122B916155540FC1376B54CC672B200B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D20F556E82A28701AA17EC1201D2D9D4 /* FBSDKLoginKit.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FBSDKLoginKit/FBSDKLoginKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		180018947B1DA949ED2A57F1B28D7842 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4490E9DA9879B5A0AEAE62D370E41F91 /* Pods-phone-tvOSTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-			};
-			name = Debug;
-		};
-		283C66AFBDB35F1A400390D32602DB71 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 75F0407285629300DAA5BFC740604392 /* Pods-phoneTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		307F0B7EEFEF9C9C5DB857E9ECF107DB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCEFB6027787D808D8168C4B65D755D1 /* Pods-phoneTests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
 		};
 		515494B267E8A813691163FEBF4BE4A0 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -4652,7 +4542,7 @@
 		};
 		864312B9482B31DF0054CABEAD4E67D0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4637181CC70ACF8D4DD9A77FA79A719D /* Pods-phone.release.xcconfig */;
+			baseConfigurationReference = 11201ABEA37AFB11A091028C86CA3315 /* Pods-phone.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -4672,51 +4562,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
-		};
-		86EFD1A1A6F845D9567E3C8F433172CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-			};
-			name = Debug;
 		};
 		896E2F0EDF3C74CDA39BFEC431EBF7D8 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -4738,29 +4583,6 @@
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		89A332830D46FFAAAE86233F8381851C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 56D3E61D2480FA51C2BA025CC64C7773 /* Pods-phone-tvOS.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
 			};
 			name = Release;
 		};
@@ -4810,32 +4632,9 @@
 			};
 			name = Release;
 		};
-		CFBAD34BACA10D674175FB3B36D417C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24FBFB174155EF817440F0B88880697D /* Pods-phone-tvOSTests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-			};
-			name = Release;
-		};
 		D5D1C46872A6E3F8C122A368C7D2E97F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 829DF355B6DA4848DBAF712036431DC0 /* Pods-phone.debug.xcconfig */;
+			baseConfigurationReference = 024E28B0BEC698338E04FF90EA11EB74 /* Pods-phone.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -4925,29 +4724,6 @@
 			};
 			name = Release;
 		};
-		FDBD126056E7A8A72403EA62FD979FFE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D44E263CF87D16F3A8C93A7655D0E95 /* Pods-phone-tvOS.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				SKIP_INSTALL = YES;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -4972,8 +4748,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				86EFD1A1A6F845D9567E3C8F433172CA /* Debug */,
-				0B43A67CEC0B68167428C47C8B9118F8 /* Release */,
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -5014,29 +4790,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6152C20912AF84C49065F0CAF595419E /* Build configuration list for PBXNativeTarget "Pods-phone-tvOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				180018947B1DA949ED2A57F1B28D7842 /* Debug */,
-				CFBAD34BACA10D674175FB3B36D417C7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		6926B261E714CF2A60675D0AD1CC097F /* Build configuration list for PBXNativeTarget "React" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				59E1D56029EC57DE0F9DD01A8FD181C8 /* Debug */,
 				F85CD4FCBABF0CB903C17CD8AD8D2E61 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8870EDD6E5C3562D27D8FBFD452FDB75 /* Build configuration list for PBXNativeTarget "Pods-phone-tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FDBD126056E7A8A72403EA62FD979FFE /* Debug */,
-				89A332830D46FFAAAE86233F8381851C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

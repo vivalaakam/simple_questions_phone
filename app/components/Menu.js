@@ -57,6 +57,7 @@ export default class Menu extends Component {
           </Text>
           {this.renderButton('Main', this.onPress('launch'))}
           {this.renderButton('Todos', this.onPress('todos'))}
+          {this.renderButton('Questions', this.onPress('questions'))}
         </View>
         <View style={styles.bottom}>
           {this.renderLogout()}

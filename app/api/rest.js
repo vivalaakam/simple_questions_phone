@@ -12,12 +12,11 @@ export default class Rest {
 
   getUrl = () => {
     return `${this.url}/${this.base_url}`;
-  }
+  };
 
   setToken = (token) => {
     this._token = token
-    console.log('_token', this._token);
-  }
+  };
 
   restoreToken() {
     token.getToken(this.setToken);
