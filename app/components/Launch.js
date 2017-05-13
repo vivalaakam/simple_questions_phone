@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
-import Button from 'react-native-button';
+import { View, Text, StyleSheet } from 'react-native';
 import Login from '../containers/Login';
 
 const styles = StyleSheet.create({

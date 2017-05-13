@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import Login from '../components/Login';
 
-import { userTryAuth } from '../reducers/user';
+import { userTryAuth, userChange, userAuth } from '../reducers/user';
 
 const mapStateToProps = (state) => {
   return {
@@ -15,6 +15,15 @@ const mapDispatchToProps = (dispatch) => {
   return {
     userLogin(params) {
       dispatch(userTryAuth(params));
+    },
+    userAuthEmail(email) {
+      return dispatch(userChange({ email }));
+    },
+    userAuthPassword(password) {
+      return dispatch(userChange({ password }));
+    },
+    userAuth() {
+      return dispatch(userAuth())
     }
   }
 };

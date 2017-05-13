@@ -9,8 +9,8 @@ export default class Auth extends Rest {
     return this.getQuery(this.getUrl());
   }
 
-  auth({ username, password }) {
-    return this.postQuery(this.getUrl(), { username, password });
+  auth({ email, password }) {
+    return this.postQuery(this.getUrl(), { email, password });
   }
 
   provider(provider, uid, token, expires = false) {

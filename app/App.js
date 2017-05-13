@@ -5,21 +5,13 @@ import { Router, Route, Container, Animations, Schema, Actions } from 'react-nat
 
 import { NavBar, NavBarModal } from './components/NavBar';
 import Error from './components/Error';
-import Home from './components/Home';
-import Launch from './containers/Launch';
-import Register from './components/Register';
 import Login from './containers/Login';
-import Todos from './containers/Todos/Todos';
 import Questions from './containers/Questions/Questions';
 import Question from './containers/Questions/Question';
 import QuestionsForm from './containers/Questions/Form';
 import Menu from './containers/Menu';
 
-const mapStateToProps = (state) => {
-  return {
-    user: state.user
-  }
-};
+import { toggleAppMenu } from './reducers/app';
 
 const { width } = Dimensions.get('window');
 
@@ -66,46 +58,39 @@ const styles = StyleSheet.create({
 
 class App extends Component {
   static propTypes = {
-    user: PropTypes.object,
     userRestore: PropTypes.func
-  };
-
-  state = {
-    menuVisible: false
   };
 
   toggleMenu = () => {
     LayoutAnimation.configureNext(LayoutAnimation.Presets.spring);
-    this.setState({
-      menuVisible: !this.state.menuVisible
-    })
+    this.props.toggleMenu();
   };
 
   onQuestionAdd = {
-    title: "Add",
+    title: "Добавить",
     handler: () => {
       Actions.questions_add()
     }
   };
 
   onQuestionAddBack = {
-    title: "Back",
+    title: "Назад",
     handler: () => {
       Actions.questions()
     }
-  }
+  };
 
   render() {
     const styleMenu = {
       transform: [
-        { translateX: this.state.menuVisible ? 0 : -1 * width }
+        { translateX: this.props.app.menu ? 0 : -1 * width }
       ]
     };
 
     const styleView = {
       transform: [
         {
-          translateX: this.state.menuVisible ? width * MENU_WIDTH : 0
+          translateX: this.props.app.menu ? width * MENU_WIDTH : 0
         }
       ]
     };
@@ -114,7 +99,7 @@ class App extends Component {
       <View style={styles.container}>
         <View style={[styles.menuWrapper, styleMenu]}>
           <View style={styles.menu}>
-            <Menu user={this.props.user} toggleMenu={this.toggleMenu} />
+            <Menu toggleMenu={this.toggleMenu} />
           </View>
           <TouchableHighlight underlayColor="transparent" style={styles.menuRight} onPress={this.toggleMenu}>
             <View />
@@ -127,19 +112,13 @@ class App extends Component {
                     toggleMenu={this.toggleMenu} />
             <Schema name="withoutAnimation" navBar={NavBar} />
             <Schema name="tab" navBar={NavBar} />
-
-            <Route name="launch" component={Launch} initial={true} title="Launch" />
-            <Route name="register" component={Register} title="Register" />
-            <Route name="home" component={Home} title="Home" type="replace" />
-            <Route name="todos" component={Todos} title="Todos" type="replace" />
-            <Route name="questions" component={Questions} title="Вопросы" type="replace"
+            <Route name="questions" component={Questions} initial={true} title="Вопросы" type="replace"
                    rightButton={this.onQuestionAdd} />
             <Route name="question_show" component={Question} title="Вопрос" type="replace"
                    leftButton={this.onQuestionAddBack} />
             <Route name="questions_add" component={QuestionsForm} title="Создать вопрос" type="replace"
                    leftButton={this.onQuestionAddBack} />
-            <Route name="login" component={Login} title="Login Page" />
-            <Route name="register2" component={Register} myparam="abc" schema="withoutAnimation" />
+            <Route name="login" component={Login} title="Вход" type="replace" />
             <Route name="error" component={Error} schema="popup" />
           </Router>
         </View>
@@ -148,4 +127,18 @@ class App extends Component {
   }
 }
 
-export default connect(mapStateToProps)(App);
+const mapStateToProps = (state) => {
+  return {
+    app: state.app
+  }
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    toggleMenu() {
+      return dispatch(toggleAppMenu())
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import { Actions } from 'react-native-redux-router';
 import { userLogout } from '../reducers/user';
+import { toggleAppMenu } from '../reducers/app';
 
 import Menu from '../components/Menu';
 
@@ -15,7 +16,9 @@ class MenuContainer extends Component {
 }
 
 const mapStateToProps = (state) => {
-  return {};
+  return {
+    user: state.user
+  };
 };
 
 const mapDispatchToProps = (dispatch) => {
@@ -24,7 +27,10 @@ const mapDispatchToProps = (dispatch) => {
       return Actions.replace({ name, data });
     },
     userLogout() {
-      dispatch(userLogout());
+      return dispatch(userLogout());
+    },
+    toggleMenu() {
+      return dispatch(toggleAppMenu())
     }
   };
 };

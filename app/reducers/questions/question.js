@@ -83,14 +83,10 @@ function* updateQuestionAction() {
 }
 
 function* createAdditionQuestionAction() {
-  console.log(1);
   const { id, additionText } = yield select(getQuestion);
-  console.log(2);
   try {
     const questionData = yield apiQuestions.addition(id, { text: additionText });
-    console.log(3);
     yield put(resetQuestion({ ...questionData, additionText: '', addition: false }));
-    console.log(4);
   } catch (e) {
     console.log(e.message);
   }

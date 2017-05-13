@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
+import { Actions } from 'react-native-redux-router';
 
 const styles = StyleSheet.create({
   container: {
@@ -7,7 +8,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#474f60'
   },
   main: {
-    flex: 1
+    flex: 1,
+    paddingTop: 25
   },
   bottom: {
     flexBasis: 60
@@ -41,22 +43,20 @@ export default class Menu extends Component {
   }
 
   renderLogout() {
-    if (this.props.user) {
-      return this.renderButton('Logout', this.props.userLogout);
+    if (this.props.user && this.props.user.auth) {
+      return this.renderButton('Выход', this.props.userLogout);
     }
 
-    return null;
+    return this.renderButton('Вход', () => {
+      Actions.login();
+      this.props.toggleMenu();
+    });
   }
 
   render() {
     return (
       <View style={styles.container}>
         <View style={styles.main}>
-          <Text>
-            Menu
-          </Text>
-          {this.renderButton('Main', this.onPress('launch'))}
-          {this.renderButton('Todos', this.onPress('todos'))}
           {this.renderButton('Questions', this.onPress('questions'))}
         </View>
         <View style={styles.bottom}>

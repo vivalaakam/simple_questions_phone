@@ -3,7 +3,7 @@
 import token from '../utils/token';
 
 export default class Rest {
-  url = 'http://192.168.1.72:3001';
+  url = 'http://127.0.0.1:3001';
 
   constructor(url) {
     this.base_url = url;

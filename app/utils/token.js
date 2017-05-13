@@ -1,6 +1,6 @@
 import { AsyncStorage } from 'react-native';
 
-const KEY = '@state:token';
+const KEY = '@state:jwt';
 
 export default {
   async asyncGetToken() {
@@ -19,6 +19,6 @@ export default {
     }
   },
   removeToken() {
-    AsyncStorage.removeItem();
+    AsyncStorage.removeItem(KEY);
   }
 };
