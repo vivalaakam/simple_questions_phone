@@ -6,6 +6,7 @@ import { Router, Route, Container, Animations, Schema, Actions } from 'react-nat
 import { NavBar, NavBarModal } from './components/NavBar';
 import Error from './components/Error';
 import Login from './containers/Login';
+import Settings from './containers/Settings';
 import Questions from './containers/Questions/Questions';
 import Question from './containers/Questions/Question';
 import QuestionsForm from './containers/Questions/Form';
@@ -112,6 +113,7 @@ class App extends Component {
                     toggleMenu={this.toggleMenu} />
             <Schema name="withoutAnimation" navBar={NavBar} />
             <Schema name="tab" navBar={NavBar} />
+            <Route name="settings" component={Settings} title="Настройки" type="replace" />
             <Route name="questions" component={Questions} initial={true} title="Вопросы" type="replace"
                    rightButton={this.onQuestionAdd} />
             <Route name="question_show" component={Question} title="Вопрос" type="replace"

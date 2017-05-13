@@ -4,12 +4,14 @@ import { call, select, put, fork, takeEvery } from 'redux-saga/effects'
 import { AsyncStorage } from 'react-native';
 import { AccessToken, LoginManager } from 'react-native-fbsdk';
 import Auth from '../api/auth';
+import User from '../api/user';
 import fbQuery from '../api/facebook';
 import { merge } from '../helpers/ramda';
 import token from '../utils/token';
 
 
 const authModel = new Auth();
+const userModel = new User();
 
 const USER_LOGIN = 'USER_LOGIN';
 const USER_AUTH = 'USER_AUTH';
@@ -17,7 +19,9 @@ const USER_TRY_AUTH = 'USER_TRY_AUTH';
 const USER_FACEBOOK_AUTH = 'USER_FACEBOOK_AUTH';
 const USER_LOGOUT = 'USER_LOGOUT';
 const USER_ERROR = 'USER_ERROR';
-const USER_CHANGE = 'USER_CHANGE'
+const USER_CHANGE = 'USER_CHANGE';
+const USER_UPDATE = 'USER_UPDATE';
+const USER_SAVE = 'USER_SAVE';
 
 const $$initialState = {
   auth: false
@@ -41,6 +45,8 @@ export default function reducer($$state = $$initialState, { type, payload }) {
   }
 }
 
+export const userSave = createAction(USER_SAVE);
+
 export const userLogin = createAction(USER_LOGIN);
 
 export const userError = createAction(USER_ERROR);
@@ -55,20 +61,17 @@ export const userLogout = createAction(USER_LOGOUT);
 
 export const userChange = createAction(USER_CHANGE);
 
+export const userUpdate = createAction(USER_UPDATE);
+
 function getUser(state) {
   return state.user;
 }
 
 function* userAuthAction() {
   const { email, password } = yield select(getUser);
-  console.log({ email, password });
   try {
-    const userData = yield authModel.auth({ email, password });
-    yield call(AsyncStorage.setItem, '@state:user', JSON.stringify(userData));
-    yield put(userLogin({ ...userData, auth: true }));
-    if (userData.token) {
-      token.setToken(userData.token);
-    }
+    const data = yield authModel.auth({ email, password });
+    yield put(userSave(data));
     Actions.questions()
   } catch (e) {
     yield put(userError(e.message));
@@ -82,11 +85,7 @@ function* userFetchFacebookAuthAction({ payload }) {
     }, payload);
 
     const data = yield authModel.provider('facebook', params.id, payload);
-    yield call(AsyncStorage.setItem, '@state:user', JSON.stringify(data));
-    yield put(userLogin({ ...data, auth: true }));
-    if (data.token) {
-      token.setToken(data.token);
-    }
+    yield put(userSave(data));
     Actions.questions()
   } catch (e) {
     yield put(userError(e.message));
@@ -109,7 +108,12 @@ function* userRestoreAction() {
     const json = yield call(AsyncStorage.getItem, '@state:user');
     const data = JSON.parse(json);
     if (data) {
-      yield put(userLogin({ ...data, auth: true }));
+      yield put(userLogin({
+        ...data,
+        auth: true,
+        tmp_first_name: data.first_name,
+        tmp_last_name: data.last_name
+      }));
     }
   } catch (e) {
     console.log(e.message);
@@ -120,13 +124,28 @@ function* userLogoutAction() {
   yield LoginManager.logOut();
   yield call(AsyncStorage.removeItem, '@state:user');
   token.removeToken()
+}
 
+function* userUpdateAction() {
+  const { tmp_first_name, tmp_last_name } = yield select(getUser);
+  const data = yield userModel.update({ first_name: tmp_first_name, last_name: tmp_last_name });
+  yield put(userSave(data));
+}
+
+function* userSaveAction({ payload }) {
+  yield call(AsyncStorage.setItem, '@state:user', JSON.stringify(payload));
+  yield put(userLogin({ ...payload, auth: true, tmp_first_name: payload.first_name, tmp_last_name: payload.last_name }));
+  if (payload.token) {
+    token.setToken(payload.token);
+  }
 }
 
 export function* user() {
   yield call(userRestoreAction);
   yield fork(takeEvery, USER_AUTH, userAuthAction);
+  yield fork(takeEvery, USER_SAVE, userSaveAction);
   yield fork(takeEvery, USER_TRY_AUTH, userTryAuthAction);
   yield fork(takeEvery, USER_LOGOUT, userLogoutAction);
+  yield fork(takeEvery, USER_UPDATE, userUpdateAction);
   yield fork(takeEvery, USER_FACEBOOK_AUTH, userFetchFacebookAuthAction);
 }

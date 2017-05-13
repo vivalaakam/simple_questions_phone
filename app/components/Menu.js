@@ -44,7 +44,10 @@ export default class Menu extends Component {
 
   renderLogout() {
     if (this.props.user && this.props.user.auth) {
-      return this.renderButton('Выход', this.props.userLogout);
+      return this.renderButton('Выход', () => {
+        this.props.userLogout();
+        this.props.toggleMenu();
+      });
     }
 
     return this.renderButton('Вход', () => {
@@ -53,11 +56,18 @@ export default class Menu extends Component {
     });
   }
 
+  renderSettings() {
+    if (this.props.user && this.props.user.auth) {
+      return this.renderButton('Настройки', this.onPress('settings'))
+    }
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <View style={styles.main}>
-          {this.renderButton('Questions', this.onPress('questions'))}
+          {this.renderButton('Вопросы', this.onPress('questions'))}
+          {this.renderSettings()}
         </View>
         <View style={styles.bottom}>
           {this.renderLogout()}
