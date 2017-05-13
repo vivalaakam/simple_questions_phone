@@ -25,8 +25,8 @@ export default class NavBarBase extends Component {
     return <NavigationBar style={styles.navBar}
                           titleColor='white'
                           buttonsColor='white'
-                          statusBar={{style:'default', hidden: false, tintColor: '#474f60'}}
-                          title={{title:this.props.title}}
+                          statusBar={{style:'light-content', hidden: false, tintColor: '#474f60'}}
+                          title={{title:this.props.title, tintColor: '#e1e4e9'}}
                           prevTitle={this.props.initial ? " " : null}
                           leftButton={this.props.leftButton ? this.props.leftButton : {title:''}}
                           rightButton={this.props.rightButton ? this.props.rightButton : {title:''}}

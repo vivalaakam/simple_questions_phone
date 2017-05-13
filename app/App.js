@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { View, StyleSheet, LayoutAnimation, Dimensions, TouchableHighlight } from 'react-native';
+import { View, StyleSheet, LayoutAnimation, Dimensions, TouchableHighlight, StatusBar } from 'react-native';
 import { Router, Route, Container, Animations, Schema, Actions } from 'react-native-redux-router';
 
 import { NavBar, NavBarModal } from './components/NavBar';
@@ -69,6 +69,7 @@ class App extends Component {
 
   onQuestionAdd = {
     title: "Добавить",
+    tintColor: '#e1e4e9',
     handler: () => {
       Actions.questions_add()
     }
@@ -76,6 +77,7 @@ class App extends Component {
 
   onQuestionAddBack = {
     title: "Назад",
+    tintColor: '#e1e4e9',
     handler: () => {
       Actions.questions()
     }

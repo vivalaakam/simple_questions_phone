@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
   container: {
     flexBasis: 40,
     color: '#fff',
-    backgroundColor: '#3F51B5',
+    backgroundColor: '#474f60',
     textAlign: 'center',
     fontSize: 18,
     lineHeight: 24,
