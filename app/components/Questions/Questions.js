@@ -36,7 +36,7 @@ export default class Questions extends Component {
 
   renderRow = (data) => {
     return (
-      <QuestionRow question={data} />
+      <QuestionRow question={data} user={this.props.users[data.user_id]} />
     );
   };
 

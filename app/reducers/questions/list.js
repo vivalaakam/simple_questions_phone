@@ -1,11 +1,9 @@
+import _ from 'lodash';
 import { fork, put, call, select, takeEvery } from 'redux-saga/effects';
 import { createAction } from 'redux-actions';
 import { AsyncStorage } from 'react-native';
-import { Actions } from 'react-native-redux-router';
-import uuid4 from 'uuid/v4';
 import Questions from '../../api/questions'
-
-import { append, removeByKey, replace } from '../../helpers/ramda';
+import { usersList } from '../users';
 import { selectForm, questionFormReset } from './question';
 
 const questionsModel = new Questions();
@@ -51,6 +49,8 @@ function* questionsListRestoreAction() {
 
 function* fetchQuestionsAction() {
   const data = yield questionsModel.all();
+  const users = data.map(question => question.user_id);
+  yield put(usersList(_.uniq(users)));
   yield put(resetQuestions(data));
   yield call(updateQuestionsStorage);
 }

@@ -31,9 +31,9 @@ const styles = StyleSheet.create({
     fontSize: 13,
     lineHeight: 15
   }
-})
+});
 
-export default function QuestionRow({ question }) {
+export default function QuestionRow({ question, user = {} }) {
   const time = moment(question.created_at).fromNow();
 
   const showQuestion = () => {
@@ -42,6 +42,7 @@ export default function QuestionRow({ question }) {
 
   return (
     <Container>
+      <Text style={styles.text}>{user.name}</Text>
       <Text style={styles.text}>{time}</Text>
       <Text style={[styles.text, styles.title]}>{question.title}</Text>
       <Text style={styles.text}>{question.text}</Text>

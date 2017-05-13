@@ -10,8 +10,12 @@ export default class Rest {
     this.restoreToken();
   }
 
-  getUrl = () => {
-    return `${this.url}/${this.base_url}`;
+  getUrl = (subpath = '', params = null) => {
+    if (!params) {
+      return `${this.url}/${this.base_url}${subpath}`;
+    }
+
+    return `${this.url}/${this.base_url}${subpath}?${params}`;
   };
 
   setToken = (token) => {

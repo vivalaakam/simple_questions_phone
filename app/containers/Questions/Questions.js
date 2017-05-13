@@ -14,7 +14,8 @@ class QuestionsContainer extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    questions: state.questions.list
+    questions: state.questions.list,
+    users: state.users
   };
 };
 

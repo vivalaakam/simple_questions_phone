@@ -1,3 +1,4 @@
+import queryString from 'query-string';
 import Rest from './rest';
 
 export default class User extends Rest {
@@ -11,5 +12,10 @@ export default class User extends Rest {
 
   fetch() {
     return this.getQuery(this.getUrl());
+  }
+
+  list(users = []) {
+    const string = queryString.stringify({ users }, { arrayFormat: 'bracket' });
+    return this.getQuery(this.getUrl('/list', string));
   }
 }

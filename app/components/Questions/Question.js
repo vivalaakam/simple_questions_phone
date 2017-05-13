@@ -112,12 +112,16 @@ export default class Question extends Component {
       return null
     }
 
-    return question.answers.map(answer => (
-      <Container key={answer.id}>
-        <Text style={styles.text}>{moment(answer.created_at).fromNow()}</Text>
-        <Text style={styles.text}>{answer.text}</Text>
-      </Container>
-    ));
+    return question.answers.map((answer) => {
+      const user = this.props.users[answer.user_id] || {};
+      return (
+        <Container key={answer.id}>
+          <Text style={styles.text}>{user.name}</Text>
+          <Text style={styles.text}>{moment(answer.created_at).fromNow()}</Text>
+          <Text style={styles.text}>{answer.text}</Text>
+        </Container>
+      )
+    });
   }
 
   renderCommentForm() {
@@ -135,7 +139,7 @@ export default class Question extends Component {
             name="answerText"
             value={question.answerText}
             onChangeText={this.props.changeAnswerText}
-            placeholder="Дополнить вопрос"
+            placeholder="Ответ на вопрос"
             style={{ height: 40 }}
           />
         </Container>
