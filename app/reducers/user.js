@@ -123,6 +123,8 @@ function* userRestoreAction() {
 function* userLogoutAction() {
   yield LoginManager.logOut();
   yield call(AsyncStorage.removeItem, '@state:user');
+  yield call(AsyncStorage.removeItem, '@state:users');
+  yield call(AsyncStorage.removeItem, '@state:questions');
   token.removeToken()
 }
 
