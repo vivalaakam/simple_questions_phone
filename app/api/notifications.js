@@ -2,7 +2,7 @@ import Rest from './rest';
 
 export default class Notifications extends Rest {
   constructor() {
-    super('/api/notifications');
+    super('/notifications');
   }
 
   subscribe(notification, device) {

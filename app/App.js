@@ -11,6 +11,7 @@ import Questions from './containers/Questions/Questions';
 import Question from './containers/Questions/Question';
 import QuestionsForm from './containers/Questions/Form';
 import Menu from './containers/Menu';
+import NotificationsWidget from './containers/NotificationsWidget'
 
 import { toggleAppMenu } from './reducers/app';
 
@@ -100,6 +101,7 @@ class App extends Component {
 
     return (
       <View style={styles.container}>
+        <NotificationsWidget />
         <View style={[styles.menuWrapper, styleMenu]}>
           <View style={styles.menu}>
             <Menu toggleMenu={this.toggleMenu} />
