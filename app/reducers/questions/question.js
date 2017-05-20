@@ -2,6 +2,8 @@ import _ from 'lodash';
 import uuid4 from 'uuid/v4';
 import { put, select, call, fork, takeLatest } from 'redux-saga/effects';
 import { createAction } from 'redux-actions';
+import { Actions } from 'react-native-redux-router';
+
 
 import { merge } from '../../helpers/ramda';
 import { usersList } from '../users';
@@ -74,7 +76,7 @@ function* createQuestionAction() {
   const { additionText, answerText, ...data } = yield select(getQuestion);
   const questionData = yield apiQuestions.create(data);
   yield put(resetQuestion(questionData));
-  yield put(push(`/${questionData.id}`));
+  Actions.question_show({ id: questionData.id })
 }
 
 function* updateQuestionAction() {

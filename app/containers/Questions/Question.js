@@ -2,7 +2,12 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import Question from '../../components/Questions/Question';
-import { toggleAdditionQuestion, changeQuestion, createAdditionQuestion, createAnswerQuestion } from '../../reducers/questions/question';
+import {
+  toggleAdditionQuestion,
+  changeQuestion,
+  createAdditionQuestion,
+  createAnswerQuestion
+} from '../../reducers/questions/question';
 
 class QuestionContainer extends Component {
   render() {
@@ -13,6 +18,7 @@ class QuestionContainer extends Component {
 }
 
 const mapStateToProps = (state) => {
+  console.log(this.state);
   return {
     question: state.questions.question,
     users: state.users,
