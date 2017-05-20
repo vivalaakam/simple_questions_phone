@@ -1,9 +1,9 @@
 /* eslint class-methods-use-this: "off" */
-
+import Config from 'react-native-config'
 import token from '../utils/token';
 
 export default class Rest {
-  url = 'http://127.0.0.1:3001';
+  url = Config.PROXY_SERVER;
 
   constructor(url) {
     this.base_url = url;

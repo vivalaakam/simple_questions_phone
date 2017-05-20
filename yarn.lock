@@ -3082,6 +3082,10 @@ react-native-button@^1.7.1:
   version "1.8.2"
   resolved "https://registry.yarnpkg.com/react-native-button/-/react-native-button-1.8.2.tgz#49e5cadd22ee443adea52a85539d288aa2117ade"
 
+react-native-config@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/react-native-config/-/react-native-config-0.4.2.tgz#42ee30835c6aa293a91f4487c85a3e9f15204f56"
+
 react-native-fbsdk@^0.5.0:
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/react-native-fbsdk/-/react-native-fbsdk-0.5.0.tgz#3ccd67d189755df11d366b8de9acb91ea2300e6e"
