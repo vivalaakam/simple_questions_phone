@@ -21,10 +21,13 @@ const USER_LOGOUT = 'USER_LOGOUT';
 const USER_ERROR = 'USER_ERROR';
 const USER_CHANGE = 'USER_CHANGE';
 const USER_UPDATE = 'USER_UPDATE';
+const USER_UPDATE_PASSWORD = 'USER_UPDATE_PASSWORD';
 const USER_SAVE = 'USER_SAVE';
 
 const $$initialState = {
-  auth: false
+  auth: false,
+  password: '',
+  password_confirmation: ''
 };
 
 export default function reducer($$state = $$initialState, { type, payload }) {
@@ -62,6 +65,8 @@ export const userLogout = createAction(USER_LOGOUT);
 export const userChange = createAction(USER_CHANGE);
 
 export const userUpdate = createAction(USER_UPDATE);
+
+export const userPasswordUpdate = createAction(USER_UPDATE_PASSWORD);
 
 function getUser(state) {
   return state.user;
@@ -134,9 +139,35 @@ function* userUpdateAction() {
   yield put(userSave(data));
 }
 
+function* updateUserPasswordAction() {
+  const { password, password_confirmation } = yield select(getUser);
+  if (password === password_confirmation) {
+    yield put(userChange({ wrongPassword: false, smallPassword: false }));
+    if (!password || password.length < 8) {
+      yield put(userChange({ smallPassword: true }));
+      return;
+    }
+    const data = yield userModel.password({ password, password_confirmation });
+    yield put(userLogin({
+      ...data,
+      tmp_last_name: data.last_name,
+      tmp_first_name: data.last_name,
+      password: '',
+      password_confirmation: ''
+    }));
+  } else {
+    yield put(userChange({ wrongPassword: true }));
+  }
+}
+
 function* userSaveAction({ payload }) {
   yield call(AsyncStorage.setItem, '@state:user', JSON.stringify(payload));
-  yield put(userLogin({ ...payload, auth: true, tmp_first_name: payload.first_name, tmp_last_name: payload.last_name }));
+  yield put(userLogin({
+    ...payload,
+    auth: true,
+    tmp_first_name: payload.first_name,
+    tmp_last_name: payload.last_name
+  }));
   if (payload.token) {
     token.setToken(payload.token);
   }
@@ -149,5 +180,6 @@ export function* user() {
   yield fork(takeEvery, USER_TRY_AUTH, userTryAuthAction);
   yield fork(takeEvery, USER_LOGOUT, userLogoutAction);
   yield fork(takeEvery, USER_UPDATE, userUpdateAction);
+  yield fork(takeEvery, USER_UPDATE_PASSWORD, updateUserPasswordAction);
   yield fork(takeEvery, USER_FACEBOOK_AUTH, userFetchFacebookAuthAction);
 }

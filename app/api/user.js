@@ -10,6 +10,10 @@ export default class User extends Rest {
     return this.postQuery(this.getUrl(), data);
   }
 
+  password({ password, password_confirmation }) {
+    return this.postQuery(this.getUrl('/password'), { password, password_confirmation });
+  }
+
   fetch() {
     return this.getQuery(this.getUrl());
   }

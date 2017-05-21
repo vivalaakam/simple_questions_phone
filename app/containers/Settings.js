@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
 import Settings from '../components/Settings';
-import { userChange, userUpdate } from '../reducers/user';
+import { userChange, userUpdate, userPasswordUpdate } from '../reducers/user';
 
 class SettingsContainer extends Component {
   render() {
@@ -28,6 +28,15 @@ const mapDispatchToProps = (dispatch) => {
     },
     updateUser() {
       return dispatch(userUpdate());
+    },
+    userPassword(password) {
+      return dispatch(userChange({ password }))
+    },
+    userPasswordConfirmation(password_confirmation) {
+      return dispatch(userChange({ password_confirmation }))
+    },
+    updatePasswordUser() {
+      return dispatch(userPasswordUpdate());
     }
   };
 };
