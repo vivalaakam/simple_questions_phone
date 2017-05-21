@@ -22,6 +22,8 @@ const USER_ERROR = 'USER_ERROR';
 const USER_CHANGE = 'USER_CHANGE';
 const USER_UPDATE = 'USER_UPDATE';
 const USER_UPDATE_PASSWORD = 'USER_UPDATE_PASSWORD';
+const USER_TOKEN_REMOVE = 'USER_TOKEN_REMOVE';
+const USER_NOTIFICATION_REMOVE = 'USER_NOTIFICATION_REMOVE';
 const USER_SAVE = 'USER_SAVE';
 
 const $$initialState = {
@@ -68,8 +70,17 @@ export const userUpdate = createAction(USER_UPDATE);
 
 export const userPasswordUpdate = createAction(USER_UPDATE_PASSWORD);
 
+export const userTokenRemove = createAction(USER_TOKEN_REMOVE);
+
+export const userNotificationRemove = createAction(USER_NOTIFICATION_REMOVE);
+
 function getUser(state) {
   return state.user;
+}
+
+export function* userFetchAction({ payload }) {
+  const data = yield userModel.fetch(payload);
+  yield put(userSave(data));
 }
 
 function* userAuthAction() {
@@ -148,16 +159,20 @@ function* updateUserPasswordAction() {
       return;
     }
     const data = yield userModel.password({ password, password_confirmation });
-    yield put(userLogin({
-      ...data,
-      tmp_last_name: data.last_name,
-      tmp_first_name: data.last_name,
-      password: '',
-      password_confirmation: ''
-    }));
+    yield put(userSave(data));
   } else {
     yield put(userChange({ wrongPassword: true }));
   }
+}
+
+function* removeTokenAction({ payload }) {
+  const data = yield userModel.removeToken(payload.id);
+  yield put(userSave(data));
+}
+
+function* removeNotificationAction({ payload }) {
+  const data = yield userModel.removeNotification(payload.id);
+  yield put(userSave(data));
 }
 
 function* userSaveAction({ payload }) {
@@ -166,7 +181,9 @@ function* userSaveAction({ payload }) {
     ...payload,
     auth: true,
     tmp_first_name: payload.first_name,
-    tmp_last_name: payload.last_name
+    tmp_last_name: payload.last_name,
+    password: '',
+    password_confirmation: ''
   }));
   if (payload.token) {
     token.setToken(payload.token);
@@ -180,6 +197,8 @@ export function* user() {
   yield fork(takeEvery, USER_TRY_AUTH, userTryAuthAction);
   yield fork(takeEvery, USER_LOGOUT, userLogoutAction);
   yield fork(takeEvery, USER_UPDATE, userUpdateAction);
+  yield fork(takeEvery, USER_TOKEN_REMOVE, removeTokenAction);
+  yield fork(takeEvery, USER_NOTIFICATION_REMOVE, removeNotificationAction);
   yield fork(takeEvery, USER_UPDATE_PASSWORD, updateUserPasswordAction);
   yield fork(takeEvery, USER_FACEBOOK_AUTH, userFetchFacebookAuthAction);
 }

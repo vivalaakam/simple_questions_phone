@@ -14,12 +14,21 @@ export default class User extends Rest {
     return this.postQuery(this.getUrl('/password'), { password, password_confirmation });
   }
 
-  fetch() {
-    return this.getQuery(this.getUrl());
+  fetch(full = false) {
+    return this.getQuery(this.getUrl('', queryString.stringify({ full })));
   }
 
   list(users = []) {
     const string = queryString.stringify({ users }, { arrayFormat: 'bracket' });
     return this.getQuery(this.getUrl('/list', string));
   }
+
+  removeToken(id) {
+    return this.postQuery(this.getUrl(`/${id}/token`));
+  }
+
+  removeNotification(id) {
+    return this.postQuery(this.getUrl(`/${id}/silent`));
+  }
+
 }

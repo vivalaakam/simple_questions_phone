@@ -3,6 +3,7 @@ import { REPLACE } from 'react-native-redux-router/actions'
 
 import { fetchQuestions } from './questions/list'
 import { resetQuestionInitial, fetchQuestionAction } from './questions/question'
+import { userFetchAction } from './user';
 
 function* changeLocation({ name, data }) {
   switch (name) {
@@ -14,6 +15,9 @@ function* changeLocation({ name, data }) {
       break;
     case 'question_show':
       yield call(fetchQuestionAction, data.id);
+      break;
+    case 'settings':
+      yield call(userFetchAction, { payload: true });
       break;
   }
 }
