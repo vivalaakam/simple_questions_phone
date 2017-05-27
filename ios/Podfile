@@ -6,6 +6,7 @@ target 'phone' do
   # use_frameworks!
 
   # Pods for phone
+    pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
     pod 'React' , :subspecs => [
         'ART',
         'RCTImage',

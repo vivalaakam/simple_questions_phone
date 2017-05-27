@@ -1,5 +1,4 @@
 import { createAction } from 'redux-actions';
-import { Actions } from 'react-native-redux-router';
 import { call, select, put, fork, takeEvery } from 'redux-saga/effects'
 import { AsyncStorage } from 'react-native';
 import { AccessToken, LoginManager } from 'react-native-fbsdk';
@@ -8,7 +7,7 @@ import User from '../api/user';
 import fbQuery from '../api/facebook';
 import { merge } from '../helpers/ramda';
 import token from '../utils/token';
-
+import navigate from './navigate'
 
 const authModel = new Auth();
 const userModel = new User();
@@ -79,8 +78,12 @@ function getUser(state) {
 }
 
 export function* userFetchAction({ payload }) {
-  const data = yield userModel.fetch(payload);
-  yield put(userSave(data));
+  try {
+    const data = yield userModel.fetch(payload);
+    yield put(userSave(data));
+  } catch (e) {
+    console.log(e.message);
+  }
 }
 
 function* userAuthAction() {
@@ -88,7 +91,7 @@ function* userAuthAction() {
   try {
     const data = yield authModel.auth({ email, password });
     yield put(userSave(data));
-    Actions.questions()
+    yield put(navigate('Questions'))
   } catch (e) {
     yield put(userError(e.message));
   }
@@ -102,7 +105,7 @@ function* userFetchFacebookAuthAction({ payload }) {
 
     const data = yield authModel.provider('facebook', params.id, payload);
     yield put(userSave(data));
-    Actions.questions()
+    yield put(navigate('Questions'))
   } catch (e) {
     yield put(userError(e.message));
   }

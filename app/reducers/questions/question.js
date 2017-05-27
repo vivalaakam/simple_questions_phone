@@ -1,12 +1,11 @@
 import _ from 'lodash';
 import uuid4 from 'uuid/v4';
-import { put, select, call, fork, takeLatest } from 'redux-saga/effects';
+import { put, select, takeLatest } from 'redux-saga/effects';
 import { createAction } from 'redux-actions';
-import { Actions } from 'react-native-redux-router';
-
 
 import { merge } from '../../helpers/ramda';
 import { usersList } from '../users';
+import  navigate  from '../navigate'
 import Questions from '../../api/questions';
 
 const apiQuestions = new Questions();
@@ -76,7 +75,7 @@ function* createQuestionAction() {
   const { additionText, answerText, ...data } = yield select(getQuestion);
   const questionData = yield apiQuestions.create(data);
   yield put(resetQuestion(questionData));
-  Actions.question_show({ id: questionData.id })
+  yield put(navigate('Question', { id: questionData.id }))
 }
 
 function* updateQuestionAction() {
@@ -111,7 +110,7 @@ function* toggleAdditionQuestionAction() {
   yield put(changeQuestion({ addition: !addition }));
 }
 
-export function* fetchQuestionAction(id) {
+export function* fetchQuestionAction({ id }) {
   const questionData = yield apiQuestions.fetch(id);
   const users = questionData.answers.map(answer => answer.user_id);
   yield put(usersList(_.uniq(users)));

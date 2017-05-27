@@ -1,18 +1,11 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { View, StyleSheet, LayoutAnimation, Dimensions, TouchableHighlight, StatusBar } from 'react-native';
-import { Router, Route, Container, Animations, Schema, Actions } from 'react-native-redux-router';
+import { addNavigationHelpers } from 'react-navigation';
 
-import { NavBar, NavBarModal } from './components/NavBar';
-import Error from './components/Error';
-import Login from './containers/Login';
-import Settings from './containers/Settings';
-import Questions from './containers/Questions/Questions';
-import Question from './containers/Questions/Question';
-import QuestionsForm from './containers/Questions/Form';
+import Navigator from './Navigator'
 import Menu from './containers/Menu';
 import NotificationsWidget from './containers/NotificationsWidget'
-
 import { toggleAppMenu } from './reducers/app';
 
 const { width } = Dimensions.get('window');
@@ -68,22 +61,6 @@ class App extends Component {
     this.props.toggleMenu();
   };
 
-  onQuestionAdd = {
-    title: "Добавить",
-    tintColor: '#e1e4e9',
-    handler: () => {
-      Actions.questions_add()
-    }
-  };
-
-  onQuestionAddBack = {
-    title: "Назад",
-    tintColor: '#e1e4e9',
-    handler: () => {
-      Actions.questions()
-    }
-  };
-
   render() {
     const styleMenu = {
       transform: [
@@ -101,6 +78,9 @@ class App extends Component {
 
     return (
       <View style={styles.container}>
+        <StatusBar
+          barStyle="light-content"
+        />
         <NotificationsWidget />
         <View style={[styles.menuWrapper, styleMenu]}>
           <View style={styles.menu}>
@@ -111,22 +91,10 @@ class App extends Component {
           </TouchableHighlight>
         </View>
         <View style={[styles.view, styleView]}>
-          <Router ref={this.setRef}>
-            <Schema name="modal" sceneConfig={Animations.FlatFloatFromBottom} navBar={NavBarModal} />
-            <Schema name="default" sceneConfig={Animations.FlatFloatFromRight} navBar={NavBar}
-                    toggleMenu={this.toggleMenu} />
-            <Schema name="withoutAnimation" navBar={NavBar} />
-            <Schema name="tab" navBar={NavBar} />
-            <Route name="settings" component={Settings} title="Настройки" type="replace" />
-            <Route name="questions" component={Questions} initial={true} title="Вопросы" type="replace"
-                   rightButton={this.onQuestionAdd} />
-            <Route name="question_show" component={Question} title="Вопрос" type="replace"
-                   leftButton={this.onQuestionAddBack} />
-            <Route name="questions_add" component={QuestionsForm} title="Создать вопрос" type="replace"
-                   leftButton={this.onQuestionAddBack} />
-            <Route name="login" component={Login} title="Вход" type="replace" />
-            <Route name="error" component={Error} schema="popup" />
-          </Router>
+          <Navigator screenProps={{ tintColor: '#e1e4e9' }} navigation={addNavigationHelpers({
+            dispatch: this.props.dispatch,
+            state: this.props.router,
+          })} />
         </View>
       </View>
     );
@@ -135,7 +103,8 @@ class App extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    app: state.app
+    app: state.app,
+    router: state.router
   }
 };
 
@@ -143,7 +112,8 @@ const mapDispatchToProps = (dispatch) => {
   return {
     toggleMenu() {
       return dispatch(toggleAppMenu())
-    }
+    },
+    dispatch
   };
 };
 

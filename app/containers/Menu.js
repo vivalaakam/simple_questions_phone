@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import { Actions } from 'react-native-redux-router';
 import { userLogout } from '../reducers/user';
 import { toggleAppMenu } from '../reducers/app';
+import { navigate } from '../reducers/router';
 
 import Menu from '../components/Menu';
 
@@ -23,8 +23,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    push(name, data) {
-      return Actions.replace({ name, data });
+    push(routeName, params) {
+      return dispatch(navigate(routeName, params))
     },
     userLogout() {
       return dispatch(userLogout());

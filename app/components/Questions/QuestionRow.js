@@ -1,7 +1,6 @@
 import React from 'react';
 import moment from 'moment';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
-import { Actions } from 'react-native-redux-router';
 
 import Container from '../UI/Container'
 
@@ -33,11 +32,11 @@ const styles = StyleSheet.create({
   }
 });
 
-export default function QuestionRow({ question, user = {} }) {
+export default function QuestionRow({ question, user = {}, navigation }) {
   const time = moment(question.created_at).fromNow();
 
   const showQuestion = () => {
-    Actions.question_show({ id: question.id })
+    navigation.navigate('Question', { id: question.id })
   };
 
   return (

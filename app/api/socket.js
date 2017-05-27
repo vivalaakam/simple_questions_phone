@@ -7,8 +7,9 @@ import token from '../utils/token';
 class Channel {
   async getChannel() {
     const jwt = await token.asyncGetToken();
+
     if (!this.channel) {
-      this.channel = ActionCable.createConsumer(`${Config.PROXY_WS_SERVER}/cable?token=${jwt}`);
+      this.channel = ActionCable.createConsumer(`${Config.PROXY_SERVER}/cable?token=${jwt}`);
     }
 
     return this.channel

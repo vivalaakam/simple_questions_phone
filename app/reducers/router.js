@@ -1,27 +1,40 @@
-import { put, select, call, fork, takeLatest } from 'redux-saga/effects';
-import { REPLACE } from 'react-native-redux-router/actions'
-
+import { put, call, takeLatest } from 'redux-saga/effects';
+import { NavigationActions } from 'react-navigation'
 import { fetchQuestions } from './questions/list'
 import { resetQuestionInitial, fetchQuestionAction } from './questions/question'
 import { userFetchAction } from './user';
+import navigate from './navigate'
 
-function* changeLocation({ name, data }) {
-  switch (name) {
-    case 'questions':
+import AppNavigator from '../Navigator'
+
+const $$initialState = AppNavigator.router.getStateForAction(AppNavigator.router.getActionForPathAndParams('Questions'));
+
+export default function router($$state = $$initialState, action) {
+  const nextState = AppNavigator.router.getStateForAction(action, $$state);
+  return nextState || $$state;
+}
+
+export {
+  navigate
+}
+
+function* changeLocation({ routeName, params }) {
+  switch (routeName) {
+    case 'Questions':
       yield put(fetchQuestions());
       break;
-    case 'questions_add':
+    case 'QuestionsForm':
       yield call(resetQuestionInitial);
       break;
-    case 'question_show':
-      yield call(fetchQuestionAction, data.id);
+    case 'Question':
+      yield call(fetchQuestionAction, params);
       break;
-    case 'settings':
+    case 'Settings':
       yield call(userFetchAction, { payload: true });
       break;
   }
 }
 
 export function* routerWatcher() {
-  yield takeLatest(REPLACE, changeLocation);
+  yield takeLatest(NavigationActions.NAVIGATE, changeLocation);
 }

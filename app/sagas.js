@@ -1,6 +1,5 @@
 import { user } from './reducers/user';
 import { usersWatcher } from './reducers/users';
-import { todosList } from './reducers/todos/list';
 import { questionsList } from './reducers/questions/list';
 import { getQuestionWatcher } from './reducers/questions/question';
 import { routerWatcher } from './reducers/router';
@@ -13,7 +12,6 @@ export default function* rootSaga() {
     routerWatcher(),
     user(),
     usersWatcher(),
-    todosList(),
     questionsList(),
     getQuestionWatcher(),
     notificationsWatcher()
