@@ -8,6 +8,7 @@ import fbQuery from '../api/facebook';
 import { merge } from '../helpers/ramda';
 import token from '../utils/token';
 import navigate from './navigate'
+import {requestNotification} from './notifications'
 
 const authModel = new Auth();
 const userModel = new User();
@@ -91,6 +92,7 @@ function* userAuthAction() {
   try {
     const data = yield authModel.auth({ email, password });
     yield put(userSave(data));
+    yield put(requestNotification());
     yield put(navigate('Questions'))
   } catch (e) {
     yield put(userError(e.message));
@@ -105,6 +107,7 @@ function* userFetchFacebookAuthAction({ payload }) {
 
     const data = yield authModel.provider('facebook', params.id, payload);
     yield put(userSave(data));
+    yield put(requestNotification());
     yield put(navigate('Questions'))
   } catch (e) {
     yield put(userError(e.message));

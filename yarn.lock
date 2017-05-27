@@ -3177,6 +3177,10 @@ react-native-navbar@^1.6.0:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/react-native-navbar/-/react-native-navbar-1.7.1.tgz#de0e6f8c2156c7e984bb43c76732bd2437b7df0f"
 
+react-native-push-notification@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/react-native-push-notification/-/react-native-push-notification-3.0.0.tgz#00282ea656443e89df6057f14b10500e7b89551f"
+
 react-native-svg-icon@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/react-native-svg-icon/-/react-native-svg-icon-0.4.0.tgz#6a7ae63afc01b66fadd077af5d45b55ed64b9406"
