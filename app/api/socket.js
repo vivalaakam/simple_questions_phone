@@ -1,4 +1,4 @@
-//import ActionCable from 'react-native-actioncable'
+import ActionCable from 'react-native-actioncable'
 import Config from 'react-native-config'
 
 import { eventChannel } from 'redux-saga';
@@ -7,12 +7,9 @@ import token from '../utils/token';
 class Channel {
   async getChannel() {
     const jwt = await token.asyncGetToken();
-    await new Promise((resolve) => {
-    });
-    if (!this.channel) {
-      //this.channel = ActionCable.createConsumer(`${Config.PROXY_WS_SERVER}/cable?token=${jwt}`);
 
-      return new Promise()
+    if (!this.channel) {
+      this.channel = ActionCable.createConsumer(`${Config.PROXY_SERVER}/cable?token=${jwt}`);
     }
 
     return this.channel
