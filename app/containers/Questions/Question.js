@@ -8,8 +8,17 @@ import {
   createAdditionQuestion,
   createAnswerQuestion
 } from '../../reducers/questions/question';
+import NavButton from '../../components/UI/NavButton';
 
 class QuestionContainer extends Component {
+  static navigationOptions = ({ navigation, screenProps }) => {
+    const add = () => navigation.goBack();
+    return {
+      title: "Вопрос",
+      headerLeft: <NavButton color={screenProps.tintColor} title="Назад" onPress={add} />,
+    };
+  };
+
   render() {
     return (
       <Question {...this.props} />
@@ -18,7 +27,6 @@ class QuestionContainer extends Component {
 }
 
 const mapStateToProps = (state) => {
-  console.log(this.state);
   return {
     question: state.questions.question,
     users: state.users,

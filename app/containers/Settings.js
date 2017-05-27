@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
+import MenuButton from './MenuButton'
 import Settings from '../components/Settings';
 import { userChange, userUpdate, userPasswordUpdate, userTokenRemove, userNotificationRemove } from '../reducers/user';
 
 class SettingsContainer extends Component {
+  static navigationOptions = {
+    title: "Настройки",
+    headerLeft: <MenuButton />
+  };
+
   render() {
     return (
       <Settings {...this.props} />

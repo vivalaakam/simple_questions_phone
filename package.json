@@ -19,7 +19,6 @@
     "react-native-fbsdk": "^0.6.0",
     "react-native-interactable": "^0.0.9",
     "react-native-navbar": "^1.6.0",
-    "react-native-redux-router": "^1.0.7",
     "react-native-svg": "^5.1.5",
     "react-native-svg-icon": "^0.4.0",
     "react-native-swipe-out": "^2.0.14",

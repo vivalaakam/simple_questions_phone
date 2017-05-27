@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, TouchableHighlight } from 'react-native';
-import { Actions } from 'react-native-redux-router';
 
 const styles = StyleSheet.create({
   container: {
@@ -51,14 +50,14 @@ export default class Menu extends Component {
     }
 
     return this.renderButton('Вход', () => {
-      Actions.login();
+      this.props.push('Login');
       this.props.toggleMenu();
     });
   }
 
   renderSettings() {
     if (this.props.user && this.props.user.auth) {
-      return this.renderButton('Настройки', this.onPress('settings'))
+      return this.renderButton('Настройки', this.onPress('Settings'))
     }
   }
 
@@ -66,7 +65,7 @@ export default class Menu extends Component {
     return (
       <View style={styles.container}>
         <View style={styles.main}>
-          {this.renderButton('Вопросы', this.onPress('questions'))}
+          {this.renderButton('Вопросы', this.onPress('Questions'))}
           {this.renderSettings()}
         </View>
         <View style={styles.bottom}>
