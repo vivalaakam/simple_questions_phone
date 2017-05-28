@@ -1,3 +1,4 @@
+import { all } from 'redux-saga/effects';
 import { user } from './reducers/user';
 import { usersWatcher } from './reducers/users';
 import { questionsList } from './reducers/questions/list';
@@ -7,7 +8,7 @@ import { appWatcher } from './reducers/app'
 import { notificationsWatcher } from './reducers/notifications';
 
 export default function* rootSaga() {
-  yield [
+  yield all([
     appWatcher(),
     routerWatcher(),
     user(),
@@ -15,5 +16,5 @@ export default function* rootSaga() {
     questionsList(),
     getQuestionWatcher(),
     notificationsWatcher()
-  ];
+  ]);
 }
