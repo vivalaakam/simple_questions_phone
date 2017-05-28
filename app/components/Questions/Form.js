@@ -35,7 +35,7 @@ export default class QuestionsForm extends Component {
             onChangeText={this.props.questionFormText}
           />
         </Container>
-        <Button title="Создать вопрос" onPress={this.handlePressSubmit} />
+        <Button title="Создать вопрос" onPress={this.handlePressSubmit} inProgress={this.props.app.question_create} />
       </View>
     );
   }

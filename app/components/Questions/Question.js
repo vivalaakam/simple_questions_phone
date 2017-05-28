@@ -67,7 +67,12 @@ export default class Question extends Component {
             style={{ height: 40 }}
           />
         </Container>
-        <Button onPress={this.props.createAdditionQuestion} style={styles.createAddition} title="Дополнить вопрос" />
+        <Button
+          onPress={this.props.createAdditionQuestion}
+          style={styles.createAddition}
+          title="Дополнить вопрос"
+          inProgress={this.props.app.question_addition}
+        />
         <Button onPress={this.props.toggleAdditionQuestion} title="Отмена" />
       </View>
     );
@@ -149,7 +154,11 @@ export default class Question extends Component {
             style={{ height: 40 }}
           />
         </Container>
-        <Button onPress={this.props.createAnswerQuestion} title="Ответить на вопрос" />
+        <Button
+          onPress={this.props.createAnswerQuestion}
+          title="Ответить на вопрос"
+          inProgress={this.props.app.question_answer}
+        />
       </View>
     );
   };

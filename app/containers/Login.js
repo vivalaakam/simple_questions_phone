@@ -8,7 +8,8 @@ import { userTryAuth, userChange, userAuth } from '../reducers/user';
 
 const mapStateToProps = (state) => {
   return {
-    user: state.user
+    user: state.user,
+    app: state.app
   };
 };
 

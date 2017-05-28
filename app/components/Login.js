@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
 export default class Login extends Component {
   static propTypes = {
     user: PropTypes.object,
+    app: PropTypes.object,
     userLogin: PropTypes.func
   };
 
@@ -53,8 +54,17 @@ export default class Login extends Component {
             onChangeText={this.props.userAuthPassword}
           />
         </Container>
-        <Button title="Войти" onPress={this.props.userAuth} style={styles.login} />
-        <Button title="Войти с помощью Facebook" onPress={this.onPressFacebook} />
+        <Button
+          title="Войти"
+          onPress={this.props.userAuth}
+          style={styles.login}
+          inProgress={this.props.app.login_basic}
+        />
+        <Button
+          title="Войти с помощью Facebook"
+          onPress={this.onPressFacebook}
+          inProgress={this.props.app.login_facebook}
+        />
       </View>
     );
   }

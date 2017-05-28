@@ -86,14 +86,14 @@ export default class Settings extends Component {
           <TextInput
             first
             placeholder="Имя"
-            style={{height: 40}}
+            style={{ height: 40 }}
             onChangeText={this.props.userFirstName}
             value={this.props.user.tmp_first_name}
           />
           <TextInput
             last
             placeholder="Фамилия"
-            style={{height: 40}}
+            style={{ height: 40 }}
             onChangeText={this.props.userLastName}
             value={this.props.user.tmp_last_name}
           />
@@ -106,7 +106,7 @@ export default class Settings extends Component {
             first
             secureTextEntry
             placeholder="Пароль"
-            style={{height: 40}}
+            style={{ height: 40 }}
             onChangeText={this.props.userPassword}
             value={this.props.user.password}
           />
@@ -114,7 +114,7 @@ export default class Settings extends Component {
             last
             secureTextEntry
             placeholder="Повторите пароль"
-            style={{height: 40}}
+            style={{ height: 40 }}
             onChangeText={this.props.userPasswordConfirmation}
             value={this.props.user.password_confirmation}
           />

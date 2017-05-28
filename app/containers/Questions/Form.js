@@ -30,7 +30,8 @@ class QuestionsFormContainer extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    form: state.questions.question
+    form: state.questions.question,
+    app: state.app
   };
 };
 

@@ -8,6 +8,7 @@ import fbQuery from '../api/facebook';
 import { merge } from '../helpers/ramda';
 import token from '../utils/token';
 import navigate from './navigate'
+import { appChange } from './app'
 import { requestNotification, emptyNotifications } from './notifications'
 
 const authModel = new Auth();
@@ -88,6 +89,7 @@ export function* userFetchAction({ payload }) {
 }
 
 function* userAuthAction() {
+  yield put(appChange({ login_basic: true }));
   const { email, password } = yield select(getUser);
   try {
     const data = yield authModel.auth({ email, password });
@@ -97,6 +99,7 @@ function* userAuthAction() {
   } catch (e) {
     yield put(userError(e.message));
   }
+  yield put(appChange({ login_basic: false }));
 }
 
 function* userFetchFacebookAuthAction({ payload }) {
@@ -112,9 +115,11 @@ function* userFetchFacebookAuthAction({ payload }) {
   } catch (e) {
     yield put(userError(e.message));
   }
+  yield put(appChange({ login_facebook: false }));
 }
 
 function* userTryAuthAction() {
+  yield put(appChange({ login_facebook: true }));
   try {
     const data = yield AccessToken.getCurrentAccessToken();
     const fbtoken = data.accessToken.toString();
@@ -122,6 +127,7 @@ function* userTryAuthAction() {
     yield put(userFacebookAuth(fbtoken));
   } catch (e) {
     yield put(userError(e.message));
+    yield put(appChange({ login_facebook: false }));
   }
 }
 

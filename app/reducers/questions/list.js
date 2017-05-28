@@ -5,7 +5,7 @@ import { AsyncStorage } from 'react-native';
 import Questions from '../../api/questions'
 import { usersList } from '../users';
 import { selectForm, questionFormReset } from './question';
-import { appQuestionsRefreshing } from '../app';
+import { appChange } from '../app';
 
 const questionsModel = new Questions();
 
@@ -49,12 +49,12 @@ function* questionsListRestoreAction() {
 }
 
 function* fetchQuestionsAction() {
-  yield put(appQuestionsRefreshing(true));
+  yield put(appChange({ questions_refreshing: true }));
   const data = yield questionsModel.all();
   const users = data.map(question => question.user_id);
   yield put(usersList(_.uniq(users)));
   yield put(resetQuestions(data));
-  yield put(appQuestionsRefreshing(false));
+  yield put(appChange({ questions_refreshing: false }));
   yield call(updateQuestionsStorage);
 }
 

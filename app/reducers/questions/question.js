@@ -6,6 +6,7 @@ import { createAction } from 'redux-actions';
 import { merge } from '../../helpers/ramda';
 import { usersList } from '../users';
 import  navigate  from '../navigate'
+import { appChange } from '../app'
 import Questions from '../../api/questions';
 
 const apiQuestions = new Questions();
@@ -72,19 +73,16 @@ function getQuestion(state) {
 }
 
 function* createQuestionAction() {
+  yield put(appChange({ question_create: true }));
   const { additionText, answerText, ...data } = yield select(getQuestion);
   const questionData = yield apiQuestions.create(data);
   yield put(resetQuestion(questionData));
   yield put(navigate('Question', { id: questionData.id }))
-}
-
-function* updateQuestionAction() {
-  const { id, additionText, answerText, ...props } = yield select(getQuestion);
-  const questionData = yield apiQuestions.update(id, props);
-  yield put(resetQuestion(questionData));
+  yield put(appChange({ question_create: false }));
 }
 
 function* createAdditionQuestionAction() {
+  yield put(appChange({ question_addition: true }));
   const { id, additionText } = yield select(getQuestion);
   try {
     const questionData = yield apiQuestions.addition(id, { text: additionText });
@@ -92,17 +90,16 @@ function* createAdditionQuestionAction() {
   } catch (e) {
     console.log(e.message);
   }
+  yield put(appChange({ question_addition: false }));
 }
 
 function* createAnswerQuestionAction() {
+  yield put(appChange({ question_answer: true }));
   const { id, answerText } = yield select(getQuestion);
   const questionData = yield apiQuestions.answer(id, { text: answerText });
   yield put(resetQuestion({ ...questionData, answerText: '' }));
-}
+  yield put(appChange({ question_answer: false }));
 
-function* deleteQuestionAction({ payload: { id } }) {
-  yield apiQuestions.remove(id);
-  yield put(destroyQuestion(id));
 }
 
 function* toggleAdditionQuestionAction() {
@@ -114,7 +111,6 @@ export function* fetchQuestionAction({ id }) {
   const questionData = yield apiQuestions.fetch(id);
   const users = questionData.answers.map(answer => answer.user_id);
   yield put(usersList(_.uniq(users)));
-
   yield put(resetQuestion({ ...questionData, isNew: false, additionText: '', answerText: '' }));
 }
 
@@ -124,8 +120,6 @@ export function* resetQuestionInitial() {
 
 export function* getQuestionWatcher() {
   yield takeLatest(QUESTION_CREATE, createQuestionAction);
-  yield takeLatest(QUESTION_UPDATE, updateQuestionAction);
-  yield takeLatest(QUESTION_DELETE, deleteQuestionAction);
   yield takeLatest(QUESTION_ADDITION_TOGGLE, toggleAdditionQuestionAction);
   yield takeLatest(QUESTION_ADDITION_CREATE, createAdditionQuestionAction);
   yield takeLatest(QUESTION_ANSWER_CREATE, createAnswerQuestionAction);
