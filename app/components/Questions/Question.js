@@ -130,7 +130,7 @@ export default class Question extends Component {
     )
   };
 
-  renderCommentForm() {
+  renderCommentForm = () => {
     const { user, question } = this.props;
     if (!user.id || user.id === question.user_id) {
       return null;

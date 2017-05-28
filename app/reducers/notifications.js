@@ -1,6 +1,6 @@
 import { Platform } from 'react-native';
 import { createAction } from 'redux-actions';
-import { put, fork, takeEvery, take, call } from 'redux-saga/effects';
+import { put, fork, takeEvery, take, call, select } from 'redux-saga/effects';
 import { eventChannel } from 'redux-saga';
 
 import PushNotification from 'react-native-push-notification';
@@ -21,6 +21,7 @@ const NOTIFICATION_RESET = 'NOTIFICATION_RESET';
 const NOTIFICATION_REQUEST = 'NOTIFICATION_REQUEST';
 const NOTIFICATION_SAVE = 'NOTIFICATION_SAVE';
 const NOTIFICATION_CANCEL = 'NOTIFICATION_CANCEL';
+const NOTIFICATIONS_FETCH = 'NOTIFICATIONS_FETCH';
 
 const $$initialState = [];
 
@@ -31,7 +32,7 @@ export default function modal($$state = $$initialState, { type, payload }) {
     case NOTIFICATION_REMOVE:
       return removeByKey($$state, payload.id, 'id');
     case NOTIFICATION_RESET:
-      return $$initialState;
+      return payload;
     default:
       return $$state;
   }
@@ -44,24 +45,34 @@ export const clearNotification = createAction(NOTIFICATION_CLEAR);
 export const resetNotification = createAction(NOTIFICATION_RESET);
 export const requestNotification = createAction(NOTIFICATION_REQUEST);
 export const saveNotification = createAction(NOTIFICATION_SAVE);
+export const fetchNotifications = createAction(NOTIFICATIONS_FETCH);
+
+function getNotifications(state) {
+  return state.notifications;
+}
+
+function* fetchNotificationsAction() {
+  const data = yield notificationsApi.all();
+  yield put(resetNotification(data));
+  yield call(updateBadgeNotificationsAction);
+}
 
 function* closeNotificationAction({ payload }) {
   yield notificationsApi.remove(payload.id);
   yield put(removeNotification(payload));
+  yield call(updateBadgeNotificationsAction);
 }
 
 function* clearNotificationAction() {
   yield notificationsApi.clear();
-  yield put(resetNotification());
+  yield put(resetNotification([]));
   yield put(resetSearchApp({ notificationsActive: false }));
 }
 
 function* registerNotificationsAction() {
   const permissions = () => eventChannel((emitter) => {
     PushNotification.configure({
-      onRegister: ({ token, os }) => {
-        emitter({ token, os });
-      }
+      onRegister: emitter
     });
 
     return () => {
@@ -88,10 +99,7 @@ function* cancelNotificationAction() {
 function* notificationsAction() {
   const permissions = () => eventChannel((emitter) => {
     PushNotification.configure({
-      onNotification: function (notification) {
-        console.log('NOTIFICATION:', notification);
-        emitter(notification);
-      }
+      onNotification: emitter
     });
 
     return () => {
@@ -106,8 +114,14 @@ function* notificationsAction() {
       yield put(closeNotification(data.data));
     } else {
       yield put(createNotification({ ...data.data, is_new: true }));
+      yield call(updateBadgeNotificationsAction);
     }
   }
+}
+
+function* updateBadgeNotificationsAction() {
+  const notifications = yield select(getNotifications);
+  PushNotification.setApplicationIconBadgeNumber(notifications.length);
 }
 
 export function* notificationsWatcher() {
@@ -116,6 +130,7 @@ export function* notificationsWatcher() {
   yield fork(takeEvery, NOTIFICATION_REQUEST, registerNotificationsAction);
   yield fork(takeEvery, NOTIFICATION_SAVE, saveTokenNotificationAction);
   yield fork(takeEvery, NOTIFICATION_CANCEL, cancelNotificationAction);
+  yield fork(takeEvery, NOTIFICATIONS_FETCH, fetchNotificationsAction);
   yield fork(notificationsAction);
   const socket = yield Socket.getChannel();
   const socketChannel = yield call(Socket.subscribe.bind(Socket), socket, 'NotificationChannel');
@@ -123,6 +138,7 @@ export function* notificationsWatcher() {
     const payload = yield take(socketChannel);
     if (payload.message) {
       yield put(createNotification({ ...payload.message, is_new: true }));
+      yield call(updateBadgeNotificationsAction);
     }
   }
 }

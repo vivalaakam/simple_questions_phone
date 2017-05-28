@@ -61,11 +61,18 @@ export default class Menu extends Component {
     }
   }
 
+  renderNotifications() {
+    if (this.props.user && this.props.user.auth) {
+      return this.renderButton('Уведомления', this.onPress('Notifications'))
+    }
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <View style={styles.main}>
           {this.renderButton('Вопросы', this.onPress('Questions'))}
+          {this.renderNotifications()}
           {this.renderSettings()}
         </View>
         <View style={styles.bottom}>

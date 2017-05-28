@@ -1,6 +1,7 @@
 import { put, call, takeLatest } from 'redux-saga/effects';
 import { NavigationActions } from 'react-navigation'
 import { fetchQuestions } from './questions/list'
+import { fetchNotifications } from './notifications'
 import { resetQuestionInitial, fetchQuestionAction } from './questions/question'
 import { userFetchAction } from './user';
 import navigate from './navigate'
@@ -31,6 +32,9 @@ function* changeLocation({ routeName, params }) {
       break;
     case 'Settings':
       yield call(userFetchAction, { payload: true });
+      break;
+    case 'Notifications':
+      yield put(fetchNotifications());
       break;
   }
 }
