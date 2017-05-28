@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { createStore, applyMiddleware } from 'redux';
 import createSagaMiddleware from 'redux-saga'
 import { Provider } from 'react-redux';
-import createLogger from 'redux-logger';
+import { createLogger } from 'redux-logger'
 
 import App from './App';
 import reducer from './reducers';
