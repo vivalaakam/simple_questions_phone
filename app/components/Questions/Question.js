@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import moment from 'moment';
-import { ScrollView, View, Text, StyleSheet } from 'react-native';
+import { FlatList, View, Text, StyleSheet } from 'react-native';
 import Container from '../UI/Container';
 import Button from '../UI/Button';
 import TextInput from '../UI/TextInput';
@@ -97,32 +97,38 @@ export default class Question extends Component {
     }
 
     const length = question.answers.length;
-
     const count = pluralize(length, ['ответ', 'ответа', 'ответов']);
-
     return (
       <Text style={[styles.title]}>{question.answers.length} {count} на вопрос</Text>
     );
   }
 
-  renderComments() {
+  renderAnswer = ({ item }) => {
+    const user = this.props.users[item.user_id] || {};
+    return (
+      <Container key={item.id}>
+        <Text style={styles.text}>{user.name}</Text>
+        <Text style={styles.text}>{moment(item.created_at).fromNow()}</Text>
+        <Text style={styles.text}>{item.text}</Text>
+      </Container>
+    )
+  };
+
+  renderHeader = () => {
     const { question } = this.props;
-
-    if (!question.answers) {
-      return null
-    }
-
-    return question.answers.map((answer) => {
-      const user = this.props.users[answer.user_id] || {};
-      return (
-        <Container key={answer.id}>
-          <Text style={styles.text}>{user.name}</Text>
-          <Text style={styles.text}>{moment(answer.created_at).fromNow()}</Text>
-          <Text style={styles.text}>{answer.text}</Text>
+    return (
+      <View>
+        <Text style={[styles.title]}>{question.title}</Text>
+        <Container>
+          <Text style={styles.text}>{question.text}</Text>
+          {this.renderAdditions()}
         </Container>
-      )
-    });
-  }
+        {this.renderAdditionForm()}
+        {this.renderAdditionButton()}
+        {this.renderCommentTitle()}
+      </View>
+    )
+  };
 
   renderCommentForm() {
     const { user, question } = this.props;
@@ -149,20 +155,14 @@ export default class Question extends Component {
   }
 
   render() {
-    const { question } = this.props;
     return (
-      <ScrollView style={styles.container}>
-        <Text style={[styles.title]}>{question.title}</Text>
-        <Container>
-          <Text style={styles.text}>{question.text}</Text>
-          {this.renderAdditions()}
-        </Container>
-        {this.renderAdditionForm()}
-        {this.renderAdditionButton()}
-        {this.renderCommentTitle()}
-        {this.renderComments()}
-        {this.renderCommentForm()}
-      </ScrollView>
+      <FlatList
+        data={this.props.question.answers}
+        keyExtractor={(item) => item.id}
+        renderItem={this.renderAnswer}
+        ListFooterComponent={this.renderCommentForm}
+        ListHeaderComponent={this.renderHeader}
+      />
     );
   }
 }

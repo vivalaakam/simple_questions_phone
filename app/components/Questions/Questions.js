@@ -1,5 +1,5 @@
-import React, { Component, PropTypes } from 'react';
-import { View, Text, ListView, StyleSheet } from 'react-native';
+import React, { PureComponent, PropTypes } from 'react';
+import { FlatList, StyleSheet } from 'react-native';
 import QuestionRow from './QuestionRow';
 
 const styles = StyleSheet.create({
@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   }
 });
 
-export default class Questions extends Component {
+export default class Questions extends PureComponent {
   static propTypes = {
     questions: PropTypes.array
   };
@@ -18,35 +18,20 @@ export default class Questions extends Component {
     questions: []
   };
 
-  ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
-
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      dataSource: this.ds.cloneWithRows(props.questions),
-    };
-  }
-
-  componentWillReceiveProps(props) {
-    this.setState({
-      dataSource: this.ds.cloneWithRows(props.questions)
-    });
-  }
-
-  renderRow = (data) => {
+  renderRow = ({ item }) => {
     return (
-      <QuestionRow question={data} user={this.props.users[data.user_id]} navigation={this.props.navigation} />
+      <QuestionRow question={item} user={this.props.users[item.user_id]} navigation={this.props.navigation} />
     );
   };
 
   render() {
     return (
-      <ListView
+      <FlatList
         style={styles.container}
-        dataSource={this.state.dataSource}
+        data={this.props.questions}
         enableEmptySections={true}
-        renderRow={this.renderRow}
+        keyExtractor={(item) => item.id}
+        renderItem={this.renderRow}
       />
     );
   }
