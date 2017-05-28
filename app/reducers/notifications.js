@@ -1,4 +1,4 @@
-import { Platform } from 'react-native';
+import { Platform, AsyncStorage } from 'react-native';
 import { createAction } from 'redux-actions';
 import { put, fork, takeEvery, take, call, select } from 'redux-saga/effects';
 import { eventChannel } from 'redux-saga';
@@ -22,6 +22,7 @@ const NOTIFICATION_REQUEST = 'NOTIFICATION_REQUEST';
 const NOTIFICATION_SAVE = 'NOTIFICATION_SAVE';
 const NOTIFICATION_CANCEL = 'NOTIFICATION_CANCEL';
 const NOTIFICATIONS_FETCH = 'NOTIFICATIONS_FETCH';
+const NOTIFICATIONS_EMPTY = 'NOTIFICATIONS_EMPTY';
 
 const $$initialState = [];
 
@@ -46,6 +47,7 @@ export const resetNotification = createAction(NOTIFICATION_RESET);
 export const requestNotification = createAction(NOTIFICATION_REQUEST);
 export const saveNotification = createAction(NOTIFICATION_SAVE);
 export const fetchNotifications = createAction(NOTIFICATIONS_FETCH);
+export const emptyNotifications = createAction(NOTIFICATIONS_EMPTY);
 
 function getNotifications(state) {
   return state.notifications;
@@ -54,6 +56,11 @@ function getNotifications(state) {
 function* fetchNotificationsAction() {
   const data = yield notificationsApi.all();
   yield put(resetNotification(data));
+  yield call(updateBadgeNotificationsAction);
+}
+
+function* emptyNotificationsAction() {
+  yield put(resetNotification([]));
   yield call(updateBadgeNotificationsAction);
 }
 
@@ -66,7 +73,7 @@ function* closeNotificationAction({ payload }) {
 function* clearNotificationAction() {
   yield notificationsApi.clear();
   yield put(resetNotification([]));
-  yield put(resetSearchApp({ notificationsActive: false }));
+  yield call(updateBadgeNotificationsAction);
 }
 
 function* registerNotificationsAction() {
@@ -121,16 +128,31 @@ function* notificationsAction() {
 
 function* updateBadgeNotificationsAction() {
   const notifications = yield select(getNotifications);
+  yield call(AsyncStorage.setItem, `@state:notifications`, JSON.stringify(notifications));
   PushNotification.setApplicationIconBadgeNumber(notifications.length);
 }
 
+function* notificationsRestoreAction() {
+  try {
+    const json = yield call(AsyncStorage.getItem, '@state:notifications');
+    const data = JSON.parse(json);
+    if (data) {
+      yield put(resetNotification(data));
+    }
+  } catch (e) {
+    console.log(e.message);
+  }
+}
+
 export function* notificationsWatcher() {
+  yield call(notificationsRestoreAction);
   yield fork(takeEvery, NOTIFICATION_CLOSE, closeNotificationAction);
   yield fork(takeEvery, NOTIFICATION_CLEAR, clearNotificationAction);
   yield fork(takeEvery, NOTIFICATION_REQUEST, registerNotificationsAction);
   yield fork(takeEvery, NOTIFICATION_SAVE, saveTokenNotificationAction);
   yield fork(takeEvery, NOTIFICATION_CANCEL, cancelNotificationAction);
   yield fork(takeEvery, NOTIFICATIONS_FETCH, fetchNotificationsAction);
+  yield fork(takeEvery, NOTIFICATIONS_EMPTY, emptyNotificationsAction);
   yield fork(notificationsAction);
   const socket = yield Socket.getChannel();
   const socketChannel = yield call(Socket.subscribe.bind(Socket), socket, 'NotificationChannel');

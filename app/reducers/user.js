@@ -8,7 +8,7 @@ import fbQuery from '../api/facebook';
 import { merge } from '../helpers/ramda';
 import token from '../utils/token';
 import navigate from './navigate'
-import {requestNotification} from './notifications'
+import { requestNotification, emptyNotifications } from './notifications'
 
 const authModel = new Auth();
 const userModel = new User();
@@ -145,8 +145,7 @@ function* userRestoreAction() {
 function* userLogoutAction() {
   yield LoginManager.logOut();
   yield call(AsyncStorage.removeItem, '@state:user');
-  yield call(AsyncStorage.removeItem, '@state:users');
-  yield call(AsyncStorage.removeItem, '@state:questions');
+  yield put(emptyNotifications());
   token.removeToken()
 }
 
