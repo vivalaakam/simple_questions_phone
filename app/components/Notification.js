@@ -2,15 +2,13 @@ import React, { PureComponent } from 'react';
 import { StyleSheet, View, Text, Dimensions, TouchableOpacity } from 'react-native';
 import Interactable from 'react-native-interactable';
 
+import Container from './UI/Container';
+
 const { width } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   notificationContainer: {
-    backgroundColor: 'rgba(255,255,255,.7)',
-    borderRadius: 5,
-    marginTop: 8,
-    paddingVertical: 8,
-    height: 72
+    height: 58
   },
   notificationHeader: {
     paddingHorizontal: 8,
@@ -51,12 +49,14 @@ export default class Notification extends PureComponent {
         ]}
         onSnap={this.onSnap}
       >
-        <TouchableOpacity style={styles.notificationContainer} onPress={this.onPress}>
-          <View style={styles.notificationHeader}>
-            <Text style={styles.notificationTitle}>{notification.title}</Text>
-          </View>
-          <Text numberOfLines={2} style={styles.notificationBody}>{notification.body}</Text>
-        </TouchableOpacity>
+        <Container>
+          <TouchableOpacity style={styles.notificationContainer} onPress={this.onPress}>
+            <View style={styles.notificationHeader}>
+              <Text style={styles.notificationTitle}>{notification.title}</Text>
+            </View>
+            <Text numberOfLines={2} style={styles.notificationBody}>{notification.body}</Text>
+          </TouchableOpacity>
+        </Container>
       </Interactable.View>
     );
   }

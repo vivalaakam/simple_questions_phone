@@ -7,8 +7,6 @@ const styles = StyleSheet.create({
     padding: 8,
     borderRadius: 5,
     marginBottom: 8,
-    borderColor: 'rgba(121,135,142,.77)',
-    borderWidth: 1,
     shadowColor: '#607D8B',
     shadowOpacity: 0.25,
     shadowOffset: {

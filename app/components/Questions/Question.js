@@ -11,7 +11,7 @@ moment.locale('ru');
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 10,
+    paddingHorizontal: 8,
     paddingVertical: 18
   },
   text: {
@@ -152,11 +152,12 @@ export default class Question extends Component {
         <Button onPress={this.props.createAnswerQuestion} title="Ответить на вопрос" />
       </View>
     );
-  }
+  };
 
   render() {
     return (
       <FlatList
+        style={styles.container}
         data={this.props.question.answers}
         keyExtractor={(item) => item.id}
         renderItem={this.renderAnswer}
