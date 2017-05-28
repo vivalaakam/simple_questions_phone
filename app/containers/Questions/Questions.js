@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import Questions from '../../components/Questions/Questions';
 import NavButton from '../../components/UI/NavButton';
-import { deleteQuestion } from '../../reducers/questions/list';
+import { fetchQuestions } from '../../reducers/questions/list';
 import MenuButton from '../MenuButton';
 
 class QuestionsContainer extends Component {
@@ -26,14 +26,15 @@ class QuestionsContainer extends Component {
 const mapStateToProps = (state) => {
   return {
     questions: state.questions.list,
-    users: state.users
+    users: state.users,
+    app: state.app
   };
 };
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    destroy: (id) => {
-      dispatch(deleteQuestion(id));
+    refresh() {
+      dispatch(fetchQuestions())
     }
   }
 };

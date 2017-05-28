@@ -32,6 +32,8 @@ export default class Questions extends PureComponent {
         enableEmptySections={true}
         keyExtractor={(item) => item.id}
         renderItem={this.renderRow}
+        refreshing={this.props.app.questions_refreshing}
+        onRefresh={this.props.refresh}
       />
     );
   }
